@@ -7,7 +7,7 @@ permalink: /about/
 João Pedro Chaves de Lima, Backend Developer
 
 email | location
-pedrochaveslimas3@gmail.com | Teresina, Piauí, BR
+[pedrochaveslimas3@gmail.com](mailto:pedrochaveslimas3@gmail.com) | Teresina, Piauí, BR
 
 # Links to follow
 [summary](#summary) | [work experience](#work-experience) | [college related projects](#college-related-projects) | [events](#events) | [education](#education) | [skills](#skills) | [languages](#languages) | [hobbies](#hobbies)

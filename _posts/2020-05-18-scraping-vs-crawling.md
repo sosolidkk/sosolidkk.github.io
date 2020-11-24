@@ -2,7 +2,7 @@
 layout: post
 title:  "Scraping vs Crawling"
 date:   2020-05-18 22:02:37 -0300
-categories: scraping, crawling
+categories: scraping
 ---
 Geralmente esses termos são difundidos de maneira equivocada. Para entender melhor, é necessário saber o que cada um deles significa. Scraping, ou aportuguesando um pouco podemos chegar em "garimpagem", que é o ato de extrair informações e posteriormente salvá-las em algum local (geralmente uma base de dados) para depois serem analizadas. Basicamente, scraping não se limita somente a web já que é possível realizar scraping de um site, de um banco de dados, de arquivos, as opções são diversas. Já um crawler, popurlamente conhecido como bot ou spider (World wide web, spider, web, pegou o trocadilho?), vai buscar informações ou salvar páginas web completas para depois analizar as informações. Conseguiu perceber a diferença entre eles? Um crawler é exclusivamente para web e se difere tanto em escala quanto alcance de um simples script que realiza scraping. 
 

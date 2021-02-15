@@ -19,7 +19,7 @@ Python backend developer who loves listening to music in his spare time and stro
 <!-- WORK SESSION BEGIN -->
 ## **Work experience**
 **[Juntos Somos Mais](https://www.juntossomosmais.com.br/), Contract Developer (Backend)**
-> period: 07/09/2020 - Today
+> period: 07/09/2020 - 12/02/2021
 
 - We are the largest relationship network in the civil construction market. We work hard to unite leading companies in the sector and connect them to tenants and construction professionals. We promote several exclusive benefits and more development for those who get their hands dirty and help build a better Brazil.
 - Working on the development of an API for handling resources in a B2C project.

@@ -13,7 +13,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Personal blog
+title: Brain dump
 description: >-
   Don't take everything you read here too seriously.
   Enjoy your stay!
@@ -22,8 +22,8 @@ url: "https://sosolidkk.github.io/"
 
 tagline: Ruby on Rails and Indie Hacking
 
-feed:
-  post_limit: 20
+show_excerpts: true
+excerpt_separator: <!--more-->
 
 header_pages:
   - about.md

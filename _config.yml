@@ -17,8 +17,13 @@ title: Personal blog
 description: >-
   Don't take everything you read here too seriously.
   Enjoy your stay!
-baseurl: ""
+# baseurl: ""
 url: "https://sosolidkk.github.io/"
+
+tagline: Ruby on Rails and Indie Hacking
+
+feed:
+  post_limit: 20
 
 header_pages:
   - about.md
@@ -28,8 +33,10 @@ author:
   email: pedrochaveslimas3@gmail.com
   name: João Pedro
 
-# Build settings
+remote_theme: jekyll/minima
+
 theme: minima
+
 minima:
   skin: dark
   social_links:

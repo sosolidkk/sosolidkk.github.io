@@ -1,1 +1,0 @@
-# sosolidkk.github.io

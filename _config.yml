@@ -35,8 +35,6 @@ author:
 
 remote_theme: jekyll/minima
 
-theme: minima
-
 minima:
   skin: dark
   social_links:
@@ -47,3 +45,4 @@ minima:
 
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme

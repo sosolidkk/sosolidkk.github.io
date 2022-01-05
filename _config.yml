@@ -46,3 +46,10 @@ minima:
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+
+exclude:
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

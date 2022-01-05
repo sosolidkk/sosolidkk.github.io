@@ -97,10 +97,6 @@ Spanish 🇪🇸🇦🇷: `Basic`
 
 [Django-Extensions](https://github.com/django-extensions/django-extensions): Django Extensions is a collection of custom extensions for the Django Framework.
 
-##### **Rails**
-
-[Rails](https://github.com/rails/rails): Rails is a web-application framework that includes everything needed to create database-backed web applications according to the [Model-View-Controller (MVC)](https://en.wikipedia.org/wiki/Model-view-controller) pattern.
-
 ---
 
 #### 📚 Education

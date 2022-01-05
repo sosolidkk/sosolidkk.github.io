@@ -28,6 +28,7 @@ excerpt_separator: <!--more-->
 header_pages:
   - about.md
   - portfolio.md
+  - tags.html
 
 author:
   email: pedrochaveslimas3@gmail.com

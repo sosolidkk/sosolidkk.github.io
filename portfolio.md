@@ -77,6 +77,7 @@ Spanish 🇪🇸🇦🇷: `Basic`
 
 #### 📅 Events
 
+- [Imersão42](https://www.imersao42.com.br/) (Imersão42 - Class 1 e 2) - 2021
 - [NLW](https://nextlevelweek.com/) (Next Level Week, Rocketseat) - 2021
 - Introdev - 2019
 - Introdev - 2018

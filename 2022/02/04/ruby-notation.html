@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Ruby % Notation | &lt;~brain dump/&gt;</title>
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:title" content="Ruby % Notation" />
+<meta name="author" content="João Pedro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="For a long time, my Rubocop always kept complaining about the list of symbols defined in my code and, I also didn’t search for the reason behind it. It states that: Prefer %i to the literal array syntax when you need an array of symbols (and you don’t need to maintain Ruby 1.9 compatibility). Apply this rule only to arrays with two or more elements. So after some searching, I’ve found that’s pretty common and, generally, more readable for the developers to use this notation. So here goes a brief resume and examples about them: # Yes, they are case sensitive %q[ ] # Non-interpolated String (except for \\ \[ and \]) %Q[ ] # Interpolated String (default) %r[ ] # Interpolated Regexp (flags can appear after the closing delimiter) %i[ ] # Non-interpolated Array of symbols, separated by whitespace %I[ ] # Interpolated Array of symbols, separated by whitespace %w[ ] # Non-interpolated Array of words, separated by whitespace %W[ ] # Interpolated Array of words, separated by whitespace %x[ ] # Interpolated shell command %q %q{one\ntwo\n#{ 1 + 2 }} # =&gt; &quot;one\\ntwo\\n\#{ 1 + 2 }&quot; %Q %Q{one\ntwo\n#{ 1 + 2 }} # =&gt; &quot;one\ntwo\n3&quot; %r name = &#39;nemo&#39; %r/#{name}/i # =&gt; /nemo/i %i %i[one two three] # after Ruby 2.0 # =&gt; [:one, :two, :three] %I value = &#39;searching&#39; %I[#{value} for nemo] # =&gt; [:searching, :for, :nemo] %w %w[one two three] # =&gt; [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;] %W value = &#39;one&#39; %W[#{value} two three] # =&gt; [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;] %x %x{ruby --copyright} # =&gt; &quot;ruby - Copyright (C) 1993-2020 Yukihiro Matsumoto\n&quot; References Wikibooks - Ruby Programming Rubocop Style Guide" />
+<meta property="og:description" content="For a long time, my Rubocop always kept complaining about the list of symbols defined in my code and, I also didn’t search for the reason behind it. It states that: Prefer %i to the literal array syntax when you need an array of symbols (and you don’t need to maintain Ruby 1.9 compatibility). Apply this rule only to arrays with two or more elements. So after some searching, I’ve found that’s pretty common and, generally, more readable for the developers to use this notation. So here goes a brief resume and examples about them: # Yes, they are case sensitive %q[ ] # Non-interpolated String (except for \\ \[ and \]) %Q[ ] # Interpolated String (default) %r[ ] # Interpolated Regexp (flags can appear after the closing delimiter) %i[ ] # Non-interpolated Array of symbols, separated by whitespace %I[ ] # Interpolated Array of symbols, separated by whitespace %w[ ] # Non-interpolated Array of words, separated by whitespace %W[ ] # Interpolated Array of words, separated by whitespace %x[ ] # Interpolated shell command %q %q{one\ntwo\n#{ 1 + 2 }} # =&gt; &quot;one\\ntwo\\n\#{ 1 + 2 }&quot; %Q %Q{one\ntwo\n#{ 1 + 2 }} # =&gt; &quot;one\ntwo\n3&quot; %r name = &#39;nemo&#39; %r/#{name}/i # =&gt; /nemo/i %i %i[one two three] # after Ruby 2.0 # =&gt; [:one, :two, :three] %I value = &#39;searching&#39; %I[#{value} for nemo] # =&gt; [:searching, :for, :nemo] %w %w[one two three] # =&gt; [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;] %W value = &#39;one&#39; %W[#{value} two three] # =&gt; [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;] %x %x{ruby --copyright} # =&gt; &quot;ruby - Copyright (C) 1993-2020 Yukihiro Matsumoto\n&quot; References Wikibooks - Ruby Programming Rubocop Style Guide" />
+<link rel="canonical" href="https://sosolidkk.github.io//2022/02/04/ruby-notation.html" />
+<meta property="og:url" content="https://sosolidkk.github.io//2022/02/04/ruby-notation.html" />
+<meta property="og:site_name" content="&lt;~brain dump/&gt;" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-02-04T23:20:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Ruby % Notation" />
+<script type="application/ld+json">
+{"description":"For a long time, my Rubocop always kept complaining about the list of symbols defined in my code and, I also didn’t search for the reason behind it. It states that: Prefer %i to the literal array syntax when you need an array of symbols (and you don’t need to maintain Ruby 1.9 compatibility). Apply this rule only to arrays with two or more elements. So after some searching, I’ve found that’s pretty common and, generally, more readable for the developers to use this notation. So here goes a brief resume and examples about them: # Yes, they are case sensitive %q[ ] # Non-interpolated String (except for \\\\ \\[ and \\]) %Q[ ] # Interpolated String (default) %r[ ] # Interpolated Regexp (flags can appear after the closing delimiter) %i[ ] # Non-interpolated Array of symbols, separated by whitespace %I[ ] # Interpolated Array of symbols, separated by whitespace %w[ ] # Non-interpolated Array of words, separated by whitespace %W[ ] # Interpolated Array of words, separated by whitespace %x[ ] # Interpolated shell command %q %q{one\\ntwo\\n#{ 1 + 2 }} # =&gt; &quot;one\\\\ntwo\\\\n\\#{ 1 + 2 }&quot; %Q %Q{one\\ntwo\\n#{ 1 + 2 }} # =&gt; &quot;one\\ntwo\\n3&quot; %r name = &#39;nemo&#39; %r/#{name}/i # =&gt; /nemo/i %i %i[one two three] # after Ruby 2.0 # =&gt; [:one, :two, :three] %I value = &#39;searching&#39; %I[#{value} for nemo] # =&gt; [:searching, :for, :nemo] %w %w[one two three] # =&gt; [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;] %W value = &#39;one&#39; %W[#{value} two three] # =&gt; [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;] %x %x{ruby --copyright} # =&gt; &quot;ruby - Copyright (C) 1993-2020 Yukihiro Matsumoto\\n&quot; References Wikibooks - Ruby Programming Rubocop Style Guide","url":"https://sosolidkk.github.io//2022/02/04/ruby-notation.html","@type":"BlogPosting","headline":"Ruby % Notation","dateModified":"2022-02-04T23:20:00+00:00","datePublished":"2022-02-04T23:20:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://sosolidkk.github.io//2022/02/04/ruby-notation.html"},"author":{"@type":"Person","name":"João Pedro"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://sosolidkk.github.io//feed.xml" title="&lt;~brain dump/&gt;" />
+        
+
+
+
+
+
+
+
+    
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">&lt;~brain dump/&gt;</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/portfolio/">Portfolio</a><a class="page-link" href="/tags/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Ruby % Notation</h1>
+    <span class="post-tags">
+      Tags: [&nbsp;
+      
+        
+        <a class="no-underline" href="/tag/ruby">
+          <code class="highligher-rouge">
+            <nobr>ruby</nobr>
+          </code>
+        </a>&nbsp;
+      
+        
+        <a class="no-underline" href="/tag/tips">
+          <code class="highligher-rouge">
+            <nobr>tips</nobr>
+          </code>
+        </a>&nbsp;
+       ]
+    </span>
+    <p class="post-meta"><time class="dt-published" datetime="2022-02-04T23:20:00+00:00" itemprop="datePublished">
+        Feb 4, 2022
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>For a long time, my Rubocop always kept complaining about the list of symbols defined in my code and, I also didn’t search for the reason behind it. It states that:</p>
+<blockquote>
+  <p>Prefer %i to the literal array syntax when you need an array of symbols (and you don’t need to maintain Ruby 1.9 compatibility). Apply this rule only to arrays with two or more elements.</p>
+</blockquote>
+
+<p>So after some searching, I’ve found that’s pretty common and, generally, more readable for the developers to use this notation. So here goes a brief resume and examples about them:</p>
+
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Yes, they are case sensitive</span>
+<span class="sx">%q[ ]</span> <span class="c1"># Non-interpolated String (except for \\ \[ and \])</span>
+<span class="sx">%Q[ ]</span> <span class="c1"># Interpolated String (default)</span>
+<span class="sr">%r[ ]</span> <span class="c1"># Interpolated Regexp (flags can appear after the closing delimiter)</span>
+<span class="sx">%i[ ]</span> <span class="c1"># Non-interpolated Array of symbols, separated by whitespace</span>
+<span class="sx">%I[ ]</span> <span class="c1"># Interpolated Array of symbols, separated by whitespace</span>
+<span class="sx">%w[ ]</span> <span class="c1"># Non-interpolated Array of words, separated by whitespace</span>
+<span class="sx">%W[ ]</span> <span class="c1"># Interpolated Array of words, separated by whitespace</span>
+<span class="sx">%x[ ]</span> <span class="c1"># Interpolated shell command</span>
+</code></pre></div></div>
+
+<h4 id="q"><code class="language-plaintext highlighter-rouge">%q</code></h4>
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="sx">%q{one\ntwo\n#{ 1 + 2 }}</span>
+<span class="c1"># =&gt; "one\\ntwo\\n\#{ 1 + 2 }"</span>
+</code></pre></div></div>
+<h4 id="q-1"><code class="language-plaintext highlighter-rouge">%Q</code></h4>
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="sx">%Q{one</span><span class="se">\n</span><span class="sx">two</span><span class="se">\n</span><span class="si">#{</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span> <span class="si">}</span><span class="sx">}</span>
+<span class="c1"># =&gt; "one\ntwo\n3"</span>
+</code></pre></div></div>
+<h4 id="r"><code class="language-plaintext highlighter-rouge">%r</code></h4>
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">name</span> <span class="o">=</span> <span class="s1">'nemo'</span>
+<span class="sr">%r/</span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="sr">/i</span>
+<span class="c1"># =&gt; /nemo/i</span>
+</code></pre></div></div>
+<h4 id="i"><code class="language-plaintext highlighter-rouge">%i</code></h4>
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="sx">%i[one two three]</span> <span class="c1"># after Ruby 2.0</span>
+<span class="c1"># =&gt; [:one, :two, :three]</span>
+</code></pre></div></div>
+<h4 id="i-1"><code class="language-plaintext highlighter-rouge">%I</code></h4>
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">value</span> <span class="o">=</span> <span class="s1">'searching'</span>
+<span class="sx">%I[</span><span class="si">#{</span><span class="n">value</span><span class="si">}</span><span class="sx"> for nemo]</span>
+<span class="c1"># =&gt; [:searching, :for, :nemo]</span>
+</code></pre></div></div>
+<h4 id="w"><code class="language-plaintext highlighter-rouge">%w</code></h4>
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="sx">%w[one two three]</span>
+<span class="c1"># =&gt; ["one", "two", "three"]</span>
+</code></pre></div></div>
+<h4 id="w-1"><code class="language-plaintext highlighter-rouge">%W</code></h4>
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">value</span> <span class="o">=</span> <span class="s1">'one'</span>
+<span class="sx">%W[</span><span class="si">#{</span><span class="n">value</span><span class="si">}</span><span class="sx"> two three]</span>
+<span class="c1"># =&gt; ["one", "two", "three"]</span>
+</code></pre></div></div>
+<h4 id="x"><code class="language-plaintext highlighter-rouge">%x</code></h4>
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="sx">%x{ruby --copyright}</span>
+<span class="c1"># =&gt; "ruby - Copyright (C) 1993-2020 Yukihiro Matsumoto\n"</span>
+</code></pre></div></div>
+<h4 id="references">References</h4>
+<p><a href="https://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Literals#The_.25_Notation">Wikibooks - Ruby Programming</a></p>
+
+<p><a href="https://github.com/rubocop/ruby-style-guide#percent-w">Rubocop Style Guide</a></p>
+
+  </div><a class="u-url" href="/2022/02/04/ruby-notation.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+        <ul class="contact-list">
+          <li class="p-name">João Pedro</li>
+          <li><a class="u-email" href="mailto:pedrochaveslimas3@gmail.com">pedrochaveslimas3@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p>Don&#39;t take everything you read here too seriously. Enjoy your stay!</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/sosolidkk" target="_blank" title="sosolidkk"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://www.instagram.com/jpechaves" target="_blank" title="jpechaves"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#instagram"></use></svg></a></li><li><a rel="me" href="https://t.me/sosolidkk" target="_blank" title="sosolidkk"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#telegram"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

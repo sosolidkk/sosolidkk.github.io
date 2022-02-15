@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Dotfiles and config | &lt;~brain dump/&gt;</title>
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:title" content="Dotfiles and config" />
+<meta name="author" content="João Pedro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="So, it’s not big news that more often than not we need to wipe our workstations due to a large number of files already being created or just for the sake of doing so. My biggest problem with re-installing my Linux distro is the time that takes to configure everything all over again. So, instead of googling everything, I’ve chosen to register most of the programs that I need to install after a fresh wipe of the OS and how I deal with the configuration of all of them and some of my dotfiles for an easier copy and paste for future wipes. Programs list zsh oh-my-zsh asdf vscode 1password postgres terminal Just to make sure we have everything we’ll need before hand, run this: $ sudo pacman-mirrors --fasttrack &amp;&amp; sudo pacman -Syyu $ sudo pacman -S base base-devel git yay lm_sensors $ yay -S google-chrome visual-studio-code-bin After you system is updated, let’s install the remaining tools. Zsh Zsh is a shell designed for interactive use, although it is also a powerful scripting language. Many of the useful features of bash, ksh, and tcsh were incorporated into zsh; many original features were added. $ sudo pacman -S zsh $ chsh -s $(which zsh) $ echo $SHELL Oh my zsh I install this because it’s easier to setup some themes on my shell. sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot; SpaceShip Spaceship is a minimalistic, powerful and extremely customizable zsh prompt. It combines everything you may need for convenient work, without unnecessary complications, like a real spaceship. git clone https://github.com/spaceship-prompt/spaceship-prompt.git &quot;$ZSH_CUSTOM/themes/spaceship-prompt&quot; --depth=1 ln -s &quot;$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme&quot; &quot;$ZSH_CUSTOM/themes/spaceship.zsh-theme&quot; # Set ZSH_THEME=&quot;spaceship&quot; in your .zshrc. Zinit Zinit is a flexible and fast Zshell plugin manager that will allow you to install everything from GitHub and other sites. sh -c &quot;$(curl -fsSL https://git.io/zinit-install)&quot; # Add the next three lines after this part: &#39;### End of ZInit&#39;s installer chunk&#39; zinit light zdharma/fast-syntax-highlighting zinit light zsh-users/zsh-autosuggestions zinit light zsh-users/zsh-completions Github SSH $ ssh-keygen -t ed25519 -C &quot;your_email@example.com&quot; $ eval &quot;$(ssh-agent -s)&quot; $ ssh-add ~/.ssh/id_ed25519 # Then just &#39;cat&#39; the id_ed25519.pub and add it in the github ssh settings VSCode Visual Studio Code is pretty straight forward. You just need to click on the Login to Sync config option and it’s pretty much all done after you logged in successfully. Dotfiles .zshrc # export PATH=$HOME/bin:/usr/local/bin:$PATH . $HOME/.asdf/asdf.sh export ZSH=&quot;$HOME/.oh-my-zsh&quot; ZSH_THEME=&quot;spaceship&quot; plugins=(git) source $ZSH/oh-my-zsh.sh # User configuration export MANPATH=&quot;/usr/local/man:$MANPATH&quot; export LANG=en_US.UTF-8 # Preferred editor for local and remote sessions if [[ -n $SSH_CONNECTION ]]; then export EDITOR=&#39;vim&#39; else export EDITOR=&#39;mvim&#39; fi alias zshconfig=&quot;code ~/.zshrc&quot; alias ohmyzsh=&quot;code ~/.oh-my-zsh&quot; SPACESHIP_PROMPT_ORDER=( user # Username section dir # Current directory section host # Hostname section git # Git section (git_branch + git_status) exec_time # Execution time vi_mode # Vi-mode indicator jobs # Background jobs indicator exit_code # Exit code section char # Prompt character ) SPACESHIP_USER_SHOW=always SPACESHIP_PROMPT_ADD_NEWLINE=false SPACESHIP_CHAR_SYMBOL=&quot;$&quot; SPACESHIP_CHAR_SUFFIX=&quot; &quot; ### Added by Zinit&#39;s installer if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then print -P &quot;%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f&quot; command mkdir -p &quot;$HOME/.local/share/zinit&quot; &amp;&amp; command chmod g-rwX &quot;$HOME/.local/share/zinit&quot; command git clone https://github.com/zdharma-continuum/zinit &quot;$HOME/.local/share/zinit/zinit.git&quot; &amp;&amp; \ print -P &quot;%F{33} %F{34}Installation successful.%f%b&quot; || \ print -P &quot;%F{160} The clone has failed.%f%b&quot; fi source &quot;$HOME/.local/share/zinit/zinit.git/zinit.zsh&quot; autoload -Uz _zinit (( ${+_comps} )) &amp;&amp; _comps[zinit]=_zinit # Load a few important annexes, without Turbo # (this is currently required for annexes) zinit light-mode for \ zdharma-continuum/zinit-annex-as-monitor \ zdharma-continuum/zinit-annex-bin-gem-node \ zdharma-continuum/zinit-annex-patch-dl \ zdharma-continuum/zinit-annex-rust ### End of Zinit&#39;s installer chunk zinit light zdharma/fast-syntax-highlighting zinit light zsh-users/zsh-autosuggestions zinit light zsh-users/zsh-completions settings.json (vscode) { &quot;workbench.tree.indent&quot;: 12, &quot;files.exclude&quot;: { &quot;**/*.pyc&quot;: { &quot;when&quot;: &quot;$(basename).py&quot; }, &quot;**/__pycache__&quot;: true, }, &quot;workbench.iconTheme&quot;: &quot;vscode-icons&quot;, &quot;workbench.editorAssociations&quot;: { &quot;*.ipynb&quot;: &quot;jupyter-notebook&quot; }, // Python rules &quot;python.linting.pylintEnabled&quot;: false, &quot;python.linting.flake8Enabled&quot;: true, &quot;python.linting.enabled&quot;: true, // Python formatting rules &quot;python.formatting.provider&quot;: &quot;black&quot;, &quot;python.formatting.blackArgs&quot;: [ &quot;--line-length&quot;, &quot;120&quot; ], &quot;python.linting.flake8Args&quot;: [ &quot;--max-line-length=120&quot;, &quot;--ignore=E402,F841,E302,E305&quot;, ], // Editor font &quot;editor.fontFamily&quot;: &quot;JetBrains Mono&quot;, &quot;editor.fontSize&quot;: 14, &quot;editor.fontLigatures&quot;: true, // Editor Rules &quot;editor.rulers&quot;: [ 88, 121 ], &quot;editor.formatOnSave&quot;: true, &quot;editor.tabSize&quot;: 4, &quot;[ruby]&quot;: { &quot;editor.tabSize&quot;: 2 }, // HTML Rules &quot;[html]&quot;: { &quot;editor.formatOnSave&quot;: false }, &quot;html.format.wrapLineLength&quot;: 0, &quot;html.format.wrapAttributes&quot;: &quot;aligned-multiple&quot;, &quot;html.format.indentHandlebars&quot;: true, &quot;html.format.preserveNewLines&quot;: false, &quot;workbench.colorTheme&quot;: &quot;Dracula&quot;, // Terminal Rules &quot;terminal.integrated.fontSize&quot;: 14, &quot;terminal.integrated.lineHeight&quot;: 1.1, &quot;terminal.integrated.fontFamily&quot;: &quot;NotoSansMono Nerd Font&quot;, &quot;terminal.integrated.fontWeightBold&quot;: &quot;normal&quot;, &quot;terminal.integrated.tabs.enabled&quot;: true, &quot;editor.renderWhitespace&quot;: &quot;trailing&quot;, &quot;files.maxMemoryForLargeFilesMB&quot;: 8192, &quot;python.defaultInterpreterPath&quot;: &quot;/bin/python&quot;, &quot;notebook.cellToolbarLocation&quot;: { &quot;default&quot;: &quot;right&quot;, &quot;jupyter-notebook&quot;: &quot;left&quot; }, &quot;solargraph.diagnostics&quot;: true, &quot;vscode-pets.position&quot;: &quot;explorer&quot;, &quot;vscode-pets.theme&quot;: &quot;forest&quot;, &quot;vscode-pets.petSize&quot;: &quot;medium&quot;, &quot;vscode-pets.petType&quot;: &quot;rubber-duck&quot;, &quot;security.workspace.trust.untrustedFiles&quot;: &quot;open&quot;, }" />
+<meta property="og:description" content="So, it’s not big news that more often than not we need to wipe our workstations due to a large number of files already being created or just for the sake of doing so. My biggest problem with re-installing my Linux distro is the time that takes to configure everything all over again. So, instead of googling everything, I’ve chosen to register most of the programs that I need to install after a fresh wipe of the OS and how I deal with the configuration of all of them and some of my dotfiles for an easier copy and paste for future wipes. Programs list zsh oh-my-zsh asdf vscode 1password postgres terminal Just to make sure we have everything we’ll need before hand, run this: $ sudo pacman-mirrors --fasttrack &amp;&amp; sudo pacman -Syyu $ sudo pacman -S base base-devel git yay lm_sensors $ yay -S google-chrome visual-studio-code-bin After you system is updated, let’s install the remaining tools. Zsh Zsh is a shell designed for interactive use, although it is also a powerful scripting language. Many of the useful features of bash, ksh, and tcsh were incorporated into zsh; many original features were added. $ sudo pacman -S zsh $ chsh -s $(which zsh) $ echo $SHELL Oh my zsh I install this because it’s easier to setup some themes on my shell. sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot; SpaceShip Spaceship is a minimalistic, powerful and extremely customizable zsh prompt. It combines everything you may need for convenient work, without unnecessary complications, like a real spaceship. git clone https://github.com/spaceship-prompt/spaceship-prompt.git &quot;$ZSH_CUSTOM/themes/spaceship-prompt&quot; --depth=1 ln -s &quot;$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme&quot; &quot;$ZSH_CUSTOM/themes/spaceship.zsh-theme&quot; # Set ZSH_THEME=&quot;spaceship&quot; in your .zshrc. Zinit Zinit is a flexible and fast Zshell plugin manager that will allow you to install everything from GitHub and other sites. sh -c &quot;$(curl -fsSL https://git.io/zinit-install)&quot; # Add the next three lines after this part: &#39;### End of ZInit&#39;s installer chunk&#39; zinit light zdharma/fast-syntax-highlighting zinit light zsh-users/zsh-autosuggestions zinit light zsh-users/zsh-completions Github SSH $ ssh-keygen -t ed25519 -C &quot;your_email@example.com&quot; $ eval &quot;$(ssh-agent -s)&quot; $ ssh-add ~/.ssh/id_ed25519 # Then just &#39;cat&#39; the id_ed25519.pub and add it in the github ssh settings VSCode Visual Studio Code is pretty straight forward. You just need to click on the Login to Sync config option and it’s pretty much all done after you logged in successfully. Dotfiles .zshrc # export PATH=$HOME/bin:/usr/local/bin:$PATH . $HOME/.asdf/asdf.sh export ZSH=&quot;$HOME/.oh-my-zsh&quot; ZSH_THEME=&quot;spaceship&quot; plugins=(git) source $ZSH/oh-my-zsh.sh # User configuration export MANPATH=&quot;/usr/local/man:$MANPATH&quot; export LANG=en_US.UTF-8 # Preferred editor for local and remote sessions if [[ -n $SSH_CONNECTION ]]; then export EDITOR=&#39;vim&#39; else export EDITOR=&#39;mvim&#39; fi alias zshconfig=&quot;code ~/.zshrc&quot; alias ohmyzsh=&quot;code ~/.oh-my-zsh&quot; SPACESHIP_PROMPT_ORDER=( user # Username section dir # Current directory section host # Hostname section git # Git section (git_branch + git_status) exec_time # Execution time vi_mode # Vi-mode indicator jobs # Background jobs indicator exit_code # Exit code section char # Prompt character ) SPACESHIP_USER_SHOW=always SPACESHIP_PROMPT_ADD_NEWLINE=false SPACESHIP_CHAR_SYMBOL=&quot;$&quot; SPACESHIP_CHAR_SUFFIX=&quot; &quot; ### Added by Zinit&#39;s installer if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then print -P &quot;%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f&quot; command mkdir -p &quot;$HOME/.local/share/zinit&quot; &amp;&amp; command chmod g-rwX &quot;$HOME/.local/share/zinit&quot; command git clone https://github.com/zdharma-continuum/zinit &quot;$HOME/.local/share/zinit/zinit.git&quot; &amp;&amp; \ print -P &quot;%F{33} %F{34}Installation successful.%f%b&quot; || \ print -P &quot;%F{160} The clone has failed.%f%b&quot; fi source &quot;$HOME/.local/share/zinit/zinit.git/zinit.zsh&quot; autoload -Uz _zinit (( ${+_comps} )) &amp;&amp; _comps[zinit]=_zinit # Load a few important annexes, without Turbo # (this is currently required for annexes) zinit light-mode for \ zdharma-continuum/zinit-annex-as-monitor \ zdharma-continuum/zinit-annex-bin-gem-node \ zdharma-continuum/zinit-annex-patch-dl \ zdharma-continuum/zinit-annex-rust ### End of Zinit&#39;s installer chunk zinit light zdharma/fast-syntax-highlighting zinit light zsh-users/zsh-autosuggestions zinit light zsh-users/zsh-completions settings.json (vscode) { &quot;workbench.tree.indent&quot;: 12, &quot;files.exclude&quot;: { &quot;**/*.pyc&quot;: { &quot;when&quot;: &quot;$(basename).py&quot; }, &quot;**/__pycache__&quot;: true, }, &quot;workbench.iconTheme&quot;: &quot;vscode-icons&quot;, &quot;workbench.editorAssociations&quot;: { &quot;*.ipynb&quot;: &quot;jupyter-notebook&quot; }, // Python rules &quot;python.linting.pylintEnabled&quot;: false, &quot;python.linting.flake8Enabled&quot;: true, &quot;python.linting.enabled&quot;: true, // Python formatting rules &quot;python.formatting.provider&quot;: &quot;black&quot;, &quot;python.formatting.blackArgs&quot;: [ &quot;--line-length&quot;, &quot;120&quot; ], &quot;python.linting.flake8Args&quot;: [ &quot;--max-line-length=120&quot;, &quot;--ignore=E402,F841,E302,E305&quot;, ], // Editor font &quot;editor.fontFamily&quot;: &quot;JetBrains Mono&quot;, &quot;editor.fontSize&quot;: 14, &quot;editor.fontLigatures&quot;: true, // Editor Rules &quot;editor.rulers&quot;: [ 88, 121 ], &quot;editor.formatOnSave&quot;: true, &quot;editor.tabSize&quot;: 4, &quot;[ruby]&quot;: { &quot;editor.tabSize&quot;: 2 }, // HTML Rules &quot;[html]&quot;: { &quot;editor.formatOnSave&quot;: false }, &quot;html.format.wrapLineLength&quot;: 0, &quot;html.format.wrapAttributes&quot;: &quot;aligned-multiple&quot;, &quot;html.format.indentHandlebars&quot;: true, &quot;html.format.preserveNewLines&quot;: false, &quot;workbench.colorTheme&quot;: &quot;Dracula&quot;, // Terminal Rules &quot;terminal.integrated.fontSize&quot;: 14, &quot;terminal.integrated.lineHeight&quot;: 1.1, &quot;terminal.integrated.fontFamily&quot;: &quot;NotoSansMono Nerd Font&quot;, &quot;terminal.integrated.fontWeightBold&quot;: &quot;normal&quot;, &quot;terminal.integrated.tabs.enabled&quot;: true, &quot;editor.renderWhitespace&quot;: &quot;trailing&quot;, &quot;files.maxMemoryForLargeFilesMB&quot;: 8192, &quot;python.defaultInterpreterPath&quot;: &quot;/bin/python&quot;, &quot;notebook.cellToolbarLocation&quot;: { &quot;default&quot;: &quot;right&quot;, &quot;jupyter-notebook&quot;: &quot;left&quot; }, &quot;solargraph.diagnostics&quot;: true, &quot;vscode-pets.position&quot;: &quot;explorer&quot;, &quot;vscode-pets.theme&quot;: &quot;forest&quot;, &quot;vscode-pets.petSize&quot;: &quot;medium&quot;, &quot;vscode-pets.petType&quot;: &quot;rubber-duck&quot;, &quot;security.workspace.trust.untrustedFiles&quot;: &quot;open&quot;, }" />
+<link rel="canonical" href="https://sosolidkk.github.io//2022/02/15/dotfiles-and-config.html" />
+<meta property="og:url" content="https://sosolidkk.github.io//2022/02/15/dotfiles-and-config.html" />
+<meta property="og:site_name" content="&lt;~brain dump/&gt;" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-02-15T02:04:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Dotfiles and config" />
+<script type="application/ld+json">
+{"headline":"Dotfiles and config","dateModified":"2022-02-15T02:04:00+00:00","url":"https://sosolidkk.github.io//2022/02/15/dotfiles-and-config.html","datePublished":"2022-02-15T02:04:00+00:00","author":{"@type":"Person","name":"João Pedro"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sosolidkk.github.io//2022/02/15/dotfiles-and-config.html"},"@type":"BlogPosting","description":"So, it’s not big news that more often than not we need to wipe our workstations due to a large number of files already being created or just for the sake of doing so. My biggest problem with re-installing my Linux distro is the time that takes to configure everything all over again. So, instead of googling everything, I’ve chosen to register most of the programs that I need to install after a fresh wipe of the OS and how I deal with the configuration of all of them and some of my dotfiles for an easier copy and paste for future wipes. Programs list zsh oh-my-zsh asdf vscode 1password postgres terminal Just to make sure we have everything we’ll need before hand, run this: $ sudo pacman-mirrors --fasttrack &amp;&amp; sudo pacman -Syyu $ sudo pacman -S base base-devel git yay lm_sensors $ yay -S google-chrome visual-studio-code-bin After you system is updated, let’s install the remaining tools. Zsh Zsh is a shell designed for interactive use, although it is also a powerful scripting language. Many of the useful features of bash, ksh, and tcsh were incorporated into zsh; many original features were added. $ sudo pacman -S zsh $ chsh -s $(which zsh) $ echo $SHELL Oh my zsh I install this because it’s easier to setup some themes on my shell. sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot; SpaceShip Spaceship is a minimalistic, powerful and extremely customizable zsh prompt. It combines everything you may need for convenient work, without unnecessary complications, like a real spaceship. git clone https://github.com/spaceship-prompt/spaceship-prompt.git &quot;$ZSH_CUSTOM/themes/spaceship-prompt&quot; --depth=1 ln -s &quot;$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme&quot; &quot;$ZSH_CUSTOM/themes/spaceship.zsh-theme&quot; # Set ZSH_THEME=&quot;spaceship&quot; in your .zshrc. Zinit Zinit is a flexible and fast Zshell plugin manager that will allow you to install everything from GitHub and other sites. sh -c &quot;$(curl -fsSL https://git.io/zinit-install)&quot; # Add the next three lines after this part: &#39;### End of ZInit&#39;s installer chunk&#39; zinit light zdharma/fast-syntax-highlighting zinit light zsh-users/zsh-autosuggestions zinit light zsh-users/zsh-completions Github SSH $ ssh-keygen -t ed25519 -C &quot;your_email@example.com&quot; $ eval &quot;$(ssh-agent -s)&quot; $ ssh-add ~/.ssh/id_ed25519 # Then just &#39;cat&#39; the id_ed25519.pub and add it in the github ssh settings VSCode Visual Studio Code is pretty straight forward. You just need to click on the Login to Sync config option and it’s pretty much all done after you logged in successfully. Dotfiles .zshrc # export PATH=$HOME/bin:/usr/local/bin:$PATH . $HOME/.asdf/asdf.sh export ZSH=&quot;$HOME/.oh-my-zsh&quot; ZSH_THEME=&quot;spaceship&quot; plugins=(git) source $ZSH/oh-my-zsh.sh # User configuration export MANPATH=&quot;/usr/local/man:$MANPATH&quot; export LANG=en_US.UTF-8 # Preferred editor for local and remote sessions if [[ -n $SSH_CONNECTION ]]; then export EDITOR=&#39;vim&#39; else export EDITOR=&#39;mvim&#39; fi alias zshconfig=&quot;code ~/.zshrc&quot; alias ohmyzsh=&quot;code ~/.oh-my-zsh&quot; SPACESHIP_PROMPT_ORDER=( user # Username section dir # Current directory section host # Hostname section git # Git section (git_branch + git_status) exec_time # Execution time vi_mode # Vi-mode indicator jobs # Background jobs indicator exit_code # Exit code section char # Prompt character ) SPACESHIP_USER_SHOW=always SPACESHIP_PROMPT_ADD_NEWLINE=false SPACESHIP_CHAR_SYMBOL=&quot;$&quot; SPACESHIP_CHAR_SUFFIX=&quot; &quot; ### Added by Zinit&#39;s installer if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then print -P &quot;%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f&quot; command mkdir -p &quot;$HOME/.local/share/zinit&quot; &amp;&amp; command chmod g-rwX &quot;$HOME/.local/share/zinit&quot; command git clone https://github.com/zdharma-continuum/zinit &quot;$HOME/.local/share/zinit/zinit.git&quot; &amp;&amp; \\ print -P &quot;%F{33} %F{34}Installation successful.%f%b&quot; || \\ print -P &quot;%F{160} The clone has failed.%f%b&quot; fi source &quot;$HOME/.local/share/zinit/zinit.git/zinit.zsh&quot; autoload -Uz _zinit (( ${+_comps} )) &amp;&amp; _comps[zinit]=_zinit # Load a few important annexes, without Turbo # (this is currently required for annexes) zinit light-mode for \\ zdharma-continuum/zinit-annex-as-monitor \\ zdharma-continuum/zinit-annex-bin-gem-node \\ zdharma-continuum/zinit-annex-patch-dl \\ zdharma-continuum/zinit-annex-rust ### End of Zinit&#39;s installer chunk zinit light zdharma/fast-syntax-highlighting zinit light zsh-users/zsh-autosuggestions zinit light zsh-users/zsh-completions settings.json (vscode) { &quot;workbench.tree.indent&quot;: 12, &quot;files.exclude&quot;: { &quot;**/*.pyc&quot;: { &quot;when&quot;: &quot;$(basename).py&quot; }, &quot;**/__pycache__&quot;: true, }, &quot;workbench.iconTheme&quot;: &quot;vscode-icons&quot;, &quot;workbench.editorAssociations&quot;: { &quot;*.ipynb&quot;: &quot;jupyter-notebook&quot; }, // Python rules &quot;python.linting.pylintEnabled&quot;: false, &quot;python.linting.flake8Enabled&quot;: true, &quot;python.linting.enabled&quot;: true, // Python formatting rules &quot;python.formatting.provider&quot;: &quot;black&quot;, &quot;python.formatting.blackArgs&quot;: [ &quot;--line-length&quot;, &quot;120&quot; ], &quot;python.linting.flake8Args&quot;: [ &quot;--max-line-length=120&quot;, &quot;--ignore=E402,F841,E302,E305&quot;, ], // Editor font &quot;editor.fontFamily&quot;: &quot;JetBrains Mono&quot;, &quot;editor.fontSize&quot;: 14, &quot;editor.fontLigatures&quot;: true, // Editor Rules &quot;editor.rulers&quot;: [ 88, 121 ], &quot;editor.formatOnSave&quot;: true, &quot;editor.tabSize&quot;: 4, &quot;[ruby]&quot;: { &quot;editor.tabSize&quot;: 2 }, // HTML Rules &quot;[html]&quot;: { &quot;editor.formatOnSave&quot;: false }, &quot;html.format.wrapLineLength&quot;: 0, &quot;html.format.wrapAttributes&quot;: &quot;aligned-multiple&quot;, &quot;html.format.indentHandlebars&quot;: true, &quot;html.format.preserveNewLines&quot;: false, &quot;workbench.colorTheme&quot;: &quot;Dracula&quot;, // Terminal Rules &quot;terminal.integrated.fontSize&quot;: 14, &quot;terminal.integrated.lineHeight&quot;: 1.1, &quot;terminal.integrated.fontFamily&quot;: &quot;NotoSansMono Nerd Font&quot;, &quot;terminal.integrated.fontWeightBold&quot;: &quot;normal&quot;, &quot;terminal.integrated.tabs.enabled&quot;: true, &quot;editor.renderWhitespace&quot;: &quot;trailing&quot;, &quot;files.maxMemoryForLargeFilesMB&quot;: 8192, &quot;python.defaultInterpreterPath&quot;: &quot;/bin/python&quot;, &quot;notebook.cellToolbarLocation&quot;: { &quot;default&quot;: &quot;right&quot;, &quot;jupyter-notebook&quot;: &quot;left&quot; }, &quot;solargraph.diagnostics&quot;: true, &quot;vscode-pets.position&quot;: &quot;explorer&quot;, &quot;vscode-pets.theme&quot;: &quot;forest&quot;, &quot;vscode-pets.petSize&quot;: &quot;medium&quot;, &quot;vscode-pets.petType&quot;: &quot;rubber-duck&quot;, &quot;security.workspace.trust.untrustedFiles&quot;: &quot;open&quot;, }","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://sosolidkk.github.io//feed.xml" title="&lt;~brain dump/&gt;" />
+        
+
+
+
+
+
+
+
+    
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">&lt;~brain dump/&gt;</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/portfolio/">Portfolio</a><a class="page-link" href="/tags/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Dotfiles and config</h1>
+    <span class="post-tags">
+      Tags: [&nbsp;
+      
+        
+        <a class="no-underline" href="/tag/config">
+          <code class="highligher-rouge">
+            <nobr>config</nobr>
+          </code>
+        </a>&nbsp;
+       ]
+    </span>
+    <p class="post-meta"><time class="dt-published" datetime="2022-02-15T02:04:00+00:00" itemprop="datePublished">
+        Feb 15, 2022
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>So, it’s not big news that more often than not we need to wipe our workstations due to a large number of files already being created or just for the sake of doing so. My biggest problem with re-installing my Linux distro is the time that takes to configure everything all over again. So, instead of googling everything, I’ve chosen to register most of the programs that I need to install after a fresh wipe of the OS and how I deal with the configuration of all of them and some of my <code class="language-plaintext highlighter-rouge">dotfiles</code> for an easier copy and paste <del>for future wipes</del>.</p>
+
+<h4 id="programs-list"><strong>Programs list</strong></h4>
+<ul>
+  <li><a href="https://github.com/zsh-users/zsh">zsh</a></li>
+  <li><a href="https://ohmyz.sh/">oh-my-zsh</a></li>
+  <li><a href="http://asdf-vm.com/">asdf</a></li>
+  <li><a href="https://code.visualstudio.com/">vscode</a></li>
+  <li><a href="https://1password.com/pt/">1password</a></li>
+  <li><a href="https://www.postgresql.org/">postgres</a></li>
+  <li>terminal</li>
+</ul>
+
+<p>Just to make sure we have everything we’ll need before hand, run this:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>pacman-mirrors <span class="nt">--fasttrack</span> <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>pacman <span class="nt">-Syyu</span>
+<span class="nv">$ </span><span class="nb">sudo </span>pacman <span class="nt">-S</span> base base-devel git yay lm_sensors
+<span class="nv">$ </span>yay <span class="nt">-S</span> google-chrome visual-studio-code-bin
+</code></pre></div></div>
+
+<p>After you system is updated, let’s install the remaining tools.</p>
+
+<hr />
+<h4 id="zsh"><strong>Zsh</strong></h4>
+<p>Zsh is a shell designed for interactive use, although it is also a powerful scripting language. Many of the useful features of <code class="language-plaintext highlighter-rouge">bash</code>, <code class="language-plaintext highlighter-rouge">ksh</code>, and <code class="language-plaintext highlighter-rouge">tcsh</code> were incorporated into zsh; many original features were added.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>pacman <span class="nt">-S</span> zsh
+<span class="nv">$ </span>chsh <span class="nt">-s</span> <span class="si">$(</span>which zsh<span class="si">)</span>
+<span class="nv">$ </span><span class="nb">echo</span> <span class="nv">$SHELL</span>
+</code></pre></div></div>
+
+<h4 id="oh-my-zsh"><strong>Oh my zsh</strong></h4>
+<p>I install this because it’s easier to setup some themes on my shell.</p>
+
+<p><code class="language-plaintext highlighter-rouge">sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"</code></p>
+
+<h4 id="spaceship"><strong>SpaceShip</strong></h4>
+<p>Spaceship is a minimalistic, powerful and extremely customizable zsh prompt. It combines everything you may need for convenient work, without unnecessary complications, like a real spaceship.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/spaceship-prompt/spaceship-prompt.git <span class="s2">"</span><span class="nv">$ZSH_CUSTOM</span><span class="s2">/themes/spaceship-prompt"</span> <span class="nt">--depth</span><span class="o">=</span>1
+
+<span class="nb">ln</span> <span class="nt">-s</span> <span class="s2">"</span><span class="nv">$ZSH_CUSTOM</span><span class="s2">/themes/spaceship-prompt/spaceship.zsh-theme"</span> <span class="s2">"</span><span class="nv">$ZSH_CUSTOM</span><span class="s2">/themes/spaceship.zsh-theme"</span>
+
+<span class="c"># Set ZSH_THEME="spaceship" in your .zshrc.</span>
+</code></pre></div></div>
+
+<h4 id="zinit"><strong>Zinit</strong></h4>
+<p>Zinit is a flexible and fast Zshell plugin manager that will allow you to install everything from GitHub and other sites.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sh <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://git.io/zinit-install<span class="si">)</span><span class="s2">"</span>
+
+<span class="c"># Add the next three lines after this part: '### End of ZInit's installer chunk'</span>
+zinit light zdharma/fast-syntax-highlighting
+zinit light zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-completions
+</code></pre></div></div>
+
+<h4 id="github-ssh"><strong>Github SSH</strong></h4>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>ssh-keygen <span class="nt">-t</span> ed25519 <span class="nt">-C</span> <span class="s2">"your_email@example.com"</span>
+<span class="nv">$ </span><span class="nb">eval</span> <span class="s2">"</span><span class="si">$(</span>ssh-agent <span class="nt">-s</span><span class="si">)</span><span class="s2">"</span>
+<span class="nv">$ </span>ssh-add ~/.ssh/id_ed25519
+
+<span class="c"># Then just 'cat' the id_ed25519.pub and add it in the github ssh settings</span>
+</code></pre></div></div>
+
+<h4 id="vscode"><strong>VSCode</strong></h4>
+<p>Visual Studio Code is pretty straight forward. You just need to click on the <code class="language-plaintext highlighter-rouge">Login to Sync config</code> option and it’s pretty much all done after you logged in successfully.</p>
+
+<hr />
+<h4 id="dotfiles"><strong>Dotfiles</strong></h4>
+<blockquote>
+  <p>.zshrc</p>
+</blockquote>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># export PATH=$HOME/bin:/usr/local/bin:$PATH</span>
+<span class="nb">.</span> <span class="nv">$HOME</span>/.asdf/asdf.sh
+
+<span class="nb">export </span><span class="nv">ZSH</span><span class="o">=</span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/.oh-my-zsh"</span>
+<span class="nv">ZSH_THEME</span><span class="o">=</span><span class="s2">"spaceship"</span>
+<span class="nv">plugins</span><span class="o">=(</span>git<span class="o">)</span>
+<span class="nb">source</span> <span class="nv">$ZSH</span>/oh-my-zsh.sh
+
+<span class="c"># User configuration</span>
+<span class="nb">export </span><span class="nv">MANPATH</span><span class="o">=</span><span class="s2">"/usr/local/man:</span><span class="nv">$MANPATH</span><span class="s2">"</span>
+<span class="nb">export </span><span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8
+
+<span class="c"># Preferred editor for local and remote sessions</span>
+<span class="k">if</span> <span class="o">[[</span> <span class="nt">-n</span> <span class="nv">$SSH_CONNECTION</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then
+  </span><span class="nb">export </span><span class="nv">EDITOR</span><span class="o">=</span><span class="s1">'vim'</span>
+<span class="k">else
+  </span><span class="nb">export </span><span class="nv">EDITOR</span><span class="o">=</span><span class="s1">'mvim'</span>
+<span class="k">fi
+
+</span><span class="nb">alias </span><span class="nv">zshconfig</span><span class="o">=</span><span class="s2">"code ~/.zshrc"</span>
+<span class="nb">alias </span><span class="nv">ohmyzsh</span><span class="o">=</span><span class="s2">"code ~/.oh-my-zsh"</span>
+
+<span class="nv">SPACESHIP_PROMPT_ORDER</span><span class="o">=(</span>
+  user          <span class="c"># Username section</span>
+  <span class="nb">dir</span>           <span class="c"># Current directory section</span>
+  host          <span class="c"># Hostname section</span>
+  git           <span class="c"># Git section (git_branch + git_status)</span>
+  exec_time     <span class="c"># Execution time</span>
+  vi_mode       <span class="c"># Vi-mode indicator</span>
+  <span class="nb">jobs</span>          <span class="c"># Background jobs indicator</span>
+  exit_code     <span class="c"># Exit code section</span>
+  char          <span class="c"># Prompt character</span>
+<span class="o">)</span>
+<span class="nv">SPACESHIP_USER_SHOW</span><span class="o">=</span>always
+<span class="nv">SPACESHIP_PROMPT_ADD_NEWLINE</span><span class="o">=</span><span class="nb">false
+</span><span class="nv">SPACESHIP_CHAR_SYMBOL</span><span class="o">=</span><span class="s2">"$"</span>
+<span class="nv">SPACESHIP_CHAR_SUFFIX</span><span class="o">=</span><span class="s2">" "</span>
+
+<span class="c">### Added by Zinit's installer</span>
+<span class="k">if</span> <span class="o">[[</span> <span class="o">!</span> <span class="nt">-f</span> <span class="nv">$HOME</span>/.local/share/zinit/zinit.git/zinit.zsh <span class="o">]]</span><span class="p">;</span> <span class="k">then
+    </span>print <span class="nt">-P</span> <span class="s2">"%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f"</span>
+    <span class="nb">command mkdir</span> <span class="nt">-p</span> <span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/.local/share/zinit"</span> <span class="o">&amp;&amp;</span> <span class="nb">command chmod </span>g-rwX <span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/.local/share/zinit"</span>
+    <span class="nb">command </span>git clone https://github.com/zdharma-continuum/zinit <span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/.local/share/zinit/zinit.git"</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+        print <span class="nt">-P</span> <span class="s2">"%F{33} %F{34}Installation successful.%f%b"</span> <span class="o">||</span> <span class="se">\</span>
+        print <span class="nt">-P</span> <span class="s2">"%F{160} The clone has failed.%f%b"</span>
+<span class="k">fi
+
+</span><span class="nb">source</span> <span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/.local/share/zinit/zinit.git/zinit.zsh"</span>
+autoload <span class="nt">-Uz</span> _zinit
+<span class="o">((</span> <span class="k">${</span><span class="p">+_comps</span><span class="k">}</span> <span class="o">))</span> <span class="o">&amp;&amp;</span> _comps[zinit]<span class="o">=</span>_zinit
+
+<span class="c"># Load a few important annexes, without Turbo</span>
+<span class="c"># (this is currently required for annexes)</span>
+zinit light-mode <span class="k">for</span> <span class="se">\</span>
+    zdharma-continuum/zinit-annex-as-monitor <span class="se">\</span>
+    zdharma-continuum/zinit-annex-bin-gem-node <span class="se">\</span>
+    zdharma-continuum/zinit-annex-patch-dl <span class="se">\</span>
+    zdharma-continuum/zinit-annex-rust
+
+<span class="c">### End of Zinit's installer chunk</span>
+zinit light zdharma/fast-syntax-highlighting
+zinit light zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-completions
+</code></pre></div></div>
+
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">settings.json (vscode)</code></p>
+</blockquote>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"workbench.tree.indent"</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"files.exclude"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"**/*.pyc"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"when"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$(basename).py"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"**/__pycache__"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"workbench.iconTheme"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vscode-icons"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"workbench.editorAssociations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"*.ipynb"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jupyter-notebook"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="err">//</span><span class="w"> </span><span class="err">Python</span><span class="w"> </span><span class="err">rules</span><span class="w">
+    </span><span class="nl">"python.linting.pylintEnabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"python.linting.flake8Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"python.linting.enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="err">//</span><span class="w"> </span><span class="err">Python</span><span class="w"> </span><span class="err">formatting</span><span class="w"> </span><span class="err">rules</span><span class="w">
+    </span><span class="nl">"python.formatting.provider"</span><span class="p">:</span><span class="w"> </span><span class="s2">"black"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"python.formatting.blackArgs"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"--line-length"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"120"</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"python.linting.flake8Args"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"--max-line-length=120"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"--ignore=E402,F841,E302,E305"</span><span class="p">,</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="err">//</span><span class="w"> </span><span class="err">Editor</span><span class="w"> </span><span class="err">font</span><span class="w">
+    </span><span class="nl">"editor.fontFamily"</span><span class="p">:</span><span class="w"> </span><span class="s2">"JetBrains Mono"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"editor.fontSize"</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"editor.fontLigatures"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="err">//</span><span class="w"> </span><span class="err">Editor</span><span class="w"> </span><span class="err">Rules</span><span class="w">
+    </span><span class="nl">"editor.rulers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="mi">88</span><span class="p">,</span><span class="w">
+        </span><span class="mi">121</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"editor.formatOnSave"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"editor.tabSize"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"[ruby]"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"editor.tabSize"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="err">//</span><span class="w"> </span><span class="err">HTML</span><span class="w"> </span><span class="err">Rules</span><span class="w">
+    </span><span class="nl">"[html]"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"editor.formatOnSave"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"html.format.wrapLineLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"html.format.wrapAttributes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aligned-multiple"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"html.format.indentHandlebars"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"html.format.preserveNewLines"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"workbench.colorTheme"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dracula"</span><span class="p">,</span><span class="w">
+    </span><span class="err">//</span><span class="w"> </span><span class="err">Terminal</span><span class="w"> </span><span class="err">Rules</span><span class="w">
+    </span><span class="nl">"terminal.integrated.fontSize"</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"terminal.integrated.lineHeight"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"terminal.integrated.fontFamily"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NotoSansMono Nerd Font"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"terminal.integrated.fontWeightBold"</span><span class="p">:</span><span class="w"> </span><span class="s2">"normal"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"terminal.integrated.tabs.enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"editor.renderWhitespace"</span><span class="p">:</span><span class="w"> </span><span class="s2">"trailing"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"files.maxMemoryForLargeFilesMB"</span><span class="p">:</span><span class="w"> </span><span class="mi">8192</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"python.defaultInterpreterPath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/bin/python"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"notebook.cellToolbarLocation"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"default"</span><span class="p">:</span><span class="w"> </span><span class="s2">"right"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"jupyter-notebook"</span><span class="p">:</span><span class="w"> </span><span class="s2">"left"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"solargraph.diagnostics"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"vscode-pets.position"</span><span class="p">:</span><span class="w"> </span><span class="s2">"explorer"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"vscode-pets.theme"</span><span class="p">:</span><span class="w"> </span><span class="s2">"forest"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"vscode-pets.petSize"</span><span class="p">:</span><span class="w"> </span><span class="s2">"medium"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"vscode-pets.petType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rubber-duck"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"security.workspace.trust.untrustedFiles"</span><span class="p">:</span><span class="w"> </span><span class="s2">"open"</span><span class="p">,</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+  </div><a class="u-url" href="/2022/02/15/dotfiles-and-config.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+        <ul class="contact-list">
+          <li class="p-name">João Pedro</li>
+          <li><a class="u-email" href="mailto:pedrochaveslimas3@gmail.com">pedrochaveslimas3@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p>Don&#39;t take everything you read here too seriously. Enjoy your stay!</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/sosolidkk" target="_blank" title="sosolidkk"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://www.instagram.com/jpechaves" target="_blank" title="jpechaves"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#instagram"></use></svg></a></li><li><a rel="me" href="https://t.me/sosolidkk" target="_blank" title="sosolidkk"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#telegram"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

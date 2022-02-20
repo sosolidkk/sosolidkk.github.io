@@ -1,4 +1,208 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://sosolidkk.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://sosolidkk.github.io//" rel="alternate" type="text/html" /><updated>2022-02-15T02:43:05+00:00</updated><id>https://sosolidkk.github.io//feed.xml</id><title type="html">&amp;lt;~brain dump/&amp;gt;</title><subtitle>Don&apos;t take everything you read here too seriously. Enjoy your stay!</subtitle><author><name>João Pedro</name><email>pedrochaveslimas3@gmail.com</email></author><entry><title type="html">Dotfiles and config</title><link href="https://sosolidkk.github.io//2022/02/15/dotfiles-and-config.html" rel="alternate" type="text/html" title="Dotfiles and config" /><published>2022-02-15T02:04:00+00:00</published><updated>2022-02-15T02:04:00+00:00</updated><id>https://sosolidkk.github.io//2022/02/15/dotfiles-and-config</id><content type="html" xml:base="https://sosolidkk.github.io//2022/02/15/dotfiles-and-config.html">&lt;p&gt;So, it’s not big news that more often than not we need to wipe our workstations due to a large number of files already being created or just for the sake of doing so. My biggest problem with re-installing my Linux distro is the time that takes to configure everything all over again. So, instead of googling everything, I’ve chosen to register most of the programs that I need to install after a fresh wipe of the OS and how I deal with the configuration of all of them and some of my &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dotfiles&lt;/code&gt; for an easier copy and paste &lt;del&gt;for future wipes&lt;/del&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://sosolidkk.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://sosolidkk.github.io//" rel="alternate" type="text/html" /><updated>2022-02-20T14:05:46+00:00</updated><id>https://sosolidkk.github.io//feed.xml</id><title type="html">&amp;lt;~brain dump/&amp;gt;</title><subtitle>Don&apos;t take everything you read here too seriously. Enjoy your stay!</subtitle><author><name>João Pedro</name><email>pedrochaveslimas3@gmail.com</email></author><entry><title type="html">PSQL</title><link href="https://sosolidkk.github.io//2022/02/20/psql.html" rel="alternate" type="text/html" title="PSQL" /><published>2022-02-20T14:03:00+00:00</published><updated>2022-02-20T14:03:00+00:00</updated><id>https://sosolidkk.github.io//2022/02/20/psql</id><content type="html" xml:base="https://sosolidkk.github.io//2022/02/20/psql.html">&lt;p&gt;This one will also be another post about configuration since configuring Postgres and its user will always be a pain in the ass for me. Shall we?&lt;/p&gt;
+
+&lt;h4 id=&quot;installation&quot;&gt;&lt;strong&gt;Installation&lt;/strong&gt;&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ sudo pacman -S postgresql&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;initial-configuration&quot;&gt;&lt;strong&gt;Initial configuration&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;After the succeeded installation, you can now switch to the postgres user using a &lt;a href=&quot;https://wiki.archlinux.org/title/List_of_applications/Security#Privilege_elevation&quot;&gt;privilege elevation&lt;/a&gt; program like:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ sudo su - postgres&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Before PostgreSQL can function correctly, the database cluster must be initialized:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;postgres@&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;machine_name&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; ~]&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;initdb &lt;span class=&quot;nt&quot;&gt;-D&lt;/span&gt; /var/lib/postgres/data
+&lt;span class=&quot;c&quot;&gt;# If everything runs successfully you should see this output&lt;/span&gt;
+The database cluster will be initialized with locales
+  COLLATE:  en_US.UTF-8
+  CTYPE:    en_US.UTF-8
+  MESSAGES: en_US.UTF-8
+  MONETARY: pt_BR.UTF-8
+  NUMERIC:  pt_BR.UTF-8
+  TIME:     pt_BR.UTF-8
+The default database encoding has accordingly been &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;to &lt;span class=&quot;s2&quot;&gt;&quot;UTF8&quot;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+The default text search configuration will be &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;to &lt;span class=&quot;s2&quot;&gt;&quot;english&quot;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+
+Data page checksums are disabled.
+
+fixing permissions on existing directory /var/lib/postgres/data ... ok
+creating subdirectories ... ok
+selecting dynamic shared memory implementation ... posix
+selecting default max_connections ... 100
+selecting default shared_buffers ... 128MB
+selecting default &lt;span class=&quot;nb&quot;&gt;time &lt;/span&gt;zone ... America/Fortaleza
+creating configuration files ... ok
+running bootstrap script ... ok
+performing post-bootstrap initialization ... ok
+syncing data to disk ... ok
+
+initdb: warning: enabling &lt;span class=&quot;s2&quot;&gt;&quot;trust&quot;&lt;/span&gt; authentication &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;local &lt;/span&gt;connections
+You can change this by editing pg_hba.conf or using the option &lt;span class=&quot;nt&quot;&gt;-A&lt;/span&gt;, or
+&lt;span class=&quot;nt&quot;&gt;--auth-local&lt;/span&gt; and &lt;span class=&quot;nt&quot;&gt;--auth-host&lt;/span&gt;, the next &lt;span class=&quot;nb&quot;&gt;time &lt;/span&gt;you run initdb.
+
+Success. You can now start the database server using:
+
+    pg_ctl &lt;span class=&quot;nt&quot;&gt;-D&lt;/span&gt; /var/lib/postgres/data &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt; logfile start
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Start postgreSQL:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ sudo systemctl start postgresql&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Enable postgreSQL service:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ sudo systemctl enable postgresql&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Check if PostgreSQL is active and running:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;● postgresql.service - PostgreSQL database server
+     Loaded: loaded &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;/usr/lib/systemd/system/postgresql.service&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; enabled&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; vendo&amp;gt;
+     Active: active &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;running&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; since Sun 2022-02-20 09:54:51 &lt;span class=&quot;nt&quot;&gt;-03&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 12s ago
+   Main PID: 9057 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;postgres&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+      Tasks: 7 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;limit: 19091&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+     Memory: 15.8M
+        CPU: 102ms
+     CGroup: /system.slice/postgresql.service
+             ├─9057 /usr/bin/postgres &lt;span class=&quot;nt&quot;&gt;-D&lt;/span&gt; /var/lib/postgres/data
+             ├─9059 &lt;span class=&quot;s2&quot;&gt;&quot;postgres: checkpointer &quot;&lt;/span&gt;
+             ├─9060 &lt;span class=&quot;s2&quot;&gt;&quot;postgres: background writer &quot;&lt;/span&gt;
+             ├─9061 &lt;span class=&quot;s2&quot;&gt;&quot;postgres: walwriter &quot;&lt;/span&gt;
+             ├─9062 &lt;span class=&quot;s2&quot;&gt;&quot;postgres: autovacuum launcher &quot;&lt;/span&gt;
+             ├─9063 &lt;span class=&quot;s2&quot;&gt;&quot;postgres: stats collector &quot;&lt;/span&gt;
+             └─9064 &lt;span class=&quot;s2&quot;&gt;&quot;postgres: logical replication launcher &quot;&lt;/span&gt;
+
+fev 20 09:54:50 ws systemd[1]: Starting PostgreSQL database server...
+fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.090 &lt;span class=&quot;nt&quot;&gt;-03&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;9057] LOG:  starting PostgreSQL 13.4 on x86_64-pc-linux-gnu, compiled by gcc &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;GCC&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 11.1.0, 64-bit
+fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.091 &lt;span class=&quot;nt&quot;&gt;-03&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;9057] LOG:  listening on IPv6 address &lt;span class=&quot;s2&quot;&gt;&quot;::1&quot;&lt;/span&gt;, port 5432
+fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.091 &lt;span class=&quot;nt&quot;&gt;-03&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;9057] LOG:  listening on IPv4 address &lt;span class=&quot;s2&quot;&gt;&quot;127.0.0.1&quot;&lt;/span&gt;, port 5432
+fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.094 &lt;span class=&quot;nt&quot;&gt;-03&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;9057] LOG:  listening on Unix socket &lt;span class=&quot;s2&quot;&gt;&quot;/run/postgresql/.s.PGSQL.5432&quot;&lt;/span&gt;
+fev 20 09:54:51 ws postgres[9058]: 2022-02-20 09:54:51.100 &lt;span class=&quot;nt&quot;&gt;-03&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;9058] LOG:  database system was shut down at 2022-02-20 09:52:34 &lt;span class=&quot;nt&quot;&gt;-03&lt;/span&gt;
+fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.105 &lt;span class=&quot;nt&quot;&gt;-03&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;9057] LOG:  database system is ready to accept connections
+fev 20 09:54:51 ws systemd[1]: Started PostgreSQL database server.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;create-database-in-postgresql&quot;&gt;&lt;strong&gt;Create Database in PostgreSQL&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;To create a valid database, we first need a User. We can take advantage of the user that the system already makes available to us.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ sudo su - postgres&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Secure this default postgres user with a password:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ psql -c &quot;ALTER USER postgres WITH PASSWORD &apos;{new_password}&apos;&quot;&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To test and execute commands, let’s use the PostgreSQL cli. Type:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;psql&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Run the following command to create a database and then type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\l&lt;/code&gt; to list the already created databases:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CREATE DATABASE mydb;&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;create-an-user-in-postgresql&quot;&gt;&lt;strong&gt;Create an User in PostgreSQL&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;If you want a more assisted way, run this command:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;createuser --interactive --pwprompt&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If not, you can run those two to create a User with a password defined and a proper role for it:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CREATE USER {user_name} WITH ENCRYPTED PASSWORD &apos;{user_password}&apos;;&lt;/code&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GRANT ALL PRIVILEGES ON DATABASE {db_name} TO {username};&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;useful-commands-to-run-when-using-psql&quot;&gt;&lt;strong&gt;Useful commands to run when using PSQL&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;Login in to your user, run the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;psql&lt;/code&gt; command, and type:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Connect to a database:
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\c {db_name} {username}&lt;/code&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;List available databases:
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\l&lt;/code&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;List available tables:
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\dt or \dt+&lt;/code&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Describe a table:
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\d {table_name}&lt;/code&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;List available schema:
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\dn&lt;/code&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;List available functions:
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\df&lt;/code&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;List available views:
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\dv&lt;/code&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;List users and their roles:
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\du&lt;/code&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Execute the previous command (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;psql&lt;/code&gt; executes the previous command again, which is the SELECT statement):
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SELECT version();&lt;/code&gt;&lt;/p&gt;
+
+      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\g&lt;/code&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Command history:
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\s&lt;/code&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Execute &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;psql&lt;/code&gt; commands from a file:
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\i {filename}&lt;/code&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Turn on query execution time:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;db_name=# \timing
+Timing is on.
+db_name=# SELECT COUNT(*) FROM table;
+ count
+-------
+  1000
+(1 row)
+
+Time: 0.495 ms
+db_name=#
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Edit command in your own editor. It will open the text editor defined in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EDITOR&lt;/code&gt; environment variable:
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\e&lt;/code&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>João Pedro</name><email>pedrochaveslimas3@gmail.com</email></author><category term="config" /><category term="tips" /><summary type="html">This one will also be another post about configuration since configuring Postgres and its user will always be a pain in the ass for me. Shall we? Installation $ sudo pacman -S postgresql Initial configuration After the succeeded installation, you can now switch to the postgres user using a privilege elevation program like: $ sudo su - postgres Before PostgreSQL can function correctly, the database cluster must be initialized: [postgres@{machine_name} ~]$ initdb -D /var/lib/postgres/data # If everything runs successfully you should see this output The database cluster will be initialized with locales COLLATE: en_US.UTF-8 CTYPE: en_US.UTF-8 MESSAGES: en_US.UTF-8 MONETARY: pt_BR.UTF-8 NUMERIC: pt_BR.UTF-8 TIME: pt_BR.UTF-8 The default database encoding has accordingly been set to &quot;UTF8&quot;. The default text search configuration will be set to &quot;english&quot;. Data page checksums are disabled. fixing permissions on existing directory /var/lib/postgres/data ... ok creating subdirectories ... ok selecting dynamic shared memory implementation ... posix selecting default max_connections ... 100 selecting default shared_buffers ... 128MB selecting default time zone ... America/Fortaleza creating configuration files ... ok running bootstrap script ... ok performing post-bootstrap initialization ... ok syncing data to disk ... ok initdb: warning: enabling &quot;trust&quot; authentication for local connections You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb. Success. You can now start the database server using: pg_ctl -D /var/lib/postgres/data -l logfile start Start postgreSQL: $ sudo systemctl start postgresql Enable postgreSQL service: $ sudo systemctl enable postgresql Check if PostgreSQL is active and running: ● postgresql.service - PostgreSQL database server Loaded: loaded (/usr/lib/systemd/system/postgresql.service; enabled; vendo&amp;gt; Active: active (running) since Sun 2022-02-20 09:54:51 -03; 12s ago Main PID: 9057 (postgres) Tasks: 7 (limit: 19091) Memory: 15.8M CPU: 102ms CGroup: /system.slice/postgresql.service ├─9057 /usr/bin/postgres -D /var/lib/postgres/data ├─9059 &quot;postgres: checkpointer &quot; ├─9060 &quot;postgres: background writer &quot; ├─9061 &quot;postgres: walwriter &quot; ├─9062 &quot;postgres: autovacuum launcher &quot; ├─9063 &quot;postgres: stats collector &quot; └─9064 &quot;postgres: logical replication launcher &quot; fev 20 09:54:50 ws systemd[1]: Starting PostgreSQL database server... fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.090 -03 [9057] LOG: starting PostgreSQL 13.4 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 11.1.0, 64-bit fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.091 -03 [9057] LOG: listening on IPv6 address &quot;::1&quot;, port 5432 fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.091 -03 [9057] LOG: listening on IPv4 address &quot;127.0.0.1&quot;, port 5432 fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.094 -03 [9057] LOG: listening on Unix socket &quot;/run/postgresql/.s.PGSQL.5432&quot; fev 20 09:54:51 ws postgres[9058]: 2022-02-20 09:54:51.100 -03 [9058] LOG: database system was shut down at 2022-02-20 09:52:34 -03 fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.105 -03 [9057] LOG: database system is ready to accept connections fev 20 09:54:51 ws systemd[1]: Started PostgreSQL database server. Create Database in PostgreSQL To create a valid database, we first need a User. We can take advantage of the user that the system already makes available to us. $ sudo su - postgres Secure this default postgres user with a password: $ psql -c &quot;ALTER USER postgres WITH PASSWORD &apos;{new_password}&apos;&quot; To test and execute commands, let’s use the PostgreSQL cli. Type: psql Run the following command to create a database and then type \l to list the already created databases: CREATE DATABASE mydb; Create an User in PostgreSQL If you want a more assisted way, run this command: createuser --interactive --pwprompt If not, you can run those two to create a User with a password defined and a proper role for it: CREATE USER {user_name} WITH ENCRYPTED PASSWORD &apos;{user_password}&apos;; GRANT ALL PRIVILEGES ON DATABASE {db_name} TO {username}; Useful commands to run when using PSQL Login in to your user, run the psql command, and type: Connect to a database: \c {db_name} {username} List available databases: \l List available tables: \dt or \dt+ Describe a table: \d {table_name} List available schema: \dn List available functions: \df List available views: \dv List users and their roles: \du Execute the previous command (psql executes the previous command again, which is the SELECT statement): SELECT version(); \g Command history: \s Execute psql commands from a file: \i {filename} Turn on query execution time: db_name=# \timing Timing is on. db_name=# SELECT COUNT(*) FROM table; count ------- 1000 (1 row) Time: 0.495 ms db_name=# Edit command in your own editor. It will open the text editor defined in the EDITOR environment variable: \e</summary></entry><entry><title type="html">Dotfiles and config</title><link href="https://sosolidkk.github.io//2022/02/15/dotfiles-and-config.html" rel="alternate" type="text/html" title="Dotfiles and config" /><published>2022-02-15T02:04:00+00:00</published><updated>2022-02-15T02:04:00+00:00</updated><id>https://sosolidkk.github.io//2022/02/15/dotfiles-and-config</id><content type="html" xml:base="https://sosolidkk.github.io//2022/02/15/dotfiles-and-config.html">&lt;p&gt;So, it’s not big news that more often than not we need to wipe our workstations due to a large number of files already being created or just for the sake of doing so. My biggest problem with re-installing my Linux distro is the time that takes to configure everything all over again. So, instead of googling everything, I’ve chosen to register most of the programs that I need to install after a fresh wipe of the OS and how I deal with the configuration of all of them and some of my &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dotfiles&lt;/code&gt; for an easier copy and paste &lt;del&gt;for future wipes&lt;/del&gt;.&lt;/p&gt;
 
 &lt;h4 id=&quot;programs-list&quot;&gt;&lt;strong&gt;Programs list&lt;/strong&gt;&lt;/h4&gt;
 &lt;ul&gt;

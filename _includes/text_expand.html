@@ -1,0 +1,17 @@
+<script>
+    let elements = document.querySelectorAll('p');
+
+    Array.prototype.forEach.call(elements, function(el, i){
+        if(el.innerHTML.includes('[expand]')) {
+            let parentcontent = el.parentNode.innerHTML.replace('<p>[expand]','<div class="expand" style="display: none; height: 0; overflow: hidden;">').replace('[/expand]</p>','</div>');
+            el.parentNode.innerHTML = parentcontent;
+        }
+    });
+
+    let newElements = document.querySelectorAll('div.expand');
+    Array.prototype.forEach.call(newElements, function(el, i){
+        newNode = document.createElement('div');
+        newNode.innerHTML = '<a href="#" style="cursor: pointer;" onclick="this.parentNode.previousElementSibling.style.display = \'block\'; this.parentNode.previousElementSibling.style.height = \'auto\'; this.parentNode.style.display = \'none\';">Click to expand &rarr;</a>'
+        el.parentNode.insertBefore(newNode, el.nextElementSibling);
+    });
+</script>

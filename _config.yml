@@ -17,7 +17,6 @@ title: <brain_dump/>
 description: >-
   Don't take everything you read here too seriously.
   Enjoy your stay!
-# baseurl: ""
 url: "https://sosolidkk.github.io/"
 
 tagline: Ruby on Rails and Indie Hacking
@@ -26,9 +25,14 @@ show_excerpts: true
 excerpt_separator: <!--more-->
 
 header_pages:
-  - about.md
-  - portfolio.md
-  - tags.html
+  - _pages/about.md
+  - _pages/now.md
+  - _pages/work.md
+  - _pages/contact.md
+  - _pages/tags.html
+
+include:
+  - _pages
 
 author:
   email: pedrochaveslimas3@gmail.com

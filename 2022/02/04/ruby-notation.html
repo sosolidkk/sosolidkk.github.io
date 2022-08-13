@@ -17,10 +17,9 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Ruby % Notation" />
 <script type="application/ld+json">
-{"datePublished":"2022-02-04T23:20:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://sosolidkk.github.io//2022/02/04/ruby-notation.html"},"url":"https://sosolidkk.github.io//2022/02/04/ruby-notation.html","author":{"@type":"Person","name":"João Pedro"},"@type":"BlogPosting","headline":"Ruby % Notation","dateModified":"2022-02-04T23:20:00+00:00","description":"For a long time, my Rubocop always kept complaining about the list of symbols defined in my code and, I also didn’t search for the reason behind it. It states that: Prefer %i to the literal array syntax when you need an array of symbols (and you don’t need to maintain Ruby 1.9 compatibility). Apply this rule only to arrays with two or more elements. So after some searching, I’ve found that’s pretty common and, generally, more readable for the developers to use this notation. So here goes a brief resume and examples about them: # Yes, they are case sensitive %q[ ] # Non-interpolated String (except for \\\\ \\[ and \\]) %Q[ ] # Interpolated String (default) %r[ ] # Interpolated Regexp (flags can appear after the closing delimiter) %i[ ] # Non-interpolated Array of symbols, separated by whitespace %I[ ] # Interpolated Array of symbols, separated by whitespace %w[ ] # Non-interpolated Array of words, separated by whitespace %W[ ] # Interpolated Array of words, separated by whitespace %x[ ] # Interpolated shell command %q %q{one\\ntwo\\n#{ 1 + 2 }} # =&gt; &quot;one\\\\ntwo\\\\n\\#{ 1 + 2 }&quot; %Q %Q{one\\ntwo\\n#{ 1 + 2 }} # =&gt; &quot;one\\ntwo\\n3&quot; %r name = &#39;nemo&#39; %r/#{name}/i # =&gt; /nemo/i %i %i[one two three] # after Ruby 2.0 # =&gt; [:one, :two, :three] %I value = &#39;searching&#39; %I[#{value} for nemo] # =&gt; [:searching, :for, :nemo] %w %w[one two three] # =&gt; [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;] %W value = &#39;one&#39; %W[#{value} two three] # =&gt; [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;] %x %x{ruby --copyright} # =&gt; &quot;ruby - Copyright (C) 1993-2020 Yukihiro Matsumoto\\n&quot; References Wikibooks - Ruby Programming Rubocop Style Guide","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://sosolidkk.github.io//2022/02/04/ruby-notation.html"},"url":"https://sosolidkk.github.io//2022/02/04/ruby-notation.html","headline":"Ruby % Notation","dateModified":"2022-02-04T23:20:00+00:00","datePublished":"2022-02-04T23:20:00+00:00","@type":"BlogPosting","author":{"@type":"Person","name":"João Pedro"},"description":"For a long time, my Rubocop always kept complaining about the list of symbols defined in my code and, I also didn’t search for the reason behind it. It states that: Prefer %i to the literal array syntax when you need an array of symbols (and you don’t need to maintain Ruby 1.9 compatibility). Apply this rule only to arrays with two or more elements. So after some searching, I’ve found that’s pretty common and, generally, more readable for the developers to use this notation. So here goes a brief resume and examples about them: # Yes, they are case sensitive %q[ ] # Non-interpolated String (except for \\\\ \\[ and \\]) %Q[ ] # Interpolated String (default) %r[ ] # Interpolated Regexp (flags can appear after the closing delimiter) %i[ ] # Non-interpolated Array of symbols, separated by whitespace %I[ ] # Interpolated Array of symbols, separated by whitespace %w[ ] # Non-interpolated Array of words, separated by whitespace %W[ ] # Interpolated Array of words, separated by whitespace %x[ ] # Interpolated shell command %q %q{one\\ntwo\\n#{ 1 + 2 }} # =&gt; &quot;one\\\\ntwo\\\\n\\#{ 1 + 2 }&quot; %Q %Q{one\\ntwo\\n#{ 1 + 2 }} # =&gt; &quot;one\\ntwo\\n3&quot; %r name = &#39;nemo&#39; %r/#{name}/i # =&gt; /nemo/i %i %i[one two three] # after Ruby 2.0 # =&gt; [:one, :two, :three] %I value = &#39;searching&#39; %I[#{value} for nemo] # =&gt; [:searching, :for, :nemo] %w %w[one two three] # =&gt; [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;] %W value = &#39;one&#39; %W[#{value} two three] # =&gt; [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;] %x %x{ruby --copyright} # =&gt; &quot;ruby - Copyright (C) 1993-2020 Yukihiro Matsumoto\\n&quot; References Wikibooks - Ruby Programming Rubocop Style Guide","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://sosolidkk.github.io//feed.xml" title="&lt;brain_dump/&gt;" />
-        
 
 
 
@@ -28,7 +27,6 @@
 
 
 
-    
 </head>
 <body><header class="site-header">
 
@@ -42,7 +40,7 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/portfolio/">Portfolio</a><a class="page-link" href="/tags/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/now/">Now</a><a class="page-link" href="/work/">Work</a><a class="page-link" href="/contact/">Contact</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -167,6 +165,22 @@
   </div>
 
 </footer>
-</body>
+<script>
+    let elements = document.querySelectorAll('p');
 
+    Array.prototype.forEach.call(elements, function(el, i){
+        if(el.innerHTML.includes('[expand]')) {
+            let parentcontent = el.parentNode.innerHTML.replace('<p>[expand]','<div class="expand" style="display: none; height: 0; overflow: hidden;">').replace('[/expand]</p>','</div>');
+            el.parentNode.innerHTML = parentcontent;
+        }
+    });
+
+    let newElements = document.querySelectorAll('div.expand');
+    Array.prototype.forEach.call(newElements, function(el, i){
+        newNode = document.createElement('div');
+        newNode.innerHTML = '<a href="#" style="cursor: pointer;" onclick="this.parentNode.previousElementSibling.style.display = \'block\'; this.parentNode.previousElementSibling.style.height = \'auto\'; this.parentNode.style.display = \'none\';">Click to expand &rarr;</a>'
+        el.parentNode.insertBefore(newNode, el.nextElementSibling);
+    });
+</script>
+</body>
 </html>

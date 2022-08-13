@@ -12,10 +12,9 @@
 <meta property="og:url" content="https://sosolidkk.github.io//404.html" />
 <meta name="twitter:card" content="summary" />
 <script type="application/ld+json">
-{"url":"https://sosolidkk.github.io//404.html","author":{"@type":"Person","name":"João Pedro"},"@type":"WebPage","description":"Don’t take everything you read here too seriously. Enjoy your stay!","@context":"https://schema.org"}</script>
+{"url":"https://sosolidkk.github.io//404.html","@type":"WebPage","author":{"@type":"Person","name":"João Pedro"},"description":"Don’t take everything you read here too seriously. Enjoy your stay!","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://sosolidkk.github.io//feed.xml" title="&lt;brain_dump/&gt;" />
-        
 
 
 
@@ -23,7 +22,6 @@
 
 
 
-    
 </head>
 <body><header class="site-header">
 
@@ -37,7 +35,7 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/portfolio/">Portfolio</a><a class="page-link" href="/tags/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/now/">Now</a><a class="page-link" href="/work/">Work</a><a class="page-link" href="/contact/">Contact</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -94,6 +92,22 @@
   </div>
 
 </footer>
-</body>
+<script>
+    let elements = document.querySelectorAll('p');
 
+    Array.prototype.forEach.call(elements, function(el, i){
+        if(el.innerHTML.includes('[expand]')) {
+            let parentcontent = el.parentNode.innerHTML.replace('<p>[expand]','<div class="expand" style="display: none; height: 0; overflow: hidden;">').replace('[/expand]</p>','</div>');
+            el.parentNode.innerHTML = parentcontent;
+        }
+    });
+
+    let newElements = document.querySelectorAll('div.expand');
+    Array.prototype.forEach.call(newElements, function(el, i){
+        newNode = document.createElement('div');
+        newNode.innerHTML = '<a href="#" style="cursor: pointer;" onclick="this.parentNode.previousElementSibling.style.display = \'block\'; this.parentNode.previousElementSibling.style.height = \'auto\'; this.parentNode.style.display = \'none\';">Click to expand &rarr;</a>'
+        el.parentNode.insertBefore(newNode, el.nextElementSibling);
+    });
+</script>
+</body>
 </html>

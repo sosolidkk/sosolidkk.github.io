@@ -43,7 +43,6 @@ remote_theme: jekyll/minima
 minima:
   skin: classic
   social_links:
-    twitter: #
     github: sosolidkk
     instagram: jpechaves
     telegram: sosolidkk
@@ -51,6 +50,7 @@ minima:
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-seo-tag
 
 exclude:
   - node_modules

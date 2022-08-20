@@ -9,3 +9,5 @@ I'm a Ruby Full-Stack Web Developer, who loves listening to music in my spare ti
 ---
 
 This blog is based on Jeykll and is hosted on [GitHub Pages](https://pages.github.com/). For issues, improvement, and suggestions, please feel free to open an issue or pull requests on this [project](https://github.com/sosolidkk/sosolidkk.github.io). Thanks!
+
+Total posts count is `{{ site.posts.size }}`.

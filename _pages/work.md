@@ -4,48 +4,58 @@ title: Work
 permalink: /work/
 ---
 
-#### **Full-Stack Web Developer (Ruby)**
+#### **Full-Stack Web Developer (Ruby/Rails)**
 [Nuuvem](https://nuuvem.com), Remote - (06/2022 - Today)
 
 - Nuuvem was founded in 2012 with the aim of reducing barriers to accessing games in Latin America, offering games at a fair and local price. Since then, we have sold over 4 million premium games to over 2.0 million users, offering the best games from over 300 publishers. Nuuvem is today the largest digital game distribution store in Latin America and other parts of the world.
-- My job at Nuuvem consists of working and improving the company's internal projects, respecting good code practices and market standards, participating in discussions on planning new features, accompanying new developers who join the company, suggesting and presenting new technologies to the team, and much more.
+- My job at Nuuvem consists of working and improving the company's internal projects, respecting good code practices and market standards, participating in discussions on planning new features, accompanying new developers who join the company, suggesting and presenting new technologies to the team, and much more. Currently, I'm responsible for maintaining and improving the existing integrations that the store has and a complete re-write of the price/product system that runs in production to a better and faster approach.
 - `Techs: Ruby (2.7.5, 3.1.X), Rails (v5.x, v7.x), Vue, JavaScript, Sidekiq, Postgres, Mongodb, Docker and more`
-- `Services: AWS, AppSignal, Loggly, DeadMansSnitch, Segment, StitchData, MongoDB, Postgres`
+- `Services: AWS, AppSignal, Loggly, DeadMansSnitch, Segment, StitchData, CustomerIO, Klipfolio, Azion`
+
+#### **Full-Stack Contract Web Developer (Ruby/Rails)**
+[WaySync](https://www.getwaysync.com/), Remote (10/2022 - 12/2022, `2 months`)
+- WaySync is a company that aims to empower forwarders to win more business with less overhead, providing tools and automations to make quoting prices for rates easier.
+- My job at WaySync consisted of problem discussions, code reviews, and performance improvements of queries and services used by the system. I was responsible for making a redesign (UI and Code) to the whole email composer component to avoid using the one Nyla provided in their integration and build one with the "company face".
+- `Techs: Ruby (3.1.X), Rails (v7.x), JavaScript, Stimulus, Turbo, Postgres, Docker, Tailwind CSS and more`
+- `Services: AWS, Sentry, Nylas`
 
 #### **Software Developer**
-[Codeminer42](https://www.codeminer42.com/), Remote - (07/2020 - 06/2022)
+[Codeminer42](https://www.codeminer42.com/), Remote - (07/2020 - 06/2022, `1 year and 11 months`)
 
 - Codeminer42 is a Brazilian software boutique focused on delivering the best value to its customers. We started operating in September 2011 and have so far expanded to 12 different cities in Brazil with the best professionals and developers in the country. Our specialty is web development using the best cutting-edge technologies. We have a lot of experience in all types of technology products such as e-commerce, e-learning, social networks, content management, and process automation.
-- My job at Codeminer consists of participating in problem discussions, team code reviews, improvements, good coding practices, and design standards using agile methodologies. In addition, improve my experience with Ruby, Rails, RSpec, Docker, Git and be introduced to other technologies and concepts such as JavaScript, Python, Elixir, TDD, DDD, and many more. I also perform some extra activities, like reviewing the blog posts that are published every Wednesday and I help to review code and mentor new employees on their technologies and projects when asked.
+- My job at Codeminer consisted of participating in problem discussions, team code reviews, improvements, good coding practices, and design standards using agile methodologies. In addition, improve my experience with Ruby, Rails, RSpec, Docker, Git and be introduced to other technologies and concepts such as JavaScript, Python, Elixir, TDD, DDD, and many more. I also perform some extra activities, like reviewing the blog posts that are published every Wednesday and I help to mentor new employees on their technologies and projects when is needed.
 
   #### **Full-Stack Contract Developer (Ruby/Rails/React)**
-  [StackSocial](https://stacksocial.com/), Remote — (08/2021 - 06/2022)
+  [StackSocial](https://stacksocial.com/), Remote — (08/2021 - 06/2022, `10 months`)
 
   - Working remotely for StackCommerce, a native e-commerce platform solution, headquartered in California, US. 
-  - My work consists of coding features and bug fixes, doing code reviews, and participating in planning meetings. I also implement and give support to backend integrations with third-party services like Salesforce, Segment, and others
+  - My work consisted of coding features and bug fixes, doing code reviews, and participating in planning meetings. I also implement and give support to backend integrations with third-party services like Salesforce, Segment, and others
   - `Techs: Ruby (v2.7), Rails (v5.x), Angular, React, JavaScript, Sidekiq, MySQL, Docker`
   - `Services: AWS, Sentry, Iterable, Salesforce, Segment, Postgres, ElasticSearch, GraphQL, SemaphoreCI`
 
   #### **Backend Contract Developer (Ruby/Rails)**
-  [Cyanna](https://cyanna.com/), Remote — (06/2021 - 08/2021)
+  [Cyanna](https://cyanna.com/), Remote — (06/2021 - 08/2021, `2 months`)
 
   - Cyanna provides online education services in the form of platform and curriculum development. Servicing corporations, career schools, higher ed, and more.
   - My work at Cyanna consisted on help maintain one of the core services that supply a workflow for submitting, retrieving, processing, and analyzing required compliance data.
-  - `Techs: Ruby (v2.4), Rails (v4.x), Sidekiq, Docker, Postgresql, Jenkins`
+  - `Techs: Ruby (v2.4), Rails (v4.x), Sidekiq, Docker, Postgresql`
+  - `Services: AWS, Github, Jenkins`
 
   #### **Backend Contract Developer (Ruby/Rails)**
-  [Agrosmart](https://agrosmart.com.br/), Remote – (03/2021 - 06/2021)
+  [Agrosmart](https://agrosmart.com.br/), Remote – (03/2021 - 06/2021, `3 months`)
 
   - Agrosmart develops state-of-the-art technology for the Rural Producer to use the power of data in a way that knows the need for farming and can explore the maximum potential of each hectare and money invested.
   - My job at Agrosmart was the development of an API to create a field notebook to manage crops, glebas, and the entire tobacco planting cycle. Focusing on practicality, security, and offline usage (due to the poor connections of the people residing on the farms).
-  - `Techs: Ruby (v2.8), Rails (v5.1), RSpec, PostgreSQL, Docker, Git, Kubernetes, Jenkins`
+  - `Techs: Ruby (v2.8), Rails (v5.1), RSpec, PostgreSQL, Docker, Git, Kubernetes`
+  - `Services: AWS, Github, Jenkins`
 
   #### **Backend Contract Developer (Python/Django)**
-  [Juntos Somos Mais](https://www.juntossomosmais.com.br/), Remote – (09/2020 - 02/2021)
+  [Juntos Somos Mais](https://www.juntossomosmais.com.br/), Remote – (07/2020 - 02/2021, `7 months`)
 
   - Juntos Somos Mais is the largest relationship network in the civil construction market. We work hard to unite leading companies in the sector and connect them to tenants and construction professionals. We promote several exclusive benefits and more development for those who get their hands dirty and help build a better Brazil.
   - My job was the development of an API for handling resources in a B2C (Business to Consumer) project. The API was integrated with multiple third-party API services such as B2W, Mercado Livre, Shopee, Via Varejo, and Amazon.
-  - `Techs: Python, Django, DRF (django-rest-framework), Unittest, Pytest, PostgreSQL, Git, GitHub, Github Actions, Docker, RabbitMQ, Kubernetes`
+  - `Techs: Python, Django, DRF (django-rest-framework), Unittest, Pytest, PostgreSQL, Git, Docker, RabbitMQ, Kubernetes`
+  - `Services: AWS, GitHub, GitHub Actions, Sentry`
 
 #### **Backend Intern (Python)**
 [Maida.Health](https://maida.health/), Brazil - (06/2019 - 06/2020, `1 year`)

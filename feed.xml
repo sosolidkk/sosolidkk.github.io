@@ -1,21 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://sosolidkk.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://sosolidkk.github.io//" rel="alternate" type="text/html" /><updated>2022-08-20T17:47:57+00:00</updated><id>https://sosolidkk.github.io//feed.xml</id><title type="html">&lt;brain_dump /&gt;
-</title><subtitle>Don&apos;t take everything you read here too seriously. Enjoy your stay!</subtitle><author><name>João Pedro</name><email>pedrochaveslimas3@gmail.com</email></author><entry><title type="html">PSQL</title><link href="https://sosolidkk.github.io//2022/02/20/psql.html" rel="alternate" type="text/html" title="PSQL" /><published>2022-02-20T14:03:00+00:00</published><updated>2022-02-20T14:03:00+00:00</updated><id>https://sosolidkk.github.io//2022/02/20/psql</id><content type="html" xml:base="https://sosolidkk.github.io//2022/02/20/psql.html">&lt;p&gt;This one will also be another post about configuration since configuring Postgres and its user will always be a pain in the ass for me. Shall we?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://sosolidkk.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://sosolidkk.github.io//" rel="alternate" type="text/html" /><updated>2023-01-02T02:22:46+00:00</updated><id>https://sosolidkk.github.io//feed.xml</id><title type="html">&lt;brain_dump /&gt;
+</title><subtitle>Don&apos;t take everything you read here too seriously. Enjoy your stay!</subtitle><author><name>João Pedro</name><email>pedrochaveslimas3@gmail.com</email></author><entry><title type="html">2023</title><link href="https://sosolidkk.github.io//2023/01/02/2023.html" rel="alternate" type="text/html" title="2023" /><published>2023-01-02T01:40:00+00:00</published><updated>2023-01-02T01:40:00+00:00</updated><id>https://sosolidkk.github.io//2023/01/02/2023</id><content type="html" xml:base="https://sosolidkk.github.io//2023/01/02/2023.html"><![CDATA[<p>A lot has happened in 2022 and while I’m grateful for all of it, I feel like I’ve never been this tired. I traveled, I switched jobs, I met new people, I had fun in my older and newer company confraternization party and I managed to complete 3 of my 5 goals set for the whole year of 2022. I can’t say I’m 100% happy with 2022 but it’s undeniable that it was a great year without a hunch of a doubt. For 2023, I just want to complete some of the goals that I missed for 2022 and set a couple of new ones.</p>
 
-&lt;h4 id=&quot;installation&quot;&gt;&lt;strong&gt;Installation&lt;/strong&gt;&lt;/h4&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ sudo pacman -S postgresql&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+<h3 id="goals-for-2023">Goals for 2023</h3>
 
-&lt;h4 id=&quot;initial-configuration&quot;&gt;&lt;strong&gt;Initial configuration&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;After the succeeded installation, you can now switch to the postgres user using a &lt;a href=&quot;https://wiki.archlinux.org/title/List_of_applications/Security#Privilege_elevation&quot;&gt;privilege elevation&lt;/a&gt; program like:&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ sudo su - postgres&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>Read <del>five</del> ten or more books</strong>
+    <blockquote>
+      <p>I have a lot of books in my shelf just waiting to be read since 2020. So I’m just trying to get back with an old habit that I already had.</p>
+    </blockquote>
+  </li>
+  <li class="task-list-item">
+    <p><code class="language-plaintext highlighter-rouge">This goal I missed HARD in 2022. I read three and a half books throughout the whole year, and while I'm not proud of it, I'm just happy that I did read something. Most of the time that I spent reading are just those dumb Chinese/Korean light novels and tech articles, so refreshing my mind with some dense and long books was fun. So I'm just going to double the goal and see if I can make at least one a month and thats it.</code></p>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>Maintain a healthy diet and life style</strong>
+    <blockquote>
+      <p>No need to explain.</p>
+    </blockquote>
+  </li>
+  <li class="task-list-item">
+    <p><code class="language-plaintext highlighter-rouge">To be honest, I didn't even try. I played a lot of volleyball (at least twice a week) and more often than not did a 5km walk, but it isn't enough, to be honest. This is a must for 2023.</code></p>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>Try to gain at least one  salary raise this year</strong>
+    <blockquote>
+      <p>No need to explain too. And no, I’m not looking right now for a new Job. I’m happy with the one i got right now and I still have a lot to learn from the people that I work every single day.</p>
+    </blockquote>
+  </li>
+  <li class="task-list-item">
+    <p><code class="language-plaintext highlighter-rouge">It's funny because in January I said I wasn't looking for a job but till May, a lot had happened that made me start looking for Jobs as quickly as possible, and I don't regret the decision I made. I'm actually quite happy and fulfilled in my current job at Nuuvem. So for this year I just want to make more impactful changes and improve even more my workplace.</code></p>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>Travel <del>at least</del> Twice</strong>
+    <blockquote>
+      <p>My girlfriend loves to travel, and while I’m not into it as much as she, she gets on my nerves a lot by asking me when and where we’ll be traveling this year.</p>
+    </blockquote>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>Get more experience to reach the level of a Senior developer</strong>
+    <blockquote>
+      <p>No need to explain.</p>
+    </blockquote>
+  </li>
+</ul>
 
-&lt;p&gt;Before PostgreSQL can function correctly, the database cluster must be initialized:&lt;/p&gt;
+<p><strong>IN PROGRESS</strong></p>]]></content><author><name>João Pedro</name><email>pedrochaveslimas3@gmail.com</email></author><category term="personal" /><summary type="html"><![CDATA[A lot has happened in 2022 and while I’m grateful for all of it, I feel like I’ve never been this tired. I traveled, I switched jobs, I met new people, I had fun in my older and newer company confraternization party and I managed to complete 3 of my 5 goals set for the whole year of 2022. I can’t say I’m 100% happy with 2022 but it’s undeniable that it was a great year without a hunch of a doubt. For 2023, I just want to complete some of the goals that I missed for 2022 and set a couple of new ones. Goals for 2023 Read five ten or more books I have a lot of books in my shelf just waiting to be read since 2020. So I’m just trying to get back with an old habit that I already had. This goal I missed HARD in 2022. I read three and a half books throughout the whole year, and while I'm not proud of it, I'm just happy that I did read something. Most of the time that I spent reading are just those dumb Chinese/Korean light novels and tech articles, so refreshing my mind with some dense and long books was fun. So I'm just going to double the goal and see if I can make at least one a month and thats it. Maintain a healthy diet and life style No need to explain. To be honest, I didn't even try. I played a lot of volleyball (at least twice a week) and more often than not did a 5km walk, but it isn't enough, to be honest. This is a must for 2023. Try to gain at least one salary raise this year No need to explain too. And no, I’m not looking right now for a new Job. I’m happy with the one i got right now and I still have a lot to learn from the people that I work every single day. It's funny because in January I said I wasn't looking for a job but till May, a lot had happened that made me start looking for Jobs as quickly as possible, and I don't regret the decision I made. I'm actually quite happy and fulfilled in my current job at Nuuvem. So for this year I just want to make more impactful changes and improve even more my workplace. Travel at least Twice My girlfriend loves to travel, and while I’m not into it as much as she, she gets on my nerves a lot by asking me when and where we’ll be traveling this year. Get more experience to reach the level of a Senior developer No need to explain. IN PROGRESS]]></summary></entry><entry><title type="html">PSQL</title><link href="https://sosolidkk.github.io//2022/02/20/psql.html" rel="alternate" type="text/html" title="PSQL" /><published>2022-02-20T14:03:00+00:00</published><updated>2022-02-20T14:03:00+00:00</updated><id>https://sosolidkk.github.io//2022/02/20/psql</id><content type="html" xml:base="https://sosolidkk.github.io//2022/02/20/psql.html"><![CDATA[<p>This one will also be another post about configuration since configuring Postgres and its user will always be a pain in the ass for me. Shall we?</p>
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;postgres@&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;machine_name&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; ~]&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;initdb &lt;span class=&quot;nt&quot;&gt;-D&lt;/span&gt; /var/lib/postgres/data
-&lt;span class=&quot;c&quot;&gt;# If everything runs successfully you should see this output&lt;/span&gt;
+<h4 id="installation"><strong>Installation</strong></h4>
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">$ sudo pacman -S postgresql</code></p>
+</blockquote>
+
+<h4 id="initial-configuration"><strong>Initial configuration</strong></h4>
+<p>After the succeeded installation, you can now switch to the postgres user using a <a href="https://wiki.archlinux.org/title/List_of_applications/Security#Privilege_elevation">privilege elevation</a> program like:</p>
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">$ sudo su - postgres</code></p>
+</blockquote>
+
+<p>Before PostgreSQL can function correctly, the database cluster must be initialized:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>postgres@<span class="o">{</span>machine_name<span class="o">}</span> ~]<span class="nv">$ </span>initdb <span class="nt">-D</span> /var/lib/postgres/data
+<span class="c"># If everything runs successfully you should see this output</span>
 The database cluster will be initialized with locales
   COLLATE:  en_US.UTF-8
   CTYPE:    en_US.UTF-8
@@ -23,8 +64,8 @@ The database cluster will be initialized with locales
   MONETARY: pt_BR.UTF-8
   NUMERIC:  pt_BR.UTF-8
   TIME:     pt_BR.UTF-8
-The default database encoding has accordingly been &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;to &lt;span class=&quot;s2&quot;&gt;&quot;UTF8&quot;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-The default text search configuration will be &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;to &lt;span class=&quot;s2&quot;&gt;&quot;english&quot;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+The default database encoding has accordingly been <span class="nb">set </span>to <span class="s2">"UTF8"</span><span class="nb">.</span>
+The default text search configuration will be <span class="nb">set </span>to <span class="s2">"english"</span><span class="nb">.</span>
 
 Data page checksums are disabled.
 
@@ -33,159 +74,159 @@ creating subdirectories ... ok
 selecting dynamic shared memory implementation ... posix
 selecting default max_connections ... 100
 selecting default shared_buffers ... 128MB
-selecting default &lt;span class=&quot;nb&quot;&gt;time &lt;/span&gt;zone ... America/Fortaleza
+selecting default <span class="nb">time </span>zone ... America/Fortaleza
 creating configuration files ... ok
 running bootstrap script ... ok
 performing post-bootstrap initialization ... ok
 syncing data to disk ... ok
 
-initdb: warning: enabling &lt;span class=&quot;s2&quot;&gt;&quot;trust&quot;&lt;/span&gt; authentication &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;local &lt;/span&gt;connections
-You can change this by editing pg_hba.conf or using the option &lt;span class=&quot;nt&quot;&gt;-A&lt;/span&gt;, or
-&lt;span class=&quot;nt&quot;&gt;--auth-local&lt;/span&gt; and &lt;span class=&quot;nt&quot;&gt;--auth-host&lt;/span&gt;, the next &lt;span class=&quot;nb&quot;&gt;time &lt;/span&gt;you run initdb.
+initdb: warning: enabling <span class="s2">"trust"</span> authentication <span class="k">for </span><span class="nb">local </span>connections
+You can change this by editing pg_hba.conf or using the option <span class="nt">-A</span>, or
+<span class="nt">--auth-local</span> and <span class="nt">--auth-host</span>, the next <span class="nb">time </span>you run initdb.
 
 Success. You can now start the database server using:
 
-    pg_ctl &lt;span class=&quot;nt&quot;&gt;-D&lt;/span&gt; /var/lib/postgres/data &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt; logfile start
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    pg_ctl <span class="nt">-D</span> /var/lib/postgres/data <span class="nt">-l</span> logfile start
+</code></pre></div></div>
 
-&lt;p&gt;Start postgreSQL:&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ sudo systemctl start postgresql&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+<p>Start postgreSQL:</p>
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">$ sudo systemctl start postgresql</code></p>
+</blockquote>
 
-&lt;p&gt;Enable postgreSQL service:&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ sudo systemctl enable postgresql&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+<p>Enable postgreSQL service:</p>
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">$ sudo systemctl enable postgresql</code></p>
+</blockquote>
 
-&lt;p&gt;Check if PostgreSQL is active and running:&lt;/p&gt;
+<p>Check if PostgreSQL is active and running:</p>
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;● postgresql.service - PostgreSQL database server
-     Loaded: loaded &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;/usr/lib/systemd/system/postgresql.service&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; enabled&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; vendo&amp;gt;
-     Active: active &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;running&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; since Sun 2022-02-20 09:54:51 &lt;span class=&quot;nt&quot;&gt;-03&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 12s ago
-   Main PID: 9057 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;postgres&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-      Tasks: 7 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;limit: 19091&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>● postgresql.service - PostgreSQL database server
+     Loaded: loaded <span class="o">(</span>/usr/lib/systemd/system/postgresql.service<span class="p">;</span> enabled<span class="p">;</span> vendo&gt;
+     Active: active <span class="o">(</span>running<span class="o">)</span> since Sun 2022-02-20 09:54:51 <span class="nt">-03</span><span class="p">;</span> 12s ago
+   Main PID: 9057 <span class="o">(</span>postgres<span class="o">)</span>
+      Tasks: 7 <span class="o">(</span>limit: 19091<span class="o">)</span>
      Memory: 15.8M
         CPU: 102ms
      CGroup: /system.slice/postgresql.service
-             ├─9057 /usr/bin/postgres &lt;span class=&quot;nt&quot;&gt;-D&lt;/span&gt; /var/lib/postgres/data
-             ├─9059 &lt;span class=&quot;s2&quot;&gt;&quot;postgres: checkpointer &quot;&lt;/span&gt;
-             ├─9060 &lt;span class=&quot;s2&quot;&gt;&quot;postgres: background writer &quot;&lt;/span&gt;
-             ├─9061 &lt;span class=&quot;s2&quot;&gt;&quot;postgres: walwriter &quot;&lt;/span&gt;
-             ├─9062 &lt;span class=&quot;s2&quot;&gt;&quot;postgres: autovacuum launcher &quot;&lt;/span&gt;
-             ├─9063 &lt;span class=&quot;s2&quot;&gt;&quot;postgres: stats collector &quot;&lt;/span&gt;
-             └─9064 &lt;span class=&quot;s2&quot;&gt;&quot;postgres: logical replication launcher &quot;&lt;/span&gt;
+             ├─9057 /usr/bin/postgres <span class="nt">-D</span> /var/lib/postgres/data
+             ├─9059 <span class="s2">"postgres: checkpointer "</span>
+             ├─9060 <span class="s2">"postgres: background writer "</span>
+             ├─9061 <span class="s2">"postgres: walwriter "</span>
+             ├─9062 <span class="s2">"postgres: autovacuum launcher "</span>
+             ├─9063 <span class="s2">"postgres: stats collector "</span>
+             └─9064 <span class="s2">"postgres: logical replication launcher "</span>
 
 fev 20 09:54:50 ws systemd[1]: Starting PostgreSQL database server...
-fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.090 &lt;span class=&quot;nt&quot;&gt;-03&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;9057] LOG:  starting PostgreSQL 13.4 on x86_64-pc-linux-gnu, compiled by gcc &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;GCC&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 11.1.0, 64-bit
-fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.091 &lt;span class=&quot;nt&quot;&gt;-03&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;9057] LOG:  listening on IPv6 address &lt;span class=&quot;s2&quot;&gt;&quot;::1&quot;&lt;/span&gt;, port 5432
-fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.091 &lt;span class=&quot;nt&quot;&gt;-03&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;9057] LOG:  listening on IPv4 address &lt;span class=&quot;s2&quot;&gt;&quot;127.0.0.1&quot;&lt;/span&gt;, port 5432
-fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.094 &lt;span class=&quot;nt&quot;&gt;-03&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;9057] LOG:  listening on Unix socket &lt;span class=&quot;s2&quot;&gt;&quot;/run/postgresql/.s.PGSQL.5432&quot;&lt;/span&gt;
-fev 20 09:54:51 ws postgres[9058]: 2022-02-20 09:54:51.100 &lt;span class=&quot;nt&quot;&gt;-03&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;9058] LOG:  database system was shut down at 2022-02-20 09:52:34 &lt;span class=&quot;nt&quot;&gt;-03&lt;/span&gt;
-fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.105 &lt;span class=&quot;nt&quot;&gt;-03&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;9057] LOG:  database system is ready to accept connections
+fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.090 <span class="nt">-03</span> <span class="o">[</span>9057] LOG:  starting PostgreSQL 13.4 on x86_64-pc-linux-gnu, compiled by gcc <span class="o">(</span>GCC<span class="o">)</span> 11.1.0, 64-bit
+fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.091 <span class="nt">-03</span> <span class="o">[</span>9057] LOG:  listening on IPv6 address <span class="s2">"::1"</span>, port 5432
+fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.091 <span class="nt">-03</span> <span class="o">[</span>9057] LOG:  listening on IPv4 address <span class="s2">"127.0.0.1"</span>, port 5432
+fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.094 <span class="nt">-03</span> <span class="o">[</span>9057] LOG:  listening on Unix socket <span class="s2">"/run/postgresql/.s.PGSQL.5432"</span>
+fev 20 09:54:51 ws postgres[9058]: 2022-02-20 09:54:51.100 <span class="nt">-03</span> <span class="o">[</span>9058] LOG:  database system was shut down at 2022-02-20 09:52:34 <span class="nt">-03</span>
+fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.105 <span class="nt">-03</span> <span class="o">[</span>9057] LOG:  database system is ready to accept connections
 fev 20 09:54:51 ws systemd[1]: Started PostgreSQL database server.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</code></pre></div></div>
 
-&lt;h4 id=&quot;create-database-in-postgresql&quot;&gt;&lt;strong&gt;Create Database in PostgreSQL&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;To create a valid database, we first need a User. We can take advantage of the user that the system already makes available to us.&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ sudo su - postgres&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+<h4 id="create-database-in-postgresql"><strong>Create Database in PostgreSQL</strong></h4>
+<p>To create a valid database, we first need a User. We can take advantage of the user that the system already makes available to us.</p>
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">$ sudo su - postgres</code></p>
+</blockquote>
 
-&lt;p&gt;Secure this default postgres user with a password:&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ psql -c &quot;ALTER USER postgres WITH PASSWORD &apos;{new_password}&apos;&quot;&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+<p>Secure this default postgres user with a password:</p>
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">$ psql -c "ALTER USER postgres WITH PASSWORD '{new_password}'"</code></p>
+</blockquote>
 
-&lt;p&gt;To test and execute commands, let’s use the PostgreSQL cli. Type:&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;psql&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+<p>To test and execute commands, let’s use the PostgreSQL cli. Type:</p>
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">psql</code></p>
+</blockquote>
 
-&lt;p&gt;Run the following command to create a database and then type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\l&lt;/code&gt; to list the already created databases:&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CREATE DATABASE mydb;&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+<p>Run the following command to create a database and then type <code class="language-plaintext highlighter-rouge">\l</code> to list the already created databases:</p>
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">CREATE DATABASE mydb;</code></p>
+</blockquote>
 
-&lt;h4 id=&quot;create-an-user-in-postgresql&quot;&gt;&lt;strong&gt;Create an User in PostgreSQL&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;If you want a more assisted way, run this command:&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;createuser --interactive --pwprompt&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+<h4 id="create-an-user-in-postgresql"><strong>Create an User in PostgreSQL</strong></h4>
+<p>If you want a more assisted way, run this command:</p>
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">createuser --interactive --pwprompt</code></p>
+</blockquote>
 
-&lt;p&gt;If not, you can run those two to create a User with a password defined and a proper role for it:&lt;/p&gt;
+<p>If not, you can run those two to create a User with a password defined and a proper role for it:</p>
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CREATE USER {user_name} WITH ENCRYPTED PASSWORD &apos;{user_password}&apos;;&lt;/code&gt;&lt;/p&gt;
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">CREATE USER {user_name} WITH ENCRYPTED PASSWORD '{user_password}';</code></p>
 
-  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GRANT ALL PRIVILEGES ON DATABASE {db_name} TO {username};&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+  <p><code class="language-plaintext highlighter-rouge">GRANT ALL PRIVILEGES ON DATABASE {db_name} TO {username};</code></p>
+</blockquote>
 
-&lt;h4 id=&quot;useful-commands-to-run-when-using-psql&quot;&gt;&lt;strong&gt;Useful commands to run when using PSQL&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;Login in to your user, run the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;psql&lt;/code&gt; command, and type:&lt;/p&gt;
+<h4 id="useful-commands-to-run-when-using-psql"><strong>Useful commands to run when using PSQL</strong></h4>
+<p>Login in to your user, run the <code class="language-plaintext highlighter-rouge">psql</code> command, and type:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;Connect to a database:
-    &lt;blockquote&gt;
-      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\c {db_name} {username}&lt;/code&gt;&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;List available databases:
-    &lt;blockquote&gt;
-      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\l&lt;/code&gt;&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;List available tables:
-    &lt;blockquote&gt;
-      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\dt or \dt+&lt;/code&gt;&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Describe a table:
-    &lt;blockquote&gt;
-      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\d {table_name}&lt;/code&gt;&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;List available schema:
-    &lt;blockquote&gt;
-      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\dn&lt;/code&gt;&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;List available functions:
-    &lt;blockquote&gt;
-      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\df&lt;/code&gt;&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;List available views:
-    &lt;blockquote&gt;
-      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\dv&lt;/code&gt;&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;List users and their roles:
-    &lt;blockquote&gt;
-      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\du&lt;/code&gt;&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Execute the previous command (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;psql&lt;/code&gt; executes the previous command again, which is the SELECT statement):
-    &lt;blockquote&gt;
-      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SELECT version();&lt;/code&gt;&lt;/p&gt;
+<ul>
+  <li>Connect to a database:
+    <blockquote>
+      <p><code class="language-plaintext highlighter-rouge">\c {db_name} {username}</code></p>
+    </blockquote>
+  </li>
+  <li>List available databases:
+    <blockquote>
+      <p><code class="language-plaintext highlighter-rouge">\l</code></p>
+    </blockquote>
+  </li>
+  <li>List available tables:
+    <blockquote>
+      <p><code class="language-plaintext highlighter-rouge">\dt or \dt+</code></p>
+    </blockquote>
+  </li>
+  <li>Describe a table:
+    <blockquote>
+      <p><code class="language-plaintext highlighter-rouge">\d {table_name}</code></p>
+    </blockquote>
+  </li>
+  <li>List available schema:
+    <blockquote>
+      <p><code class="language-plaintext highlighter-rouge">\dn</code></p>
+    </blockquote>
+  </li>
+  <li>List available functions:
+    <blockquote>
+      <p><code class="language-plaintext highlighter-rouge">\df</code></p>
+    </blockquote>
+  </li>
+  <li>List available views:
+    <blockquote>
+      <p><code class="language-plaintext highlighter-rouge">\dv</code></p>
+    </blockquote>
+  </li>
+  <li>List users and their roles:
+    <blockquote>
+      <p><code class="language-plaintext highlighter-rouge">\du</code></p>
+    </blockquote>
+  </li>
+  <li>Execute the previous command (<code class="language-plaintext highlighter-rouge">psql</code> executes the previous command again, which is the SELECT statement):
+    <blockquote>
+      <p><code class="language-plaintext highlighter-rouge">SELECT version();</code></p>
 
-      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\g&lt;/code&gt;&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Command history:
-    &lt;blockquote&gt;
-      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\s&lt;/code&gt;&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Execute &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;psql&lt;/code&gt; commands from a file:
-    &lt;blockquote&gt;
-      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\i {filename}&lt;/code&gt;&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Turn on query execution time:&lt;/li&gt;
-&lt;/ul&gt;
+      <p><code class="language-plaintext highlighter-rouge">\g</code></p>
+    </blockquote>
+  </li>
+  <li>Command history:
+    <blockquote>
+      <p><code class="language-plaintext highlighter-rouge">\s</code></p>
+    </blockquote>
+  </li>
+  <li>Execute <code class="language-plaintext highlighter-rouge">psql</code> commands from a file:
+    <blockquote>
+      <p><code class="language-plaintext highlighter-rouge">\i {filename}</code></p>
+    </blockquote>
+  </li>
+  <li>Turn on query execution time:</li>
+</ul>
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;db_name=# \timing
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>db_name=# \timing
 Timing is on.
 db_name=# SELECT COUNT(*) FROM table;
  count
@@ -195,328 +236,328 @@ db_name=# SELECT COUNT(*) FROM table;
 
 Time: 0.495 ms
 db_name=#
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</code></pre></div></div>
 
-&lt;ul&gt;
-  &lt;li&gt;Edit command in your own editor. It will open the text editor defined in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EDITOR&lt;/code&gt; environment variable:
-    &lt;blockquote&gt;
-      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\e&lt;/code&gt;&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>João Pedro</name><email>pedrochaveslimas3@gmail.com</email></author><category term="config" /><category term="tips" /><summary type="html">This one will also be another post about configuration since configuring Postgres and its user will always be a pain in the ass for me. Shall we? Installation $ sudo pacman -S postgresql Initial configuration After the succeeded installation, you can now switch to the postgres user using a privilege elevation program like: $ sudo su - postgres Before PostgreSQL can function correctly, the database cluster must be initialized: [postgres@{machine_name} ~]$ initdb -D /var/lib/postgres/data # If everything runs successfully you should see this output The database cluster will be initialized with locales COLLATE: en_US.UTF-8 CTYPE: en_US.UTF-8 MESSAGES: en_US.UTF-8 MONETARY: pt_BR.UTF-8 NUMERIC: pt_BR.UTF-8 TIME: pt_BR.UTF-8 The default database encoding has accordingly been set to &quot;UTF8&quot;. The default text search configuration will be set to &quot;english&quot;. Data page checksums are disabled. fixing permissions on existing directory /var/lib/postgres/data ... ok creating subdirectories ... ok selecting dynamic shared memory implementation ... posix selecting default max_connections ... 100 selecting default shared_buffers ... 128MB selecting default time zone ... America/Fortaleza creating configuration files ... ok running bootstrap script ... ok performing post-bootstrap initialization ... ok syncing data to disk ... ok initdb: warning: enabling &quot;trust&quot; authentication for local connections You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb. Success. You can now start the database server using: pg_ctl -D /var/lib/postgres/data -l logfile start Start postgreSQL: $ sudo systemctl start postgresql Enable postgreSQL service: $ sudo systemctl enable postgresql Check if PostgreSQL is active and running: ● postgresql.service - PostgreSQL database server Loaded: loaded (/usr/lib/systemd/system/postgresql.service; enabled; vendo&amp;gt; Active: active (running) since Sun 2022-02-20 09:54:51 -03; 12s ago Main PID: 9057 (postgres) Tasks: 7 (limit: 19091) Memory: 15.8M CPU: 102ms CGroup: /system.slice/postgresql.service ├─9057 /usr/bin/postgres -D /var/lib/postgres/data ├─9059 &quot;postgres: checkpointer &quot; ├─9060 &quot;postgres: background writer &quot; ├─9061 &quot;postgres: walwriter &quot; ├─9062 &quot;postgres: autovacuum launcher &quot; ├─9063 &quot;postgres: stats collector &quot; └─9064 &quot;postgres: logical replication launcher &quot; fev 20 09:54:50 ws systemd[1]: Starting PostgreSQL database server... fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.090 -03 [9057] LOG: starting PostgreSQL 13.4 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 11.1.0, 64-bit fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.091 -03 [9057] LOG: listening on IPv6 address &quot;::1&quot;, port 5432 fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.091 -03 [9057] LOG: listening on IPv4 address &quot;127.0.0.1&quot;, port 5432 fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.094 -03 [9057] LOG: listening on Unix socket &quot;/run/postgresql/.s.PGSQL.5432&quot; fev 20 09:54:51 ws postgres[9058]: 2022-02-20 09:54:51.100 -03 [9058] LOG: database system was shut down at 2022-02-20 09:52:34 -03 fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.105 -03 [9057] LOG: database system is ready to accept connections fev 20 09:54:51 ws systemd[1]: Started PostgreSQL database server. Create Database in PostgreSQL To create a valid database, we first need a User. We can take advantage of the user that the system already makes available to us. $ sudo su - postgres Secure this default postgres user with a password: $ psql -c &quot;ALTER USER postgres WITH PASSWORD &apos;{new_password}&apos;&quot; To test and execute commands, let’s use the PostgreSQL cli. Type: psql Run the following command to create a database and then type \l to list the already created databases: CREATE DATABASE mydb; Create an User in PostgreSQL If you want a more assisted way, run this command: createuser --interactive --pwprompt If not, you can run those two to create a User with a password defined and a proper role for it: CREATE USER {user_name} WITH ENCRYPTED PASSWORD &apos;{user_password}&apos;; GRANT ALL PRIVILEGES ON DATABASE {db_name} TO {username}; Useful commands to run when using PSQL Login in to your user, run the psql command, and type: Connect to a database: \c {db_name} {username} List available databases: \l List available tables: \dt or \dt+ Describe a table: \d {table_name} List available schema: \dn List available functions: \df List available views: \dv List users and their roles: \du Execute the previous command (psql executes the previous command again, which is the SELECT statement): SELECT version(); \g Command history: \s Execute psql commands from a file: \i {filename} Turn on query execution time: db_name=# \timing Timing is on. db_name=# SELECT COUNT(*) FROM table; count ------- 1000 (1 row) Time: 0.495 ms db_name=# Edit command in your own editor. It will open the text editor defined in the EDITOR environment variable: \e</summary></entry><entry><title type="html">Dotfiles and config</title><link href="https://sosolidkk.github.io//2022/02/15/dotfiles-and-config.html" rel="alternate" type="text/html" title="Dotfiles and config" /><published>2022-02-15T02:04:00+00:00</published><updated>2022-02-15T02:04:00+00:00</updated><id>https://sosolidkk.github.io//2022/02/15/dotfiles-and-config</id><content type="html" xml:base="https://sosolidkk.github.io//2022/02/15/dotfiles-and-config.html">&lt;p&gt;So, it’s not big news that more often than not we need to wipe our workstations due to a large number of files already being created or just for the sake of doing so. My biggest problem with re-installing my Linux distro is the time that takes to configure everything all over again. So, instead of googling everything, I’ve chosen to register most of the programs that I need to install after a fresh wipe of the OS and how I deal with the configuration of all of them and some of my &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dotfiles&lt;/code&gt; for an easier copy and paste &lt;del&gt;for future wipes&lt;/del&gt;.&lt;/p&gt;
+<ul>
+  <li>Edit command in your own editor. It will open the text editor defined in the <code class="language-plaintext highlighter-rouge">EDITOR</code> environment variable:
+    <blockquote>
+      <p><code class="language-plaintext highlighter-rouge">\e</code></p>
+    </blockquote>
+  </li>
+</ul>]]></content><author><name>João Pedro</name><email>pedrochaveslimas3@gmail.com</email></author><category term="config" /><category term="tips" /><summary type="html"><![CDATA[This one will also be another post about configuration since configuring Postgres and its user will always be a pain in the ass for me. Shall we? Installation $ sudo pacman -S postgresql Initial configuration After the succeeded installation, you can now switch to the postgres user using a privilege elevation program like: $ sudo su - postgres Before PostgreSQL can function correctly, the database cluster must be initialized: [postgres@{machine_name} ~]$ initdb -D /var/lib/postgres/data # If everything runs successfully you should see this output The database cluster will be initialized with locales COLLATE: en_US.UTF-8 CTYPE: en_US.UTF-8 MESSAGES: en_US.UTF-8 MONETARY: pt_BR.UTF-8 NUMERIC: pt_BR.UTF-8 TIME: pt_BR.UTF-8 The default database encoding has accordingly been set to "UTF8". The default text search configuration will be set to "english". Data page checksums are disabled. fixing permissions on existing directory /var/lib/postgres/data ... ok creating subdirectories ... ok selecting dynamic shared memory implementation ... posix selecting default max_connections ... 100 selecting default shared_buffers ... 128MB selecting default time zone ... America/Fortaleza creating configuration files ... ok running bootstrap script ... ok performing post-bootstrap initialization ... ok syncing data to disk ... ok initdb: warning: enabling "trust" authentication for local connections You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb. Success. You can now start the database server using: pg_ctl -D /var/lib/postgres/data -l logfile start Start postgreSQL: $ sudo systemctl start postgresql Enable postgreSQL service: $ sudo systemctl enable postgresql Check if PostgreSQL is active and running: ● postgresql.service - PostgreSQL database server Loaded: loaded (/usr/lib/systemd/system/postgresql.service; enabled; vendo&gt; Active: active (running) since Sun 2022-02-20 09:54:51 -03; 12s ago Main PID: 9057 (postgres) Tasks: 7 (limit: 19091) Memory: 15.8M CPU: 102ms CGroup: /system.slice/postgresql.service ├─9057 /usr/bin/postgres -D /var/lib/postgres/data ├─9059 "postgres: checkpointer " ├─9060 "postgres: background writer " ├─9061 "postgres: walwriter " ├─9062 "postgres: autovacuum launcher " ├─9063 "postgres: stats collector " └─9064 "postgres: logical replication launcher " fev 20 09:54:50 ws systemd[1]: Starting PostgreSQL database server... fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.090 -03 [9057] LOG: starting PostgreSQL 13.4 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 11.1.0, 64-bit fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.091 -03 [9057] LOG: listening on IPv6 address "::1", port 5432 fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.091 -03 [9057] LOG: listening on IPv4 address "127.0.0.1", port 5432 fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.094 -03 [9057] LOG: listening on Unix socket "/run/postgresql/.s.PGSQL.5432" fev 20 09:54:51 ws postgres[9058]: 2022-02-20 09:54:51.100 -03 [9058] LOG: database system was shut down at 2022-02-20 09:52:34 -03 fev 20 09:54:51 ws postgres[9057]: 2022-02-20 09:54:51.105 -03 [9057] LOG: database system is ready to accept connections fev 20 09:54:51 ws systemd[1]: Started PostgreSQL database server. Create Database in PostgreSQL To create a valid database, we first need a User. We can take advantage of the user that the system already makes available to us. $ sudo su - postgres Secure this default postgres user with a password: $ psql -c "ALTER USER postgres WITH PASSWORD '{new_password}'" To test and execute commands, let’s use the PostgreSQL cli. Type: psql Run the following command to create a database and then type \l to list the already created databases: CREATE DATABASE mydb; Create an User in PostgreSQL If you want a more assisted way, run this command: createuser --interactive --pwprompt If not, you can run those two to create a User with a password defined and a proper role for it: CREATE USER {user_name} WITH ENCRYPTED PASSWORD '{user_password}'; GRANT ALL PRIVILEGES ON DATABASE {db_name} TO {username}; Useful commands to run when using PSQL Login in to your user, run the psql command, and type: Connect to a database: \c {db_name} {username} List available databases: \l List available tables: \dt or \dt+ Describe a table: \d {table_name} List available schema: \dn List available functions: \df List available views: \dv List users and their roles: \du Execute the previous command (psql executes the previous command again, which is the SELECT statement): SELECT version(); \g Command history: \s Execute psql commands from a file: \i {filename} Turn on query execution time: db_name=# \timing Timing is on. db_name=# SELECT COUNT(*) FROM table; count ------- 1000 (1 row) Time: 0.495 ms db_name=# Edit command in your own editor. It will open the text editor defined in the EDITOR environment variable: \e]]></summary></entry><entry><title type="html">Dotfiles and config</title><link href="https://sosolidkk.github.io//2022/02/15/dotfiles-and-config.html" rel="alternate" type="text/html" title="Dotfiles and config" /><published>2022-02-15T02:04:00+00:00</published><updated>2022-02-15T02:04:00+00:00</updated><id>https://sosolidkk.github.io//2022/02/15/dotfiles-and-config</id><content type="html" xml:base="https://sosolidkk.github.io//2022/02/15/dotfiles-and-config.html"><![CDATA[<p>So, it’s not big news that more often than not we need to wipe our workstations due to a large number of files already being created or just for the sake of doing so. My biggest problem with re-installing my Linux distro is the time that takes to configure everything all over again. So, instead of googling everything, I’ve chosen to register most of the programs that I need to install after a fresh wipe of the OS and how I deal with the configuration of all of them and some of my <code class="language-plaintext highlighter-rouge">dotfiles</code> for an easier copy and paste <del>for future wipes</del>.</p>
 
-&lt;h4 id=&quot;programs-list&quot;&gt;&lt;strong&gt;Programs list&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/zsh-users/zsh&quot;&gt;zsh&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ohmyz.sh/&quot;&gt;oh-my-zsh&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://asdf-vm.com/&quot;&gt;asdf&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;vscode&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://1password.com/pt/&quot;&gt;1password&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.postgresql.org/&quot;&gt;postgres&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;terminal&lt;/li&gt;
-&lt;/ul&gt;
+<h4 id="programs-list"><strong>Programs list</strong></h4>
+<ul>
+  <li><a href="https://github.com/zsh-users/zsh">zsh</a></li>
+  <li><a href="https://ohmyz.sh/">oh-my-zsh</a></li>
+  <li><a href="http://asdf-vm.com/">asdf</a></li>
+  <li><a href="https://code.visualstudio.com/">vscode</a></li>
+  <li><a href="https://1password.com/pt/">1password</a></li>
+  <li><a href="https://www.postgresql.org/">postgres</a></li>
+  <li>terminal</li>
+</ul>
 
-&lt;p&gt;Just to make sure we have everything we’ll need before hand, run this:&lt;/p&gt;
+<p>Just to make sure we have everything we’ll need before hand, run this:</p>
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;pacman-mirrors &lt;span class=&quot;nt&quot;&gt;--fasttrack&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;pacman &lt;span class=&quot;nt&quot;&gt;-Syyu&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;pacman &lt;span class=&quot;nt&quot;&gt;-S&lt;/span&gt; base base-devel git yay lm_sensors
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;yay &lt;span class=&quot;nt&quot;&gt;-S&lt;/span&gt; google-chrome visual-studio-code-bin
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>pacman-mirrors <span class="nt">--fasttrack</span> <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>pacman <span class="nt">-Syyu</span>
+<span class="nv">$ </span><span class="nb">sudo </span>pacman <span class="nt">-S</span> base base-devel git yay lm_sensors
+<span class="nv">$ </span>yay <span class="nt">-S</span> google-chrome visual-studio-code-bin
+</code></pre></div></div>
 
-&lt;p&gt;After you system is updated, let’s install the remaining tools.&lt;/p&gt;
+<p>After you system is updated, let’s install the remaining tools.</p>
 
-&lt;hr /&gt;
-&lt;h4 id=&quot;zsh&quot;&gt;&lt;strong&gt;Zsh&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;Zsh is a shell designed for interactive use, although it is also a powerful scripting language. Many of the useful features of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bash&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ksh&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tcsh&lt;/code&gt; were incorporated into zsh; many original features were added.&lt;/p&gt;
+<hr />
+<h4 id="zsh"><strong>Zsh</strong></h4>
+<p>Zsh is a shell designed for interactive use, although it is also a powerful scripting language. Many of the useful features of <code class="language-plaintext highlighter-rouge">bash</code>, <code class="language-plaintext highlighter-rouge">ksh</code>, and <code class="language-plaintext highlighter-rouge">tcsh</code> were incorporated into zsh; many original features were added.</p>
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;pacman &lt;span class=&quot;nt&quot;&gt;-S&lt;/span&gt; zsh
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;chsh &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; &lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;which zsh&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$SHELL&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>pacman <span class="nt">-S</span> zsh
+<span class="nv">$ </span>chsh <span class="nt">-s</span> <span class="si">$(</span>which zsh<span class="si">)</span>
+<span class="nv">$ </span><span class="nb">echo</span> <span class="nv">$SHELL</span>
+</code></pre></div></div>
 
-&lt;h4 id=&quot;oh-my-zsh&quot;&gt;&lt;strong&gt;Oh my zsh&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;I install this because it’s easier to setup some themes on my shell.&lt;/p&gt;
+<h4 id="oh-my-zsh"><strong>Oh my zsh</strong></h4>
+<p>I install this because it’s easier to setup some themes on my shell.</p>
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;&lt;/code&gt;&lt;/p&gt;
+<p><code class="language-plaintext highlighter-rouge">sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"</code></p>
 
-&lt;h4 id=&quot;spaceship&quot;&gt;&lt;strong&gt;SpaceShip&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;Spaceship is a minimalistic, powerful and extremely customizable zsh prompt. It combines everything you may need for convenient work, without unnecessary complications, like a real spaceship.&lt;/p&gt;
+<h4 id="spaceship"><strong>SpaceShip</strong></h4>
+<p>Spaceship is a minimalistic, powerful and extremely customizable zsh prompt. It combines everything you may need for convenient work, without unnecessary complications, like a real spaceship.</p>
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/spaceship-prompt/spaceship-prompt.git &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$ZSH_CUSTOM&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/themes/spaceship-prompt&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--depth&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/spaceship-prompt/spaceship-prompt.git <span class="s2">"</span><span class="nv">$ZSH_CUSTOM</span><span class="s2">/themes/spaceship-prompt"</span> <span class="nt">--depth</span><span class="o">=</span>1
 
-&lt;span class=&quot;nb&quot;&gt;ln&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$ZSH_CUSTOM&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/themes/spaceship-prompt/spaceship.zsh-theme&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$ZSH_CUSTOM&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/themes/spaceship.zsh-theme&quot;&lt;/span&gt;
+<span class="nb">ln</span> <span class="nt">-s</span> <span class="s2">"</span><span class="nv">$ZSH_CUSTOM</span><span class="s2">/themes/spaceship-prompt/spaceship.zsh-theme"</span> <span class="s2">"</span><span class="nv">$ZSH_CUSTOM</span><span class="s2">/themes/spaceship.zsh-theme"</span>
 
-&lt;span class=&quot;c&quot;&gt;# Set ZSH_THEME=&quot;spaceship&quot; in your .zshrc.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<span class="c"># Set ZSH_THEME="spaceship" in your .zshrc.</span>
+</code></pre></div></div>
 
-&lt;h4 id=&quot;zinit&quot;&gt;&lt;strong&gt;Zinit&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;Zinit is a flexible and fast Zshell plugin manager that will allow you to install everything from GitHub and other sites.&lt;/p&gt;
+<h4 id="zinit"><strong>Zinit</strong></h4>
+<p>Zinit is a flexible and fast Zshell plugin manager that will allow you to install everything from GitHub and other sites.</p>
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sh &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;curl &lt;span class=&quot;nt&quot;&gt;-fsSL&lt;/span&gt; https://git.io/zinit-install&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sh <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://git.io/zinit-install<span class="si">)</span><span class="s2">"</span>
 
-&lt;span class=&quot;c&quot;&gt;# Add the next three lines after this part: &apos;### End of ZInit&apos;s installer chunk&apos;&lt;/span&gt;
+<span class="c"># Add the next three lines after this part: '### End of ZInit's installer chunk'</span>
 zinit light zdharma/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</code></pre></div></div>
 
-&lt;h4 id=&quot;github-ssh&quot;&gt;&lt;strong&gt;Github SSH&lt;/strong&gt;&lt;/h4&gt;
+<h4 id="github-ssh"><strong>Github SSH</strong></h4>
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ssh-keygen &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; ed25519 &lt;span class=&quot;nt&quot;&gt;-C&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;your_email@example.com&quot;&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;eval&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;ssh-agent &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ssh-add ~/.ssh/id_ed25519
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>ssh-keygen <span class="nt">-t</span> ed25519 <span class="nt">-C</span> <span class="s2">"your_email@example.com"</span>
+<span class="nv">$ </span><span class="nb">eval</span> <span class="s2">"</span><span class="si">$(</span>ssh-agent <span class="nt">-s</span><span class="si">)</span><span class="s2">"</span>
+<span class="nv">$ </span>ssh-add ~/.ssh/id_ed25519
 
-&lt;span class=&quot;c&quot;&gt;# Then just &apos;cat&apos; the id_ed25519.pub and add it in the github ssh settings&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<span class="c"># Then just 'cat' the id_ed25519.pub and add it in the github ssh settings</span>
+</code></pre></div></div>
 
-&lt;h4 id=&quot;vscode&quot;&gt;&lt;strong&gt;VSCode&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;Visual Studio Code is pretty straight forward. You just need to click on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Login to Sync config&lt;/code&gt; option and it’s pretty much all done after you logged in successfully.&lt;/p&gt;
+<h4 id="vscode"><strong>VSCode</strong></h4>
+<p>Visual Studio Code is pretty straight forward. You just need to click on the <code class="language-plaintext highlighter-rouge">Login to Sync config</code> option and it’s pretty much all done after you logged in successfully.</p>
 
-&lt;hr /&gt;
-&lt;h4 id=&quot;dotfiles&quot;&gt;&lt;strong&gt;Dotfiles&lt;/strong&gt;&lt;/h4&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;.zshrc&lt;/p&gt;
-&lt;/blockquote&gt;
+<hr />
+<h4 id="dotfiles"><strong>Dotfiles</strong></h4>
+<blockquote>
+  <p>.zshrc</p>
+</blockquote>
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# export PATH=$HOME/bin:/usr/local/bin:$PATH&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;/.asdf/asdf.sh
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># export PATH=$HOME/bin:/usr/local/bin:$PATH</span>
+<span class="nb">.</span> <span class="nv">$HOME</span>/.asdf/asdf.sh
 
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ZSH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/.oh-my-zsh&quot;&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;ZSH_THEME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;spaceship&quot;&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;plugins&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=(&lt;/span&gt;git&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$ZSH&lt;/span&gt;/oh-my-zsh.sh
+<span class="nb">export </span><span class="nv">ZSH</span><span class="o">=</span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/.oh-my-zsh"</span>
+<span class="nv">ZSH_THEME</span><span class="o">=</span><span class="s2">"spaceship"</span>
+<span class="nv">plugins</span><span class="o">=(</span>git<span class="o">)</span>
+<span class="nb">source</span> <span class="nv">$ZSH</span>/oh-my-zsh.sh
 
-&lt;span class=&quot;c&quot;&gt;# User configuration&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MANPATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/usr/local/man:&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$MANPATH&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;LANG&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;en_US.UTF-8
+<span class="c"># User configuration</span>
+<span class="nb">export </span><span class="nv">MANPATH</span><span class="o">=</span><span class="s2">"/usr/local/man:</span><span class="nv">$MANPATH</span><span class="s2">"</span>
+<span class="nb">export </span><span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8
 
-&lt;span class=&quot;c&quot;&gt;# Preferred editor for local and remote sessions&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[[&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$SSH_CONNECTION&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then
-  &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;EDITOR&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;vim&apos;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;else
-  &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;EDITOR&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;mvim&apos;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;fi
+<span class="c"># Preferred editor for local and remote sessions</span>
+<span class="k">if</span> <span class="o">[[</span> <span class="nt">-n</span> <span class="nv">$SSH_CONNECTION</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then
+  </span><span class="nb">export </span><span class="nv">EDITOR</span><span class="o">=</span><span class="s1">'vim'</span>
+<span class="k">else
+  </span><span class="nb">export </span><span class="nv">EDITOR</span><span class="o">=</span><span class="s1">'mvim'</span>
+<span class="k">fi
 
-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;zshconfig&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;code ~/.zshrc&quot;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ohmyzsh&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;code ~/.oh-my-zsh&quot;&lt;/span&gt;
+</span><span class="nb">alias </span><span class="nv">zshconfig</span><span class="o">=</span><span class="s2">"code ~/.zshrc"</span>
+<span class="nb">alias </span><span class="nv">ohmyzsh</span><span class="o">=</span><span class="s2">"code ~/.oh-my-zsh"</span>
 
-&lt;span class=&quot;nv&quot;&gt;SPACESHIP_PROMPT_ORDER&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=(&lt;/span&gt;
-  user          &lt;span class=&quot;c&quot;&gt;# Username section&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;dir&lt;/span&gt;           &lt;span class=&quot;c&quot;&gt;# Current directory section&lt;/span&gt;
-  host          &lt;span class=&quot;c&quot;&gt;# Hostname section&lt;/span&gt;
-  git           &lt;span class=&quot;c&quot;&gt;# Git section (git_branch + git_status)&lt;/span&gt;
-  exec_time     &lt;span class=&quot;c&quot;&gt;# Execution time&lt;/span&gt;
-  vi_mode       &lt;span class=&quot;c&quot;&gt;# Vi-mode indicator&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;jobs&lt;/span&gt;          &lt;span class=&quot;c&quot;&gt;# Background jobs indicator&lt;/span&gt;
-  exit_code     &lt;span class=&quot;c&quot;&gt;# Exit code section&lt;/span&gt;
-  char          &lt;span class=&quot;c&quot;&gt;# Prompt character&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;SPACESHIP_USER_SHOW&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;always
-&lt;span class=&quot;nv&quot;&gt;SPACESHIP_PROMPT_ADD_NEWLINE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;false
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;SPACESHIP_CHAR_SYMBOL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;$&quot;&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;SPACESHIP_CHAR_SUFFIX&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot; &quot;&lt;/span&gt;
+<span class="nv">SPACESHIP_PROMPT_ORDER</span><span class="o">=(</span>
+  user          <span class="c"># Username section</span>
+  <span class="nb">dir</span>           <span class="c"># Current directory section</span>
+  host          <span class="c"># Hostname section</span>
+  git           <span class="c"># Git section (git_branch + git_status)</span>
+  exec_time     <span class="c"># Execution time</span>
+  vi_mode       <span class="c"># Vi-mode indicator</span>
+  <span class="nb">jobs</span>          <span class="c"># Background jobs indicator</span>
+  exit_code     <span class="c"># Exit code section</span>
+  char          <span class="c"># Prompt character</span>
+<span class="o">)</span>
+<span class="nv">SPACESHIP_USER_SHOW</span><span class="o">=</span>always
+<span class="nv">SPACESHIP_PROMPT_ADD_NEWLINE</span><span class="o">=</span><span class="nb">false
+</span><span class="nv">SPACESHIP_CHAR_SYMBOL</span><span class="o">=</span><span class="s2">"$"</span>
+<span class="nv">SPACESHIP_CHAR_SUFFIX</span><span class="o">=</span><span class="s2">" "</span>
 
-&lt;span class=&quot;c&quot;&gt;### Added by Zinit&apos;s installer&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[[&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;/.local/share/zinit/zinit.git/zinit.zsh &lt;span class=&quot;o&quot;&gt;]]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then
-    &lt;/span&gt;print &lt;span class=&quot;nt&quot;&gt;-P&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f&quot;&lt;/span&gt;
-    &lt;span class=&quot;nb&quot;&gt;command mkdir&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/.local/share/zinit&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;command chmod &lt;/span&gt;g-rwX &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/.local/share/zinit&quot;&lt;/span&gt;
-    &lt;span class=&quot;nb&quot;&gt;command &lt;/span&gt;git clone https://github.com/zdharma-continuum/zinit &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/.local/share/zinit/zinit.git&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-        print &lt;span class=&quot;nt&quot;&gt;-P&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;%F{33} %F{34}Installation successful.%f%b&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-        print &lt;span class=&quot;nt&quot;&gt;-P&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;%F{160} The clone has failed.%f%b&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;fi
+<span class="c">### Added by Zinit's installer</span>
+<span class="k">if</span> <span class="o">[[</span> <span class="o">!</span> <span class="nt">-f</span> <span class="nv">$HOME</span>/.local/share/zinit/zinit.git/zinit.zsh <span class="o">]]</span><span class="p">;</span> <span class="k">then
+    </span>print <span class="nt">-P</span> <span class="s2">"%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f"</span>
+    <span class="nb">command mkdir</span> <span class="nt">-p</span> <span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/.local/share/zinit"</span> <span class="o">&amp;&amp;</span> <span class="nb">command chmod </span>g-rwX <span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/.local/share/zinit"</span>
+    <span class="nb">command </span>git clone https://github.com/zdharma-continuum/zinit <span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/.local/share/zinit/zinit.git"</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+        print <span class="nt">-P</span> <span class="s2">"%F{33} %F{34}Installation successful.%f%b"</span> <span class="o">||</span> <span class="se">\</span>
+        print <span class="nt">-P</span> <span class="s2">"%F{160} The clone has failed.%f%b"</span>
+<span class="k">fi
 
-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/.local/share/zinit/zinit.git/zinit.zsh&quot;&lt;/span&gt;
-autoload &lt;span class=&quot;nt&quot;&gt;-Uz&lt;/span&gt; _zinit
-&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;+_comps&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; _comps[zinit]&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;_zinit
+</span><span class="nb">source</span> <span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/.local/share/zinit/zinit.git/zinit.zsh"</span>
+autoload <span class="nt">-Uz</span> _zinit
+<span class="o">((</span> <span class="k">${</span><span class="p">+_comps</span><span class="k">}</span> <span class="o">))</span> <span class="o">&amp;&amp;</span> _comps[zinit]<span class="o">=</span>_zinit
 
-&lt;span class=&quot;c&quot;&gt;# Load a few important annexes, without Turbo&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# (this is currently required for annexes)&lt;/span&gt;
-zinit light-mode &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-    zdharma-continuum/zinit-annex-as-monitor &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-    zdharma-continuum/zinit-annex-bin-gem-node &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-    zdharma-continuum/zinit-annex-patch-dl &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+<span class="c"># Load a few important annexes, without Turbo</span>
+<span class="c"># (this is currently required for annexes)</span>
+zinit light-mode <span class="k">for</span> <span class="se">\</span>
+    zdharma-continuum/zinit-annex-as-monitor <span class="se">\</span>
+    zdharma-continuum/zinit-annex-bin-gem-node <span class="se">\</span>
+    zdharma-continuum/zinit-annex-patch-dl <span class="se">\</span>
     zdharma-continuum/zinit-annex-rust
 
-&lt;span class=&quot;c&quot;&gt;### End of Zinit&apos;s installer chunk&lt;/span&gt;
+<span class="c">### End of Zinit's installer chunk</span>
 zinit light zdharma/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</code></pre></div></div>
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;settings.json (vscode)&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">settings.json (vscode)</code></p>
+</blockquote>
 
-&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;workbench.tree.indent&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;files.exclude&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;**/*.pyc&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-            &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;when&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;$(basename).py&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;**/__pycache__&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;workbench.iconTheme&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;vscode-icons&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;workbench.editorAssociations&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;*.ipynb&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;jupyter-notebook&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Python&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;rules&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;python.linting.pylintEnabled&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;python.linting.flake8Enabled&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;python.linting.enabled&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Python&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;formatting&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;rules&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;python.formatting.provider&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;black&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;python.formatting.blackArgs&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-        &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;--line-length&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-        &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;120&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;python.linting.flake8Args&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-        &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;--max-line-length=120&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-        &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;--ignore=E402,F841,E302,E305&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Editor&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;editor.fontFamily&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;JetBrains Mono&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;editor.fontSize&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;14&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;editor.fontLigatures&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Editor&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Rules&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;editor.rulers&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-        &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;88&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-        &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;121&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;editor.formatOnSave&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;editor.tabSize&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;[ruby]&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;editor.tabSize&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;HTML&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Rules&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;[html]&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;editor.formatOnSave&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;html.format.wrapLineLength&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;html.format.wrapAttributes&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;aligned-multiple&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;html.format.indentHandlebars&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;html.format.preserveNewLines&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;workbench.colorTheme&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Dracula&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Terminal&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Rules&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;terminal.integrated.fontSize&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;14&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;terminal.integrated.lineHeight&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;terminal.integrated.fontFamily&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;NotoSansMono Nerd Font&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;terminal.integrated.fontWeightBold&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;normal&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;terminal.integrated.tabs.enabled&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;editor.renderWhitespace&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;trailing&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;files.maxMemoryForLargeFilesMB&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8192&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;python.defaultInterpreterPath&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/bin/python&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;notebook.cellToolbarLocation&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;default&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;right&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;jupyter-notebook&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;left&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;solargraph.diagnostics&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;vscode-pets.position&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;explorer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;vscode-pets.theme&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;forest&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;vscode-pets.petSize&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;medium&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;vscode-pets.petType&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;rubber-duck&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;security.workspace.trust.untrustedFiles&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;open&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>João Pedro</name><email>pedrochaveslimas3@gmail.com</email></author><category term="config" /><summary type="html">So, it’s not big news that more often than not we need to wipe our workstations due to a large number of files already being created or just for the sake of doing so. My biggest problem with re-installing my Linux distro is the time that takes to configure everything all over again. So, instead of googling everything, I’ve chosen to register most of the programs that I need to install after a fresh wipe of the OS and how I deal with the configuration of all of them and some of my dotfiles for an easier copy and paste for future wipes. Programs list zsh oh-my-zsh asdf vscode 1password postgres terminal Just to make sure we have everything we’ll need before hand, run this: $ sudo pacman-mirrors --fasttrack &amp;amp;&amp;amp; sudo pacman -Syyu $ sudo pacman -S base base-devel git yay lm_sensors $ yay -S google-chrome visual-studio-code-bin After you system is updated, let’s install the remaining tools. Zsh Zsh is a shell designed for interactive use, although it is also a powerful scripting language. Many of the useful features of bash, ksh, and tcsh were incorporated into zsh; many original features were added. $ sudo pacman -S zsh $ chsh -s $(which zsh) $ echo $SHELL Oh my zsh I install this because it’s easier to setup some themes on my shell. sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot; SpaceShip Spaceship is a minimalistic, powerful and extremely customizable zsh prompt. It combines everything you may need for convenient work, without unnecessary complications, like a real spaceship. git clone https://github.com/spaceship-prompt/spaceship-prompt.git &quot;$ZSH_CUSTOM/themes/spaceship-prompt&quot; --depth=1 ln -s &quot;$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme&quot; &quot;$ZSH_CUSTOM/themes/spaceship.zsh-theme&quot; # Set ZSH_THEME=&quot;spaceship&quot; in your .zshrc. Zinit Zinit is a flexible and fast Zshell plugin manager that will allow you to install everything from GitHub and other sites. sh -c &quot;$(curl -fsSL https://git.io/zinit-install)&quot; # Add the next three lines after this part: &apos;### End of ZInit&apos;s installer chunk&apos; zinit light zdharma/fast-syntax-highlighting zinit light zsh-users/zsh-autosuggestions zinit light zsh-users/zsh-completions Github SSH $ ssh-keygen -t ed25519 -C &quot;your_email@example.com&quot; $ eval &quot;$(ssh-agent -s)&quot; $ ssh-add ~/.ssh/id_ed25519 # Then just &apos;cat&apos; the id_ed25519.pub and add it in the github ssh settings VSCode Visual Studio Code is pretty straight forward. You just need to click on the Login to Sync config option and it’s pretty much all done after you logged in successfully. Dotfiles .zshrc # export PATH=$HOME/bin:/usr/local/bin:$PATH . $HOME/.asdf/asdf.sh export ZSH=&quot;$HOME/.oh-my-zsh&quot; ZSH_THEME=&quot;spaceship&quot; plugins=(git) source $ZSH/oh-my-zsh.sh # User configuration export MANPATH=&quot;/usr/local/man:$MANPATH&quot; export LANG=en_US.UTF-8 # Preferred editor for local and remote sessions if [[ -n $SSH_CONNECTION ]]; then export EDITOR=&apos;vim&apos; else export EDITOR=&apos;mvim&apos; fi alias zshconfig=&quot;code ~/.zshrc&quot; alias ohmyzsh=&quot;code ~/.oh-my-zsh&quot; SPACESHIP_PROMPT_ORDER=( user # Username section dir # Current directory section host # Hostname section git # Git section (git_branch + git_status) exec_time # Execution time vi_mode # Vi-mode indicator jobs # Background jobs indicator exit_code # Exit code section char # Prompt character ) SPACESHIP_USER_SHOW=always SPACESHIP_PROMPT_ADD_NEWLINE=false SPACESHIP_CHAR_SYMBOL=&quot;$&quot; SPACESHIP_CHAR_SUFFIX=&quot; &quot; ### Added by Zinit&apos;s installer if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then print -P &quot;%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f&quot; command mkdir -p &quot;$HOME/.local/share/zinit&quot; &amp;amp;&amp;amp; command chmod g-rwX &quot;$HOME/.local/share/zinit&quot; command git clone https://github.com/zdharma-continuum/zinit &quot;$HOME/.local/share/zinit/zinit.git&quot; &amp;amp;&amp;amp; \ print -P &quot;%F{33} %F{34}Installation successful.%f%b&quot; || \ print -P &quot;%F{160} The clone has failed.%f%b&quot; fi source &quot;$HOME/.local/share/zinit/zinit.git/zinit.zsh&quot; autoload -Uz _zinit (( ${+_comps} )) &amp;amp;&amp;amp; _comps[zinit]=_zinit # Load a few important annexes, without Turbo # (this is currently required for annexes) zinit light-mode for \ zdharma-continuum/zinit-annex-as-monitor \ zdharma-continuum/zinit-annex-bin-gem-node \ zdharma-continuum/zinit-annex-patch-dl \ zdharma-continuum/zinit-annex-rust ### End of Zinit&apos;s installer chunk zinit light zdharma/fast-syntax-highlighting zinit light zsh-users/zsh-autosuggestions zinit light zsh-users/zsh-completions settings.json (vscode) { &quot;workbench.tree.indent&quot;: 12, &quot;files.exclude&quot;: { &quot;**/*.pyc&quot;: { &quot;when&quot;: &quot;$(basename).py&quot; }, &quot;**/__pycache__&quot;: true, }, &quot;workbench.iconTheme&quot;: &quot;vscode-icons&quot;, &quot;workbench.editorAssociations&quot;: { &quot;*.ipynb&quot;: &quot;jupyter-notebook&quot; }, // Python rules &quot;python.linting.pylintEnabled&quot;: false, &quot;python.linting.flake8Enabled&quot;: true, &quot;python.linting.enabled&quot;: true, // Python formatting rules &quot;python.formatting.provider&quot;: &quot;black&quot;, &quot;python.formatting.blackArgs&quot;: [ &quot;--line-length&quot;, &quot;120&quot; ], &quot;python.linting.flake8Args&quot;: [ &quot;--max-line-length=120&quot;, &quot;--ignore=E402,F841,E302,E305&quot;, ], // Editor font &quot;editor.fontFamily&quot;: &quot;JetBrains Mono&quot;, &quot;editor.fontSize&quot;: 14, &quot;editor.fontLigatures&quot;: true, // Editor Rules &quot;editor.rulers&quot;: [ 88, 121 ], &quot;editor.formatOnSave&quot;: true, &quot;editor.tabSize&quot;: 4, &quot;[ruby]&quot;: { &quot;editor.tabSize&quot;: 2 }, // HTML Rules &quot;[html]&quot;: { &quot;editor.formatOnSave&quot;: false }, &quot;html.format.wrapLineLength&quot;: 0, &quot;html.format.wrapAttributes&quot;: &quot;aligned-multiple&quot;, &quot;html.format.indentHandlebars&quot;: true, &quot;html.format.preserveNewLines&quot;: false, &quot;workbench.colorTheme&quot;: &quot;Dracula&quot;, // Terminal Rules &quot;terminal.integrated.fontSize&quot;: 14, &quot;terminal.integrated.lineHeight&quot;: 1.1, &quot;terminal.integrated.fontFamily&quot;: &quot;NotoSansMono Nerd Font&quot;, &quot;terminal.integrated.fontWeightBold&quot;: &quot;normal&quot;, &quot;terminal.integrated.tabs.enabled&quot;: true, &quot;editor.renderWhitespace&quot;: &quot;trailing&quot;, &quot;files.maxMemoryForLargeFilesMB&quot;: 8192, &quot;python.defaultInterpreterPath&quot;: &quot;/bin/python&quot;, &quot;notebook.cellToolbarLocation&quot;: { &quot;default&quot;: &quot;right&quot;, &quot;jupyter-notebook&quot;: &quot;left&quot; }, &quot;solargraph.diagnostics&quot;: true, &quot;vscode-pets.position&quot;: &quot;explorer&quot;, &quot;vscode-pets.theme&quot;: &quot;forest&quot;, &quot;vscode-pets.petSize&quot;: &quot;medium&quot;, &quot;vscode-pets.petType&quot;: &quot;rubber-duck&quot;, &quot;security.workspace.trust.untrustedFiles&quot;: &quot;open&quot;, }</summary></entry><entry><title type="html">Ruby % Notation</title><link href="https://sosolidkk.github.io//2022/02/04/ruby-notation.html" rel="alternate" type="text/html" title="Ruby % Notation" /><published>2022-02-04T23:20:00+00:00</published><updated>2022-02-04T23:20:00+00:00</updated><id>https://sosolidkk.github.io//2022/02/04/ruby-notation</id><content type="html" xml:base="https://sosolidkk.github.io//2022/02/04/ruby-notation.html">&lt;p&gt;For a long time, my Rubocop always kept complaining about the list of symbols defined in my code and, I also didn’t search for the reason behind it. It states that:&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;Prefer %i to the literal array syntax when you need an array of symbols (and you don’t need to maintain Ruby 1.9 compatibility). Apply this rule only to arrays with two or more elements.&lt;/p&gt;
-&lt;/blockquote&gt;
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"workbench.tree.indent"</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"files.exclude"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"**/*.pyc"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"when"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$(basename).py"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"**/__pycache__"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"workbench.iconTheme"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vscode-icons"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"workbench.editorAssociations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"*.ipynb"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jupyter-notebook"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="err">//</span><span class="w"> </span><span class="err">Python</span><span class="w"> </span><span class="err">rules</span><span class="w">
+    </span><span class="nl">"python.linting.pylintEnabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"python.linting.flake8Enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"python.linting.enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="err">//</span><span class="w"> </span><span class="err">Python</span><span class="w"> </span><span class="err">formatting</span><span class="w"> </span><span class="err">rules</span><span class="w">
+    </span><span class="nl">"python.formatting.provider"</span><span class="p">:</span><span class="w"> </span><span class="s2">"black"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"python.formatting.blackArgs"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"--line-length"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"120"</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"python.linting.flake8Args"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"--max-line-length=120"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"--ignore=E402,F841,E302,E305"</span><span class="p">,</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="err">//</span><span class="w"> </span><span class="err">Editor</span><span class="w"> </span><span class="err">font</span><span class="w">
+    </span><span class="nl">"editor.fontFamily"</span><span class="p">:</span><span class="w"> </span><span class="s2">"JetBrains Mono"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"editor.fontSize"</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"editor.fontLigatures"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="err">//</span><span class="w"> </span><span class="err">Editor</span><span class="w"> </span><span class="err">Rules</span><span class="w">
+    </span><span class="nl">"editor.rulers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="mi">88</span><span class="p">,</span><span class="w">
+        </span><span class="mi">121</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"editor.formatOnSave"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"editor.tabSize"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"[ruby]"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"editor.tabSize"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="err">//</span><span class="w"> </span><span class="err">HTML</span><span class="w"> </span><span class="err">Rules</span><span class="w">
+    </span><span class="nl">"[html]"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"editor.formatOnSave"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"html.format.wrapLineLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"html.format.wrapAttributes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aligned-multiple"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"html.format.indentHandlebars"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"html.format.preserveNewLines"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"workbench.colorTheme"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dracula"</span><span class="p">,</span><span class="w">
+    </span><span class="err">//</span><span class="w"> </span><span class="err">Terminal</span><span class="w"> </span><span class="err">Rules</span><span class="w">
+    </span><span class="nl">"terminal.integrated.fontSize"</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"terminal.integrated.lineHeight"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"terminal.integrated.fontFamily"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NotoSansMono Nerd Font"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"terminal.integrated.fontWeightBold"</span><span class="p">:</span><span class="w"> </span><span class="s2">"normal"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"terminal.integrated.tabs.enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"editor.renderWhitespace"</span><span class="p">:</span><span class="w"> </span><span class="s2">"trailing"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"files.maxMemoryForLargeFilesMB"</span><span class="p">:</span><span class="w"> </span><span class="mi">8192</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"python.defaultInterpreterPath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/bin/python"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"notebook.cellToolbarLocation"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"default"</span><span class="p">:</span><span class="w"> </span><span class="s2">"right"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"jupyter-notebook"</span><span class="p">:</span><span class="w"> </span><span class="s2">"left"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"solargraph.diagnostics"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"vscode-pets.position"</span><span class="p">:</span><span class="w"> </span><span class="s2">"explorer"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"vscode-pets.theme"</span><span class="p">:</span><span class="w"> </span><span class="s2">"forest"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"vscode-pets.petSize"</span><span class="p">:</span><span class="w"> </span><span class="s2">"medium"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"vscode-pets.petType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rubber-duck"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"security.workspace.trust.untrustedFiles"</span><span class="p">:</span><span class="w"> </span><span class="s2">"open"</span><span class="p">,</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>]]></content><author><name>João Pedro</name><email>pedrochaveslimas3@gmail.com</email></author><category term="config" /><summary type="html"><![CDATA[So, it’s not big news that more often than not we need to wipe our workstations due to a large number of files already being created or just for the sake of doing so. My biggest problem with re-installing my Linux distro is the time that takes to configure everything all over again. So, instead of googling everything, I’ve chosen to register most of the programs that I need to install after a fresh wipe of the OS and how I deal with the configuration of all of them and some of my dotfiles for an easier copy and paste for future wipes. Programs list zsh oh-my-zsh asdf vscode 1password postgres terminal Just to make sure we have everything we’ll need before hand, run this: $ sudo pacman-mirrors --fasttrack &amp;&amp; sudo pacman -Syyu $ sudo pacman -S base base-devel git yay lm_sensors $ yay -S google-chrome visual-studio-code-bin After you system is updated, let’s install the remaining tools. Zsh Zsh is a shell designed for interactive use, although it is also a powerful scripting language. Many of the useful features of bash, ksh, and tcsh were incorporated into zsh; many original features were added. $ sudo pacman -S zsh $ chsh -s $(which zsh) $ echo $SHELL Oh my zsh I install this because it’s easier to setup some themes on my shell. sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" SpaceShip Spaceship is a minimalistic, powerful and extremely customizable zsh prompt. It combines everything you may need for convenient work, without unnecessary complications, like a real spaceship. git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme" # Set ZSH_THEME="spaceship" in your .zshrc. Zinit Zinit is a flexible and fast Zshell plugin manager that will allow you to install everything from GitHub and other sites. sh -c "$(curl -fsSL https://git.io/zinit-install)" # Add the next three lines after this part: '### End of ZInit's installer chunk' zinit light zdharma/fast-syntax-highlighting zinit light zsh-users/zsh-autosuggestions zinit light zsh-users/zsh-completions Github SSH $ ssh-keygen -t ed25519 -C "your_email@example.com" $ eval "$(ssh-agent -s)" $ ssh-add ~/.ssh/id_ed25519 # Then just 'cat' the id_ed25519.pub and add it in the github ssh settings VSCode Visual Studio Code is pretty straight forward. You just need to click on the Login to Sync config option and it’s pretty much all done after you logged in successfully. Dotfiles .zshrc # export PATH=$HOME/bin:/usr/local/bin:$PATH . $HOME/.asdf/asdf.sh export ZSH="$HOME/.oh-my-zsh" ZSH_THEME="spaceship" plugins=(git) source $ZSH/oh-my-zsh.sh # User configuration export MANPATH="/usr/local/man:$MANPATH" export LANG=en_US.UTF-8 # Preferred editor for local and remote sessions if [[ -n $SSH_CONNECTION ]]; then export EDITOR='vim' else export EDITOR='mvim' fi alias zshconfig="code ~/.zshrc" alias ohmyzsh="code ~/.oh-my-zsh" SPACESHIP_PROMPT_ORDER=( user # Username section dir # Current directory section host # Hostname section git # Git section (git_branch + git_status) exec_time # Execution time vi_mode # Vi-mode indicator jobs # Background jobs indicator exit_code # Exit code section char # Prompt character ) SPACESHIP_USER_SHOW=always SPACESHIP_PROMPT_ADD_NEWLINE=false SPACESHIP_CHAR_SYMBOL="$" SPACESHIP_CHAR_SUFFIX=" " ### Added by Zinit's installer if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then print -P "%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f" command mkdir -p "$HOME/.local/share/zinit" &amp;&amp; command chmod g-rwX "$HOME/.local/share/zinit" command git clone https://github.com/zdharma-continuum/zinit "$HOME/.local/share/zinit/zinit.git" &amp;&amp; \ print -P "%F{33} %F{34}Installation successful.%f%b" || \ print -P "%F{160} The clone has failed.%f%b" fi source "$HOME/.local/share/zinit/zinit.git/zinit.zsh" autoload -Uz _zinit (( ${+_comps} )) &amp;&amp; _comps[zinit]=_zinit # Load a few important annexes, without Turbo # (this is currently required for annexes) zinit light-mode for \ zdharma-continuum/zinit-annex-as-monitor \ zdharma-continuum/zinit-annex-bin-gem-node \ zdharma-continuum/zinit-annex-patch-dl \ zdharma-continuum/zinit-annex-rust ### End of Zinit's installer chunk zinit light zdharma/fast-syntax-highlighting zinit light zsh-users/zsh-autosuggestions zinit light zsh-users/zsh-completions settings.json (vscode) { "workbench.tree.indent": 12, "files.exclude": { "**/*.pyc": { "when": "$(basename).py" }, "**/__pycache__": true, }, "workbench.iconTheme": "vscode-icons", "workbench.editorAssociations": { "*.ipynb": "jupyter-notebook" }, // Python rules "python.linting.pylintEnabled": false, "python.linting.flake8Enabled": true, "python.linting.enabled": true, // Python formatting rules "python.formatting.provider": "black", "python.formatting.blackArgs": [ "--line-length", "120" ], "python.linting.flake8Args": [ "--max-line-length=120", "--ignore=E402,F841,E302,E305", ], // Editor font "editor.fontFamily": "JetBrains Mono", "editor.fontSize": 14, "editor.fontLigatures": true, // Editor Rules "editor.rulers": [ 88, 121 ], "editor.formatOnSave": true, "editor.tabSize": 4, "[ruby]": { "editor.tabSize": 2 }, // HTML Rules "[html]": { "editor.formatOnSave": false }, "html.format.wrapLineLength": 0, "html.format.wrapAttributes": "aligned-multiple", "html.format.indentHandlebars": true, "html.format.preserveNewLines": false, "workbench.colorTheme": "Dracula", // Terminal Rules "terminal.integrated.fontSize": 14, "terminal.integrated.lineHeight": 1.1, "terminal.integrated.fontFamily": "NotoSansMono Nerd Font", "terminal.integrated.fontWeightBold": "normal", "terminal.integrated.tabs.enabled": true, "editor.renderWhitespace": "trailing", "files.maxMemoryForLargeFilesMB": 8192, "python.defaultInterpreterPath": "/bin/python", "notebook.cellToolbarLocation": { "default": "right", "jupyter-notebook": "left" }, "solargraph.diagnostics": true, "vscode-pets.position": "explorer", "vscode-pets.theme": "forest", "vscode-pets.petSize": "medium", "vscode-pets.petType": "rubber-duck", "security.workspace.trust.untrustedFiles": "open", }]]></summary></entry><entry><title type="html">Ruby % Notation</title><link href="https://sosolidkk.github.io//2022/02/04/ruby-notation.html" rel="alternate" type="text/html" title="Ruby % Notation" /><published>2022-02-04T23:20:00+00:00</published><updated>2022-02-04T23:20:00+00:00</updated><id>https://sosolidkk.github.io//2022/02/04/ruby-notation</id><content type="html" xml:base="https://sosolidkk.github.io//2022/02/04/ruby-notation.html"><![CDATA[<p>For a long time, my Rubocop always kept complaining about the list of symbols defined in my code and, I also didn’t search for the reason behind it. It states that:</p>
+<blockquote>
+  <p>Prefer %i to the literal array syntax when you need an array of symbols (and you don’t need to maintain Ruby 1.9 compatibility). Apply this rule only to arrays with two or more elements.</p>
+</blockquote>
 
-&lt;p&gt;So after some searching, I’ve found that’s pretty common and, generally, more readable for the developers to use this notation. So here goes a brief resume and examples about them:&lt;/p&gt;
+<p>So after some searching, I’ve found that’s pretty common and, generally, more readable for the developers to use this notation. So here goes a brief resume and examples about them:</p>
 
-&lt;div class=&quot;language-rb highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Yes, they are case sensitive&lt;/span&gt;
-&lt;span class=&quot;sx&quot;&gt;%q[ ]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Non-interpolated String (except for \\ \[ and \])&lt;/span&gt;
-&lt;span class=&quot;sx&quot;&gt;%Q[ ]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Interpolated String (default)&lt;/span&gt;
-&lt;span class=&quot;sr&quot;&gt;%r[ ]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Interpolated Regexp (flags can appear after the closing delimiter)&lt;/span&gt;
-&lt;span class=&quot;sx&quot;&gt;%i[ ]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Non-interpolated Array of symbols, separated by whitespace&lt;/span&gt;
-&lt;span class=&quot;sx&quot;&gt;%I[ ]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Interpolated Array of symbols, separated by whitespace&lt;/span&gt;
-&lt;span class=&quot;sx&quot;&gt;%w[ ]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Non-interpolated Array of words, separated by whitespace&lt;/span&gt;
-&lt;span class=&quot;sx&quot;&gt;%W[ ]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Interpolated Array of words, separated by whitespace&lt;/span&gt;
-&lt;span class=&quot;sx&quot;&gt;%x[ ]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Interpolated shell command&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Yes, they are case sensitive</span>
+<span class="sx">%q[ ]</span> <span class="c1"># Non-interpolated String (except for \\ \[ and \])</span>
+<span class="sx">%Q[ ]</span> <span class="c1"># Interpolated String (default)</span>
+<span class="sr">%r[ ]</span> <span class="c1"># Interpolated Regexp (flags can appear after the closing delimiter)</span>
+<span class="sx">%i[ ]</span> <span class="c1"># Non-interpolated Array of symbols, separated by whitespace</span>
+<span class="sx">%I[ ]</span> <span class="c1"># Interpolated Array of symbols, separated by whitespace</span>
+<span class="sx">%w[ ]</span> <span class="c1"># Non-interpolated Array of words, separated by whitespace</span>
+<span class="sx">%W[ ]</span> <span class="c1"># Interpolated Array of words, separated by whitespace</span>
+<span class="sx">%x[ ]</span> <span class="c1"># Interpolated shell command</span>
+</code></pre></div></div>
 
-&lt;h4 id=&quot;q&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%q&lt;/code&gt;&lt;/h4&gt;
-&lt;div class=&quot;language-rb highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;sx&quot;&gt;%q{one\ntwo\n#{ 1 + 2 }}&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# =&amp;gt; &quot;one\\ntwo\\n\#{ 1 + 2 }&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h4 id=&quot;q-1&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%Q&lt;/code&gt;&lt;/h4&gt;
-&lt;div class=&quot;language-rb highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;sx&quot;&gt;%Q{one&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;two&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# =&amp;gt; &quot;one\ntwo\n3&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h4 id=&quot;r&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%r&lt;/code&gt;&lt;/h4&gt;
-&lt;div class=&quot;language-rb highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;nemo&apos;&lt;/span&gt;
-&lt;span class=&quot;sr&quot;&gt;%r/&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/i&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# =&amp;gt; /nemo/i&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h4 id=&quot;i&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%i&lt;/code&gt;&lt;/h4&gt;
-&lt;div class=&quot;language-rb highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;sx&quot;&gt;%i[one two three]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# after Ruby 2.0&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# =&amp;gt; [:one, :two, :three]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h4 id=&quot;i-1&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%I&lt;/code&gt;&lt;/h4&gt;
-&lt;div class=&quot;language-rb highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;searching&apos;&lt;/span&gt;
-&lt;span class=&quot;sx&quot;&gt;%I[&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt; for nemo]&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# =&amp;gt; [:searching, :for, :nemo]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h4 id=&quot;w&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%w&lt;/code&gt;&lt;/h4&gt;
-&lt;div class=&quot;language-rb highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;sx&quot;&gt;%w[one two three]&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# =&amp;gt; [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h4 id=&quot;w-1&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%W&lt;/code&gt;&lt;/h4&gt;
-&lt;div class=&quot;language-rb highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;one&apos;&lt;/span&gt;
-&lt;span class=&quot;sx&quot;&gt;%W[&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt; two three]&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# =&amp;gt; [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h4 id=&quot;x&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%x&lt;/code&gt;&lt;/h4&gt;
-&lt;div class=&quot;language-rb highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;sx&quot;&gt;%x{ruby --copyright}&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# =&amp;gt; &quot;ruby - Copyright (C) 1993-2020 Yukihiro Matsumoto\n&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h4 id=&quot;references&quot;&gt;References&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;https://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Literals#The_.25_Notation&quot;&gt;Wikibooks - Ruby Programming&lt;/a&gt;&lt;/p&gt;
+<h4 id="q"><code class="language-plaintext highlighter-rouge">%q</code></h4>
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="sx">%q{one\ntwo\n#{ 1 + 2 }}</span>
+<span class="c1"># =&gt; "one\\ntwo\\n\#{ 1 + 2 }"</span>
+</code></pre></div></div>
+<h4 id="q-1"><code class="language-plaintext highlighter-rouge">%Q</code></h4>
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="sx">%Q{one</span><span class="se">\n</span><span class="sx">two</span><span class="se">\n</span><span class="si">#{</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span> <span class="si">}</span><span class="sx">}</span>
+<span class="c1"># =&gt; "one\ntwo\n3"</span>
+</code></pre></div></div>
+<h4 id="r"><code class="language-plaintext highlighter-rouge">%r</code></h4>
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">name</span> <span class="o">=</span> <span class="s1">'nemo'</span>
+<span class="sr">%r/</span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="sr">/i</span>
+<span class="c1"># =&gt; /nemo/i</span>
+</code></pre></div></div>
+<h4 id="i"><code class="language-plaintext highlighter-rouge">%i</code></h4>
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="sx">%i[one two three]</span> <span class="c1"># after Ruby 2.0</span>
+<span class="c1"># =&gt; [:one, :two, :three]</span>
+</code></pre></div></div>
+<h4 id="i-1"><code class="language-plaintext highlighter-rouge">%I</code></h4>
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">value</span> <span class="o">=</span> <span class="s1">'searching'</span>
+<span class="sx">%I[</span><span class="si">#{</span><span class="n">value</span><span class="si">}</span><span class="sx"> for nemo]</span>
+<span class="c1"># =&gt; [:searching, :for, :nemo]</span>
+</code></pre></div></div>
+<h4 id="w"><code class="language-plaintext highlighter-rouge">%w</code></h4>
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="sx">%w[one two three]</span>
+<span class="c1"># =&gt; ["one", "two", "three"]</span>
+</code></pre></div></div>
+<h4 id="w-1"><code class="language-plaintext highlighter-rouge">%W</code></h4>
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">value</span> <span class="o">=</span> <span class="s1">'one'</span>
+<span class="sx">%W[</span><span class="si">#{</span><span class="n">value</span><span class="si">}</span><span class="sx"> two three]</span>
+<span class="c1"># =&gt; ["one", "two", "three"]</span>
+</code></pre></div></div>
+<h4 id="x"><code class="language-plaintext highlighter-rouge">%x</code></h4>
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="sx">%x{ruby --copyright}</span>
+<span class="c1"># =&gt; "ruby - Copyright (C) 1993-2020 Yukihiro Matsumoto\n"</span>
+</code></pre></div></div>
+<h4 id="references">References</h4>
+<p><a href="https://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Literals#The_.25_Notation">Wikibooks - Ruby Programming</a></p>
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/rubocop/ruby-style-guide#percent-w&quot;&gt;Rubocop Style Guide&lt;/a&gt;&lt;/p&gt;</content><author><name>João Pedro</name><email>pedrochaveslimas3@gmail.com</email></author><category term="ruby" /><category term="tips" /><summary type="html">For a long time, my Rubocop always kept complaining about the list of symbols defined in my code and, I also didn’t search for the reason behind it. It states that: Prefer %i to the literal array syntax when you need an array of symbols (and you don’t need to maintain Ruby 1.9 compatibility). Apply this rule only to arrays with two or more elements. So after some searching, I’ve found that’s pretty common and, generally, more readable for the developers to use this notation. So here goes a brief resume and examples about them: # Yes, they are case sensitive %q[ ] # Non-interpolated String (except for \\ \[ and \]) %Q[ ] # Interpolated String (default) %r[ ] # Interpolated Regexp (flags can appear after the closing delimiter) %i[ ] # Non-interpolated Array of symbols, separated by whitespace %I[ ] # Interpolated Array of symbols, separated by whitespace %w[ ] # Non-interpolated Array of words, separated by whitespace %W[ ] # Interpolated Array of words, separated by whitespace %x[ ] # Interpolated shell command %q %q{one\ntwo\n#{ 1 + 2 }} # =&amp;gt; &quot;one\\ntwo\\n\#{ 1 + 2 }&quot; %Q %Q{one\ntwo\n#{ 1 + 2 }} # =&amp;gt; &quot;one\ntwo\n3&quot; %r name = &apos;nemo&apos; %r/#{name}/i # =&amp;gt; /nemo/i %i %i[one two three] # after Ruby 2.0 # =&amp;gt; [:one, :two, :three] %I value = &apos;searching&apos; %I[#{value} for nemo] # =&amp;gt; [:searching, :for, :nemo] %w %w[one two three] # =&amp;gt; [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;] %W value = &apos;one&apos; %W[#{value} two three] # =&amp;gt; [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;] %x %x{ruby --copyright} # =&amp;gt; &quot;ruby - Copyright (C) 1993-2020 Yukihiro Matsumoto\n&quot; References Wikibooks - Ruby Programming Rubocop Style Guide</summary></entry><entry><title type="html">Choices</title><link href="https://sosolidkk.github.io//2022/01/07/choices.html" rel="alternate" type="text/html" title="Choices" /><published>2022-01-07T01:22:00+00:00</published><updated>2022-01-07T01:22:00+00:00</updated><id>https://sosolidkk.github.io//2022/01/07/choices</id><content type="html" xml:base="https://sosolidkk.github.io//2022/01/07/choices.html">&lt;p&gt;This week I was watching the video &lt;a href=&quot;https://www.youtube.com/watch?v=3VCxkMvKUnA&quot;&gt;I wasted my 20s&lt;/a&gt; from the Youtuber &lt;a href=&quot;https://www.youtube.com/user/Tychos1&quot;&gt;Joshua Fluke&lt;/a&gt;. I like some of the videos he posts, especially the series where he roasts several job openings or videos on the theme of &lt;strong&gt;One day in the life of a software developer&lt;/strong&gt; that don’t quite fit the reality of many, or is it just pure marketing for the company that employee works for. I don’t take the content brought so seriously because anyway, it’s always important to filter what you should consume or not. When starting this video, I imagined it would be the same as always, people advising on what they would do if they could go back in time, what they did to make up for a lost time, and the glimpse that came when they realized they were wasting their lives at that moment. As I said, I avoid watching this type of video because it gives me the idea that if they managed to do X and Y, it should also be possible for me to do the same X and Y and I end up not considering the small events that happened during the entire process. In this specific video that I mentioned above, I blocked as much of this type of message as possible and filtered it into some points of interest that I identified, such as:&lt;/p&gt;
+<p><a href="https://github.com/rubocop/ruby-style-guide#percent-w">Rubocop Style Guide</a></p>]]></content><author><name>João Pedro</name><email>pedrochaveslimas3@gmail.com</email></author><category term="ruby" /><category term="tips" /><summary type="html"><![CDATA[For a long time, my Rubocop always kept complaining about the list of symbols defined in my code and, I also didn’t search for the reason behind it. It states that: Prefer %i to the literal array syntax when you need an array of symbols (and you don’t need to maintain Ruby 1.9 compatibility). Apply this rule only to arrays with two or more elements. So after some searching, I’ve found that’s pretty common and, generally, more readable for the developers to use this notation. So here goes a brief resume and examples about them: # Yes, they are case sensitive %q[ ] # Non-interpolated String (except for \\ \[ and \]) %Q[ ] # Interpolated String (default) %r[ ] # Interpolated Regexp (flags can appear after the closing delimiter) %i[ ] # Non-interpolated Array of symbols, separated by whitespace %I[ ] # Interpolated Array of symbols, separated by whitespace %w[ ] # Non-interpolated Array of words, separated by whitespace %W[ ] # Interpolated Array of words, separated by whitespace %x[ ] # Interpolated shell command %q %q{one\ntwo\n#{ 1 + 2 }} # =&gt; "one\\ntwo\\n\#{ 1 + 2 }" %Q %Q{one\ntwo\n#{ 1 + 2 }} # =&gt; "one\ntwo\n3" %r name = 'nemo' %r/#{name}/i # =&gt; /nemo/i %i %i[one two three] # after Ruby 2.0 # =&gt; [:one, :two, :three] %I value = 'searching' %I[#{value} for nemo] # =&gt; [:searching, :for, :nemo] %w %w[one two three] # =&gt; ["one", "two", "three"] %W value = 'one' %W[#{value} two three] # =&gt; ["one", "two", "three"] %x %x{ruby --copyright} # =&gt; "ruby - Copyright (C) 1993-2020 Yukihiro Matsumoto\n" References Wikibooks - Ruby Programming Rubocop Style Guide]]></summary></entry><entry><title type="html">Choices</title><link href="https://sosolidkk.github.io//2022/01/07/choices.html" rel="alternate" type="text/html" title="Choices" /><published>2022-01-07T01:22:00+00:00</published><updated>2022-01-07T01:22:00+00:00</updated><id>https://sosolidkk.github.io//2022/01/07/choices</id><content type="html" xml:base="https://sosolidkk.github.io//2022/01/07/choices.html"><![CDATA[<p>This week I was watching the video <a href="https://www.youtube.com/watch?v=3VCxkMvKUnA">I wasted my 20s</a> from the Youtuber <a href="https://www.youtube.com/user/Tychos1">Joshua Fluke</a>. I like some of the videos he posts, especially the series where he roasts several job openings or videos on the theme of <strong>One day in the life of a software developer</strong> that don’t quite fit the reality of many, or is it just pure marketing for the company that employee works for. I don’t take the content brought so seriously because anyway, it’s always important to filter what you should consume or not. When starting this video, I imagined it would be the same as always, people advising on what they would do if they could go back in time, what they did to make up for a lost time, and the glimpse that came when they realized they were wasting their lives at that moment. As I said, I avoid watching this type of video because it gives me the idea that if they managed to do X and Y, it should also be possible for me to do the same X and Y and I end up not considering the small events that happened during the entire process. In this specific video that I mentioned above, I blocked as much of this type of message as possible and filtered it into some points of interest that I identified, such as:</p>
 
-&lt;p&gt;The author of the video quotes a phrase that stuck in my head, and like him, I’m also a person who likes animals a lot. The phrase is: &lt;strong&gt;be the person your dog thinks you are&lt;/strong&gt;. Usually, the dog is just a companion that we can live without, however much it is included in our daily lives and there is that emotional attachment. But for the dog, we are his world. He has nothing left, or at least he can’t excoriate anything but us. It’s as if we were the ideal entity for him, who provides water and food, takes him for walks, caresses, etc.&lt;/p&gt;
+<p>The author of the video quotes a phrase that stuck in my head, and like him, I’m also a person who likes animals a lot. The phrase is: <strong>be the person your dog thinks you are</strong>. Usually, the dog is just a companion that we can live without, however much it is included in our daily lives and there is that emotional attachment. But for the dog, we are his world. He has nothing left, or at least he can’t excoriate anything but us. It’s as if we were the ideal entity for him, who provides water and food, takes him for walks, caresses, etc.</p>
 
-&lt;p&gt;Another point was the question of games. Don’t get me wrong, I’m as addicted, or once was, as any other teenager who grew up during WOW, RuneScape, CoD, Battlefield, and Halo between 2005 and 2013. I’ve played so many games I can’t even remember half of it anymore, I’ve lost hours and hours in RPGs and Action Rogue Likes. Playing games has always been a way of escape from difficult times and when I wanted to let go of anything that had been occupying my mind. But there comes a stage in life when games no longer have the same flavor, you no longer have time or desire to spend 8 hours a day on a game that will probably undergo a rework in a few months with a new patch or a new season pass. You feel bad about playing because you know you could be doing something more productive like reading a book, going out, or developing a new hobby.&lt;/p&gt;
+<p>Another point was the question of games. Don’t get me wrong, I’m as addicted, or once was, as any other teenager who grew up during WOW, RuneScape, CoD, Battlefield, and Halo between 2005 and 2013. I’ve played so many games I can’t even remember half of it anymore, I’ve lost hours and hours in RPGs and Action Rogue Likes. Playing games has always been a way of escape from difficult times and when I wanted to let go of anything that had been occupying my mind. But there comes a stage in life when games no longer have the same flavor, you no longer have time or desire to spend 8 hours a day on a game that will probably undergo a rework in a few months with a new patch or a new season pass. You feel bad about playing because you know you could be doing something more productive like reading a book, going out, or developing a new hobby.</p>
 
-&lt;p&gt;After those two sentences, that’s when I realized that I was in the same situation Joshua found himself in. 24 years old, playing unwillingly to keep the habit alive knowing he could do a lot more. That’s when I realized that if I didn’t change, I would probably regret it when I was 29 and close to turning 30, I would have a similar thought of how my 20s could be very different if I had gone in different directions. That said, to start the year well, I will try to do a reflection after the turnaround about the past year, describe my goals and see if I managed to reach them in the following year, talk a little about what touched me and marked me throughout the year.&lt;/p&gt;
+<p>After those two sentences, that’s when I realized that I was in the same situation Joshua found himself in. 24 years old, playing unwillingly to keep the habit alive knowing he could do a lot more. That’s when I realized that if I didn’t change, I would probably regret it when I was 29 and close to turning 30, I would have a similar thought of how my 20s could be very different if I had gone in different directions. That said, to start the year well, I will try to do a reflection after the turnaround about the past year, describe my goals and see if I managed to reach them in the following year, talk a little about what touched me and marked me throughout the year.</p>
 
-&lt;h3 id=&quot;goals-for-2022&quot;&gt;Goals for 2022&lt;/h3&gt;
+<h3 id="goals-for-2022---finished">Goals for 2022 - <strong>Finished</strong></h3>
 
-&lt;ul class=&quot;task-list&quot;&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;&lt;strong&gt;Read five or more books&lt;/strong&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;I have a lot of books in my shelf just waiting to be read since 2020. So I’m just trying to get back with an old habit that I already had&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;&lt;strong&gt;Draw more&lt;/strong&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;Just like reading, drawing was something that I enjoyed a lot as a kid and teenager. But due to life, it was also something that I stopped doing abruptly.&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;&lt;strong&gt;Maintain a healthy diet and life style&lt;/strong&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;No need to explain.&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;&lt;strong&gt;Fill my technical gaps in my current Job at codeminer&lt;/strong&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;No need to explain too.&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;&lt;strong&gt;Try to gain at least one raise in salary this year&lt;/strong&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;No need to explain too. And no, I’m not looking right now for a new Job. I’m happy with the one i got right now and I still have a lot to learn from the people that I work every single day.&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;&lt;strong&gt;Improve my english speaking&lt;/strong&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;This one is needed to achieve my future goals of leaving Brazil. By any means my english if bad, it’s just that I don’t feel confortable enought with my speaking. Writing, reading and listening is all good and fine for now. Also, one of the reasons for this blog is to improve my writing too.&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>Read five or more books</strong>
+    <blockquote>
+      <p>I have a lot of books in my shelf just waiting to be read since 2020. So I’m just trying to get back with an old habit that I already had</p>
+    </blockquote>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><strong>Draw more</strong>
+    <blockquote>
+      <p>Just like reading, drawing was something that I enjoyed a lot as a kid and teenager. But due to life, it was also something that I stopped doing abruptly.</p>
+    </blockquote>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>Maintain a healthy diet and life style</strong>
+    <blockquote>
+      <p>No need to explain.</p>
+    </blockquote>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><strong>Fill my technical gaps in my current Job at Codeminer</strong>
+    <blockquote>
+      <p>No need to explain too.</p>
+    </blockquote>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><strong>Try to gain at least one raise in salary this year</strong>
+    <blockquote>
+      <p>No need to explain too. And no, I’m not looking right now for a new Job. I’m happy with the one i got right now and I still have a lot to learn from the people that I work every single day.</p>
+    </blockquote>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><strong>Improve my english speaking</strong>
+    <blockquote>
+      <p>This one is needed to achieve my future goals of leaving Brazil. By any means my english if bad, it’s just that I don’t feel confortable enought with my speaking. Writing, reading and listening is all good and fine for now. Also, one of the reasons for this blog is to improve my writing too.</p>
+    </blockquote>
+  </li>
+</ul>
 
-&lt;p&gt;&lt;strong&gt;~ Thats all for now. Thanks!&lt;/strong&gt;&lt;/p&gt;</content><author><name>João Pedro</name><email>pedrochaveslimas3@gmail.com</email></author><category term="personal" /><summary type="html">This week I was watching the video I wasted my 20s from the Youtuber Joshua Fluke. I like some of the videos he posts, especially the series where he roasts several job openings or videos on the theme of One day in the life of a software developer that don’t quite fit the reality of many, or is it just pure marketing for the company that employee works for. I don’t take the content brought so seriously because anyway, it’s always important to filter what you should consume or not. When starting this video, I imagined it would be the same as always, people advising on what they would do if they could go back in time, what they did to make up for a lost time, and the glimpse that came when they realized they were wasting their lives at that moment. As I said, I avoid watching this type of video because it gives me the idea that if they managed to do X and Y, it should also be possible for me to do the same X and Y and I end up not considering the small events that happened during the entire process. In this specific video that I mentioned above, I blocked as much of this type of message as possible and filtered it into some points of interest that I identified, such as: The author of the video quotes a phrase that stuck in my head, and like him, I’m also a person who likes animals a lot. The phrase is: be the person your dog thinks you are. Usually, the dog is just a companion that we can live without, however much it is included in our daily lives and there is that emotional attachment. But for the dog, we are his world. He has nothing left, or at least he can’t excoriate anything but us. It’s as if we were the ideal entity for him, who provides water and food, takes him for walks, caresses, etc. Another point was the question of games. Don’t get me wrong, I’m as addicted, or once was, as any other teenager who grew up during WOW, RuneScape, CoD, Battlefield, and Halo between 2005 and 2013. I’ve played so many games I can’t even remember half of it anymore, I’ve lost hours and hours in RPGs and Action Rogue Likes. Playing games has always been a way of escape from difficult times and when I wanted to let go of anything that had been occupying my mind. But there comes a stage in life when games no longer have the same flavor, you no longer have time or desire to spend 8 hours a day on a game that will probably undergo a rework in a few months with a new patch or a new season pass. You feel bad about playing because you know you could be doing something more productive like reading a book, going out, or developing a new hobby. After those two sentences, that’s when I realized that I was in the same situation Joshua found himself in. 24 years old, playing unwillingly to keep the habit alive knowing he could do a lot more. That’s when I realized that if I didn’t change, I would probably regret it when I was 29 and close to turning 30, I would have a similar thought of how my 20s could be very different if I had gone in different directions. That said, to start the year well, I will try to do a reflection after the turnaround about the past year, describe my goals and see if I managed to reach them in the following year, talk a little about what touched me and marked me throughout the year. Goals for 2022 Read five or more books I have a lot of books in my shelf just waiting to be read since 2020. So I’m just trying to get back with an old habit that I already had Draw more Just like reading, drawing was something that I enjoyed a lot as a kid and teenager. But due to life, it was also something that I stopped doing abruptly. Maintain a healthy diet and life style No need to explain. Fill my technical gaps in my current Job at codeminer No need to explain too. Try to gain at least one raise in salary this year No need to explain too. And no, I’m not looking right now for a new Job. I’m happy with the one i got right now and I still have a lot to learn from the people that I work every single day. Improve my english speaking This one is needed to achieve my future goals of leaving Brazil. By any means my english if bad, it’s just that I don’t feel confortable enought with my speaking. Writing, reading and listening is all good and fine for now. Also, one of the reasons for this blog is to improve my writing too. ~ Thats all for now. Thanks!</summary></entry><entry><title type="html">The beginning!</title><link href="https://sosolidkk.github.io//2021/12/29/my-blog.html" rel="alternate" type="text/html" title="The beginning!" /><published>2021-12-29T16:30:05+00:00</published><updated>2021-12-29T16:30:05+00:00</updated><id>https://sosolidkk.github.io//2021/12/29/my-blog</id><content type="html" xml:base="https://sosolidkk.github.io//2021/12/29/my-blog.html">&lt;p&gt;I wanted to do a blog project for a long time. I’ve always had some difficulty sharing some of my thoughts and experiences related to life, work, hobbies, and such.&lt;/p&gt;
+<p><strong>~ Thats all for now. Thanks!</strong></p>]]></content><author><name>João Pedro</name><email>pedrochaveslimas3@gmail.com</email></author><category term="personal" /><summary type="html"><![CDATA[This week I was watching the video I wasted my 20s from the Youtuber Joshua Fluke. I like some of the videos he posts, especially the series where he roasts several job openings or videos on the theme of One day in the life of a software developer that don’t quite fit the reality of many, or is it just pure marketing for the company that employee works for. I don’t take the content brought so seriously because anyway, it’s always important to filter what you should consume or not. When starting this video, I imagined it would be the same as always, people advising on what they would do if they could go back in time, what they did to make up for a lost time, and the glimpse that came when they realized they were wasting their lives at that moment. As I said, I avoid watching this type of video because it gives me the idea that if they managed to do X and Y, it should also be possible for me to do the same X and Y and I end up not considering the small events that happened during the entire process. In this specific video that I mentioned above, I blocked as much of this type of message as possible and filtered it into some points of interest that I identified, such as: The author of the video quotes a phrase that stuck in my head, and like him, I’m also a person who likes animals a lot. The phrase is: be the person your dog thinks you are. Usually, the dog is just a companion that we can live without, however much it is included in our daily lives and there is that emotional attachment. But for the dog, we are his world. He has nothing left, or at least he can’t excoriate anything but us. It’s as if we were the ideal entity for him, who provides water and food, takes him for walks, caresses, etc. Another point was the question of games. Don’t get me wrong, I’m as addicted, or once was, as any other teenager who grew up during WOW, RuneScape, CoD, Battlefield, and Halo between 2005 and 2013. I’ve played so many games I can’t even remember half of it anymore, I’ve lost hours and hours in RPGs and Action Rogue Likes. Playing games has always been a way of escape from difficult times and when I wanted to let go of anything that had been occupying my mind. But there comes a stage in life when games no longer have the same flavor, you no longer have time or desire to spend 8 hours a day on a game that will probably undergo a rework in a few months with a new patch or a new season pass. You feel bad about playing because you know you could be doing something more productive like reading a book, going out, or developing a new hobby. After those two sentences, that’s when I realized that I was in the same situation Joshua found himself in. 24 years old, playing unwillingly to keep the habit alive knowing he could do a lot more. That’s when I realized that if I didn’t change, I would probably regret it when I was 29 and close to turning 30, I would have a similar thought of how my 20s could be very different if I had gone in different directions. That said, to start the year well, I will try to do a reflection after the turnaround about the past year, describe my goals and see if I managed to reach them in the following year, talk a little about what touched me and marked me throughout the year. Goals for 2022 - Finished Read five or more books I have a lot of books in my shelf just waiting to be read since 2020. So I’m just trying to get back with an old habit that I already had Draw more Just like reading, drawing was something that I enjoyed a lot as a kid and teenager. But due to life, it was also something that I stopped doing abruptly. Maintain a healthy diet and life style No need to explain. Fill my technical gaps in my current Job at Codeminer No need to explain too. Try to gain at least one raise in salary this year No need to explain too. And no, I’m not looking right now for a new Job. I’m happy with the one i got right now and I still have a lot to learn from the people that I work every single day. Improve my english speaking This one is needed to achieve my future goals of leaving Brazil. By any means my english if bad, it’s just that I don’t feel confortable enought with my speaking. Writing, reading and listening is all good and fine for now. Also, one of the reasons for this blog is to improve my writing too. ~ Thats all for now. Thanks!]]></summary></entry><entry><title type="html">The beginning!</title><link href="https://sosolidkk.github.io//2021/12/29/my-blog.html" rel="alternate" type="text/html" title="The beginning!" /><published>2021-12-29T16:30:05+00:00</published><updated>2021-12-29T16:30:05+00:00</updated><id>https://sosolidkk.github.io//2021/12/29/my-blog</id><content type="html" xml:base="https://sosolidkk.github.io//2021/12/29/my-blog.html"><![CDATA[<p>I wanted to do a blog project for a long time. I’ve always had some difficulty sharing some of my thoughts and experiences related to life, work, hobbies, and such.</p>
 
-&lt;p&gt;So, as a goal for 2022, I’ll try to write at least once a week into this blog and try to make this out of a new hobby and incorporate it into my daily routine as a Developer.&lt;/p&gt;
+<p>So, as a goal for 2022, I’ll try to write at least once a week into this blog and try to make this out of a new hobby and incorporate it into my daily routine as a Developer.</p>
 
-&lt;p&gt;Disclaimer: don’t take everything here too seriously. They’re my experiences and personal thoughts. Much of what I’ll be saying don’t have any scientific background. Anyway, have fun and enjoy your stay!&lt;/p&gt;</content><author><name>João Pedro</name><email>pedrochaveslimas3@gmail.com</email></author><category term="jekyll" /><category term="personal" /><summary type="html">I wanted to do a blog project for a long time. I’ve always had some difficulty sharing some of my thoughts and experiences related to life, work, hobbies, and such. So, as a goal for 2022, I’ll try to write at least once a week into this blog and try to make this out of a new hobby and incorporate it into my daily routine as a Developer. Disclaimer: don’t take everything here too seriously. They’re my experiences and personal thoughts. Much of what I’ll be saying don’t have any scientific background. Anyway, have fun and enjoy your stay!</summary></entry></feed>
+<p>Disclaimer: don’t take everything here too seriously. They’re my experiences and personal thoughts. Much of what I’ll be saying don’t have any scientific background. Anyway, have fun and enjoy your stay!</p>]]></content><author><name>João Pedro</name><email>pedrochaveslimas3@gmail.com</email></author><category term="jekyll" /><category term="personal" /><summary type="html"><![CDATA[I wanted to do a blog project for a long time. I’ve always had some difficulty sharing some of my thoughts and experiences related to life, work, hobbies, and such. So, as a goal for 2022, I’ll try to write at least once a week into this blog and try to make this out of a new hobby and incorporate it into my daily routine as a Developer. Disclaimer: don’t take everything here too seriously. They’re my experiences and personal thoughts. Much of what I’ll be saying don’t have any scientific background. Anyway, have fun and enjoy your stay!]]></summary></entry></feed>

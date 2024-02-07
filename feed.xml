@@ -1,5 +1,64 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://sosolidkk.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://sosolidkk.github.io//" rel="alternate" type="text/html" /><updated>2024-01-30T00:54:18+00:00</updated><id>https://sosolidkk.github.io//feed.xml</id><title type="html">&lt;brain_dump /&gt;
-</title><subtitle>Don&apos;t take everything you read here too seriously. Enjoy your stay!</subtitle><author><name>João Pedro</name><email>pedrochaveslimas3@gmail.com</email></author><entry><title type="html">2024</title><link href="https://sosolidkk.github.io//2024/01/01/2024.html" rel="alternate" type="text/html" title="2024" /><published>2024-01-01T21:43:00+00:00</published><updated>2024-01-01T21:43:00+00:00</updated><id>https://sosolidkk.github.io//2024/01/01/2024</id><content type="html" xml:base="https://sosolidkk.github.io//2024/01/01/2024.html"><![CDATA[<p>In 2023, much like the preceding year, a myriad of significant events unfolded in my life. Despite engaging in various pursuits, I find myself not entirely content with the outcomes. Nevertheless, I am grateful for the experiences that have shaped the year.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://sosolidkk.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://sosolidkk.github.io//" rel="alternate" type="text/html" /><updated>2024-02-07T21:28:31+00:00</updated><id>https://sosolidkk.github.io//feed.xml</id><title type="html">&lt;brain_dump /&gt;
+</title><subtitle>Don&apos;t take everything you read here too seriously. Enjoy your stay!</subtitle><author><name>João Pedro</name><email>pedrochaveslimas3@gmail.com</email></author><entry><title type="html">2023 review</title><link href="https://sosolidkk.github.io//2024/01/18/2023-review.html" rel="alternate" type="text/html" title="2023 review" /><published>2024-01-18T15:28:00+00:00</published><updated>2024-01-18T15:28:00+00:00</updated><id>https://sosolidkk.github.io//2024/01/18/2023-review</id><content type="html" xml:base="https://sosolidkk.github.io//2024/01/18/2023-review.html"><![CDATA[<blockquote>
+  <p>We are what we repeatedly do… therefore excellence is not an act, but a habit.</p>
+  <ul>
+    <li>Will Durant</li>
+  </ul>
+</blockquote>
+
+<p>I’ve never done this kind of post, but it’s never late. Another year is behind us and I’ll try to summarize most the stuff that I achieved and did throughout the year that I’m most proud of it or was just random.</p>
+
+<h2 id="the-bad-stuff">The bad stuff</h2>
+
+<p>Starting with the bad stuff because it feels more natural to me.</p>
+
+<ul>
+  <li>I still failed to achieve the currently and log waited dream seniority as programmer. It feels like the more I yearn for it, the further away it becomes. Most of the time I keep thinking of what I’m currently missing so for the year of 2024, most of my goals will be directly related to achieve the title of a Senior developer, which I believe will be a turning point at my careers.</li>
+  <li>I also failed to maintain a healthier lifestyle which kinda sucks, but it is becoming more of a pain since I’m getting regular back pain. I even switched my work chair and I’m policing myself regarding my posture when I sit. But let’s see how it goes for this year.</li>
+  <li>I did advance a lot in my first attempt to create and publish a <a href="https://github.com/sosolidkk/steam_api">Ruby Gem</a> but I learned the hard way that we must always write the specs after class, because if not, it becomes a snow ball and man, it is a PAIN to do it after. But I’m commited to finish and publish it this year.</li>
+</ul>
+
+<p>On top of all of that, I lacked inspiration to write anything related to programming or any other subject.</p>
+
+<h2 id="the-good-stuff">The good stuff</h2>
+
+<p>Not so much to report here, to be honest. I did some freelance work and tried to develop and learn even more about the tooling and ecosystem in <a href="https://nuuvem.com">Nuuvem</a>.</p>
+
+<p>I also got married, which is a HUGE accomplishment for me and even bigger for my wife. It was something that was in our talks for a long time, and we even postponed it due to personal issues.</p>
+
+<h2 id="eveything-else">Eveything else</h2>
+
+<ul>
+  <li>I bought a Digispark Attiny85 USB. I saw a couple of videos about the usage of it and found quite interesting the way the scripts were injected. Most of the examples I used were public on GitHub repositories. The unique downside of it was that I could not make it work under Linux because of the poorly updated drivers. It was a pain. I needed to get up a VM with Windows and do the same configuration for it to work. After uploading the first script, a simple password grabber, it was pretty good to see it work.</li>
+  <li>I had a fun time with my peers in our annual compny meeting at december.</li>
+  <li>I planned to switch from my iPhone to an Android device simply because I can’t stand Apple anymore. This year was a switch for me in terms of device usage. I deleted most of the apps I used daily, and in all the free time that I got, I invested in my Kindle which turned out to be awesome.</li>
+  <li>As I said in the previous topic, I bought a Kindle. It did take some time to decide if I needed one, but guess what, I did need one. My goal of reading X books a year would be SO MUCH EASIER if I already had a Kindle. Now any opportunity I have, be it lunch, waking up, brushing my teeth, or waiting for the doctor to call on my medical appointment I’m reading.</li>
+  <li>The best show for me this year was HBO’s Scavenger Reign. I didn’t watch that many shows, but this one was memorable enough.</li>
+  <li>Baldur’s Gate 3 also won GOTY, which was obvious. It’s the best game Larian Studios ever released and one of the best CRPGs since Divinity Original Sin 2 and Pillars of Eternity.</li>
+</ul>
+
+<h2 id="lessons-learned">Lessons Learned</h2>
+
+<p>Stealing the quote from Bozhidar Bastov blog:</p>
+<blockquote>
+  <p>We are what we repeatedly do… Not exactly something new I learned in 2023, but definitely something I was often reminded about.</p>
+</blockquote>
+
+<p>One thing I noticed is that I need to be more focused on the stuff that I need to get done, instead of looking and droving of my attention somewhere else.</p>
+
+<h2 id="goals-for-2024">Goals for 2024</h2>
+
+<p>You can read them in my <a href="/2024/01/01/2024.html">2024 post</a>.</p>
+
+<h2 id="epilogue">Epilogue</h2>
+
+<blockquote>
+  <p>Not great, not terrible.</p>
+</blockquote>
+
+<p>It could’ve been better, but it was the best possible outcome given the current scenario, plans, and more.</p>
+
+<p>I hope anyone who reads this has a great 2024, even more than 2023.</p>]]></content><author><name>João Pedro</name><email>pedrochaveslimas3@gmail.com</email></author><category term="personal" /><summary type="html"><![CDATA[We are what we repeatedly do… therefore excellence is not an act, but a habit. Will Durant I’ve never done this kind of post, but it’s never late. Another year is behind us and I’ll try to summarize most the stuff that I achieved and did throughout the year that I’m most proud of it or was just random. The bad stuff Starting with the bad stuff because it feels more natural to me. I still failed to achieve the currently and log waited dream seniority as programmer. It feels like the more I yearn for it, the further away it becomes. Most of the time I keep thinking of what I’m currently missing so for the year of 2024, most of my goals will be directly related to achieve the title of a Senior developer, which I believe will be a turning point at my careers. I also failed to maintain a healthier lifestyle which kinda sucks, but it is becoming more of a pain since I’m getting regular back pain. I even switched my work chair and I’m policing myself regarding my posture when I sit. But let’s see how it goes for this year. I did advance a lot in my first attempt to create and publish a Ruby Gem but I learned the hard way that we must always write the specs after class, because if not, it becomes a snow ball and man, it is a PAIN to do it after. But I’m commited to finish and publish it this year. On top of all of that, I lacked inspiration to write anything related to programming or any other subject. The good stuff Not so much to report here, to be honest. I did some freelance work and tried to develop and learn even more about the tooling and ecosystem in Nuuvem. I also got married, which is a HUGE accomplishment for me and even bigger for my wife. It was something that was in our talks for a long time, and we even postponed it due to personal issues. Eveything else I bought a Digispark Attiny85 USB. I saw a couple of videos about the usage of it and found quite interesting the way the scripts were injected. Most of the examples I used were public on GitHub repositories. The unique downside of it was that I could not make it work under Linux because of the poorly updated drivers. It was a pain. I needed to get up a VM with Windows and do the same configuration for it to work. After uploading the first script, a simple password grabber, it was pretty good to see it work. I had a fun time with my peers in our annual compny meeting at december. I planned to switch from my iPhone to an Android device simply because I can’t stand Apple anymore. This year was a switch for me in terms of device usage. I deleted most of the apps I used daily, and in all the free time that I got, I invested in my Kindle which turned out to be awesome. As I said in the previous topic, I bought a Kindle. It did take some time to decide if I needed one, but guess what, I did need one. My goal of reading X books a year would be SO MUCH EASIER if I already had a Kindle. Now any opportunity I have, be it lunch, waking up, brushing my teeth, or waiting for the doctor to call on my medical appointment I’m reading. The best show for me this year was HBO’s Scavenger Reign. I didn’t watch that many shows, but this one was memorable enough. Baldur’s Gate 3 also won GOTY, which was obvious. It’s the best game Larian Studios ever released and one of the best CRPGs since Divinity Original Sin 2 and Pillars of Eternity. Lessons Learned Stealing the quote from Bozhidar Bastov blog: We are what we repeatedly do… Not exactly something new I learned in 2023, but definitely something I was often reminded about. One thing I noticed is that I need to be more focused on the stuff that I need to get done, instead of looking and droving of my attention somewhere else. Goals for 2024 You can read them in my 2024 post. Epilogue Not great, not terrible. It could’ve been better, but it was the best possible outcome given the current scenario, plans, and more. I hope anyone who reads this has a great 2024, even more than 2023.]]></summary></entry><entry><title type="html">2024</title><link href="https://sosolidkk.github.io//2024/01/01/2024.html" rel="alternate" type="text/html" title="2024" /><published>2024-01-01T21:43:00+00:00</published><updated>2024-01-01T21:43:00+00:00</updated><id>https://sosolidkk.github.io//2024/01/01/2024</id><content type="html" xml:base="https://sosolidkk.github.io//2024/01/01/2024.html"><![CDATA[<p>In 2023, much like the preceding year, a myriad of significant events unfolded in my life. Despite engaging in various pursuits, I find myself not entirely content with the outcomes. Nevertheless, I am grateful for the experiences that have shaped the year.</p>
 
 <p>Among the highlights, I enjoyed a well-deserved vacation, exchanged vows with the love of my life, and celebrated a commendable advancement in both salary and position within my current job. This progression brings me a step closer to realizing my overarching ambition of becoming a Senior Software Developer.
 In addition to my professional endeavors, I undertook freelance development projects to augment my income, specifically to contribute to the financing of my wedding. I successfully accomplished three out of the five goals I had set for myself in 2023. Regrettably, the principal objective of maintaining a healthy diet and lifestyle eluded me, and I am mindful of its significance as early signs of its neglect have surfaced.</p>

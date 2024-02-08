@@ -43,7 +43,7 @@ remote_theme: jekyll/minima
 minima:
   skin: classic
   social_links:
-    - { platform: github,  user_url: "https://github.com/jekyll/jekyll" }
+    - { platform: github,  user_url: "https://github.com/sosolidkk" }
     - { platform: instagram, user_url: "https://instagram.com/jpechaves" }
     - { platform: telegram, user_url: "https://t.me/sosolidkk" }
 

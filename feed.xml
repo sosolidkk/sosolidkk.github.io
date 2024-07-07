@@ -1,5 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://sosolidkk.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://sosolidkk.github.io//" rel="alternate" type="text/html" /><updated>2024-07-07T20:12:28+00:00</updated><id>https://sosolidkk.github.io//feed.xml</id><title type="html">&lt;brain_dump /&gt;
-</title><subtitle>Don&apos;t take everything you read here too seriously. Enjoy your stay!</subtitle><author><name>João Pedro</name><email>pedrochaveslimas3@gmail.com</email></author><entry><title type="html">2023 review</title><link href="https://sosolidkk.github.io//2024/01/18/2023-review.html" rel="alternate" type="text/html" title="2023 review" /><published>2024-01-18T15:28:00+00:00</published><updated>2024-01-18T15:28:00+00:00</updated><id>https://sosolidkk.github.io//2024/01/18/2023-review</id><content type="html" xml:base="https://sosolidkk.github.io//2024/01/18/2023-review.html"><![CDATA[<blockquote>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://sosolidkk.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://sosolidkk.github.io//" rel="alternate" type="text/html" /><updated>2024-07-07T20:26:35+00:00</updated><id>https://sosolidkk.github.io//feed.xml</id><title type="html">&lt;brain_dump /&gt;
+</title><subtitle>Don&apos;t take everything you read here too seriously. Enjoy your stay!</subtitle><author><name>João Pedro</name><email>pedrochaveslimas3@gmail.com</email></author><entry><title type="html">Gnome/Keyring does not wraps around SSH Agent automatically</title><link href="https://sosolidkk.github.io//2024/07/07/gnome-keyring.html" rel="alternate" type="text/html" title="Gnome/Keyring does not wraps around SSH Agent automatically" /><published>2024-07-07T20:14:00+00:00</published><updated>2024-07-07T20:14:00+00:00</updated><id>https://sosolidkk.github.io//2024/07/07/gnome-keyring</id><content type="html" xml:base="https://sosolidkk.github.io//2024/07/07/gnome-keyring.html"><![CDATA[<p>It seems that starting from version <strong>1:46.0-1</strong>, the <code class="language-plaintext highlighter-rouge">gnome-keyring</code> changed it’s behavior and now it disables building the <code class="language-plaintext highlighter-rouge">ssh-agent</code> support by default.</p>
+
+<p>The OS by default also doesn’t enable it, which was the cause for all my <code class="language-plaintext highlighter-rouge">ssh-agents</code> goes missing every time I tried to do any connection and even asking for password again.</p>
+
+<p>Lookint at the Gitlab MR, it seems like we’re now supposed to use <code class="language-plaintext highlighter-rouge">gcr-ssh-agent</code>. Here’s the instructions:</p>
+
+<ol>
+  <li><strong>Run</strong>: <code class="language-plaintext highlighter-rouge">systemctl enable --user gcr-ssh-agent.socket</code> to enable the socket.</li>
+  <li><strong>Set</strong>: <code class="language-plaintext highlighter-rouge">$SSH_AUTH_SOCK</code> environment value to <code class="language-plaintext highlighter-rouge">$XDG_RUNTIME_DIR/gcr/ssh</code>. I just put this in my <code class="language-plaintext highlighter-rouge">.zshrc</code>:
+    <ol>
+      <li><code class="language-plaintext highlighter-rouge">export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/gcr/ssh</code></li>
+    </ol>
+  </li>
+  <li><strong>Reboot</strong></li>
+</ol>
+
+<p>After those two changes, your SSH keys should start working just like before.</p>
+
+<hr />
+
+<p>Other workaround I was doing before finding those threads were adding this to my <code class="language-plaintext highlighter-rouge">.zshrc</code>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="o">[</span> <span class="nt">-z</span> <span class="s2">"</span><span class="nv">$SSH_AUTH_SOCK</span><span class="s2">"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then
+  </span><span class="nb">eval</span> <span class="s2">"</span><span class="si">$(</span>ssh-agent <span class="nt">-s</span><span class="si">)</span><span class="s2">"</span> <span class="o">&gt;</span> /dev/null
+  ssh-add ~/.ssh/id_ed25519_github &amp;&gt; /dev/null
+  ssh-add ~/.ssh/id_ed25519_gitlab &amp;&gt; /dev/null
+<span class="k">fi</span>
+</code></pre></div></div>
+
+<p>The problem with this approach is that it will init a new ssh-agent for every newly created console session since the <code class="language-plaintext highlighter-rouge">.zshrc</code> will be loaded every time. But since it was a workaround, I didn’t care. It was more stressful not to have it working at all.</p>
+
+<h3 id="references">References</h3>
+<ul>
+  <li><a href="https://www.reddit.com/r/archlinux/comments/1aq97m8/gnomekeyring_14601_in_extratesting_disables/">Reddit</a></li>
+  <li><a href="https://gitlab.gnome.org/GNOME/gnome-keyring/-/merge_requests/60">gitlab/gnome-keyring #60</a></li>
+  <li><a href="https://wiki.archlinux.org/title/GNOME/Keyring#SSH_keys">Wiki/Arch Linux - Keyring#SSH_keys</a></li>
+  <li><a href="https://bbs.archlinux.org/viewtopic.php?pid=2152021#p2152021">https://bbs.archlinux.org/viewtopic.php?pid=2152021#p2152021</a></li>
+</ul>]]></content><author><name>João Pedro</name><email>pedrochaveslimas3@gmail.com</email></author><category term="linux" /><summary type="html"><![CDATA[It seems that starting from version 1:46.0-1, the gnome-keyring changed it’s behavior and now it disables building the ssh-agent support by default. The OS by default also doesn’t enable it, which was the cause for all my ssh-agents goes missing every time I tried to do any connection and even asking for password again. Lookint at the Gitlab MR, it seems like we’re now supposed to use gcr-ssh-agent. Here’s the instructions: Run: systemctl enable --user gcr-ssh-agent.socket to enable the socket. Set: $SSH_AUTH_SOCK environment value to $XDG_RUNTIME_DIR/gcr/ssh. I just put this in my .zshrc: export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/gcr/ssh Reboot After those two changes, your SSH keys should start working just like before. Other workaround I was doing before finding those threads were adding this to my .zshrc: if [ -z "$SSH_AUTH_SOCK" ]; then eval "$(ssh-agent -s)" &gt; /dev/null ssh-add ~/.ssh/id_ed25519_github &amp;&gt; /dev/null ssh-add ~/.ssh/id_ed25519_gitlab &amp;&gt; /dev/null fi The problem with this approach is that it will init a new ssh-agent for every newly created console session since the .zshrc will be loaded every time. But since it was a workaround, I didn’t care. It was more stressful not to have it working at all. References Reddit gitlab/gnome-keyring #60 Wiki/Arch Linux - Keyring#SSH_keys https://bbs.archlinux.org/viewtopic.php?pid=2152021#p2152021]]></summary></entry><entry><title type="html">2023 review</title><link href="https://sosolidkk.github.io//2024/01/18/2023-review.html" rel="alternate" type="text/html" title="2023 review" /><published>2024-01-18T15:28:00+00:00</published><updated>2024-01-18T15:28:00+00:00</updated><id>https://sosolidkk.github.io//2024/01/18/2023-review</id><content type="html" xml:base="https://sosolidkk.github.io//2024/01/18/2023-review.html"><![CDATA[<blockquote>
   <p>We are what we repeatedly do… therefore excellence is not an act, but a habit.</p>
   <ul>
     <li>Will Durant</li>

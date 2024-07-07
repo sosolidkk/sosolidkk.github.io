@@ -4,7 +4,7 @@ title: Work
 permalink: /work/
 ---
 
-#### [Nuuvem](https://nuuvem.com) - Full Stack Software Developer
+#### [Nuuvem](https://nuuvem.com) - Senior Software Developer
 `SINCE JUNE 2022, REMOTE`
 
 My job at Nuuvem consists of working and improving the company's projects, respecting good code practices and market standards, planning new features, helping junior developers by providing and teaching more technical concepts, suggesting and presenting new technologies to the team, and more.

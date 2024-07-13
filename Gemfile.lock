@@ -12,15 +12,18 @@ GEM
   specs:
     addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
+    base64 (0.2.0)
+    bigdecimal (3.1.8)
     colorator (1.1.0)
     concurrent-ruby (1.2.3)
+    csv (3.2.8)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
     ffi (1.16.3)
     forwardable-extended (2.6.0)
-    google-protobuf (3.25.2-x86_64-linux)
+    google-protobuf (3.25.3-x86_64-linux)
     http_parser.rb (0.8.0)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
@@ -85,6 +88,9 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  base64
+  bigdecimal
+  csv
   jekyll (~> 4.3.3)
   jekyll-compose
   jekyll-feed (~> 0.12)
@@ -96,4 +102,4 @@ DEPENDENCIES
   webrick (~> 1.7)
 
 BUNDLED WITH
-   2.4.18
+   2.5.15

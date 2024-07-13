@@ -55,7 +55,7 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 Zinit is a flexible and fast Zshell plugin manager that will allow you to install everything from GitHub and other sites.
 
 ```sh
-sh -c "$(curl -fsSL https://git.io/zinit-install)"
+bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
 
 # Add the next three lines after this part: '### End of ZInit's installer chunk'
 zinit light zdharma/fast-syntax-highlighting

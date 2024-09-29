@@ -4,7 +4,9 @@ title: About
 permalink: /about/
 ---
 
-I'm a Ruby Full-Stack Web Developer, who loves listening to music in my spare time and searching for random information (the more random the better). I design mostly monoliths, but I also enjoy doing some scripting and Web Scraping in my spare time. I'm not too fond of Angular, but let's be honest, who likes it? You can find my dumb codes [here](https://github.com/sosolidkk/) and read most of my findings here on this 'thing' I like to call a blog.
+I’m a Ruby Full-Stack Software Developer currently thriving as a senior developer at [Nuuvem](https://www.nuuvem.com/-/about), where I’ve embraced the challenges of full-stack product development using Ruby on Rails, JavaScript, AWS, Docker, and both MongoDB and PostgreSQL. I take pride in optimizing performance, delivering robust features and teaching my peers random stuff.
+
+While I primarily design monolithic applications, I also engage in scripting and web scraping projects. I’m not particularly fond of Angular, but let’s be honest—who is? You can explore some of my code [here](https://github.com/sosolidkk/) and read my musings and discoveries on this blog, which I affectionately refer to as my little corner of the internet.
 
 ---
 

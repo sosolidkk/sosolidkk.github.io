@@ -41,11 +41,12 @@ author:
 remote_theme: jekyll/minima
 
 minima:
-  skin: classic
+  skin: dark
   social_links:
     - { platform: github,  user_url: "https://github.com/sosolidkk" }
     - { platform: instagram, user_url: "https://instagram.com/jpechaves" }
     - { platform: telegram, user_url: "https://t.me/sosolidkk" }
+    - { platform: linkedin, user_url: "https://www.linkedin.com/in/sosolidkk/" }
 
 plugins:
   - jekyll-feed

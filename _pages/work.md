@@ -4,172 +4,133 @@ title: Work
 permalink: /work/
 ---
 
-#### [Nuuvem](https://nuuvem.com) - Senior Software Developer
-`SINCE JUNE 2022, REMOTE`
+### [Nuuvem](https://nuuvem.com) - Senior Software Developer
+`June 2022 - Present | Remote (BR)`
 
-My job at Nuuvem consists of working and improving the company's projects, respecting good code practices and market standards, planning new features, helping junior developers by providing and teaching more technical concepts, suggesting and presenting new technologies to the team, and more.
+- **Technical Decision-Making:** Contributed to critical product and technical decisions, sharing expertise across the company to align development efforts with business goals. Empowered team members to make decisions while maintaining product quality. Develop and enhance company projects, ensuring best coding practices and adherence to industry standards.
+- **Technical Interviews & Recruitment:** Conducted interviews to assess and onboard engineering talent, ensuring the right technical and cultural fit for the team.
+- **Major Projects & Integrations:**
+  - Integrated provider APIs, including Blackhawk and Vaultn, to ensure a seamless and secure expansion of the product catalog, enhancing the overall functionality and reliability of the store.
+  - Spearheaded Nuuvem's expansion into the Latin American market, successfully increasing the store's presence in Mexico and Peru by enabling native currency payments and significantly improving the user experience for customers in these regions.
+- **Product Development:** Engaged in full-stack product development utilizing Ruby on Rails, JavaScript, AWS, Docker, Mongoid, and PostgreSQL. Successfully delivered new features, including payment method integrations and internal tools designed to streamline inventory management, sales, and product tracking.
+- **Led and executed major projects and integrations, including:**
+  - Migrating development and CI environments to Docker for enhanced efficiency and consistency.
+  - Upgrading the Ruby on Rails stack from Ruby 2.5 to Ruby 3 and from Rails 5 to Rails 6, improving performance and security.
+  - Optimizing both SQL and NoSQL query performance, achieving execution time reductions from seconds to milliseconds.
+  - Collaborating with the design team to develop a scalable crowdfunding system that is easy to set up and operate, successfully funding three new games through the platform.
+  - Developing a comprehensive API in accordance with the JSON API specification, allowing third-party applications to effortlessly access internal product information.
 
-Here are some of the features I delivered throughout the years:
+**Technologies**: Ruby 3, Rails 6 and 7, VueJS, JavaScript, Sidekiq, Postgres, MongoDB, Docker
 
-- Helped to add docker to all projects for the development and CI environment;
-- Helped to upgrade the Ruby version from 2.5.6 up to 3.0.6;
-- Helped to upgrade Rails version from 5.1 up to 6.1;
-- Helped to develop a new provider API integration;
-- Helped to improve the pricing system of the shop and reduce the query time from seconds to milliseconds;
-- Helped to create and use an easy-to-set-up crowdfunding system;
-- Fixed a lot of bugs and technical debts;
-- Did a lot of small features like SSO Login, increased test performance and decreased CI execution time, added more test coverage for more than four projects and eighteen gems;
-
-and more.
-
-
-- **Techs**: Ruby (2.7.5, 3.1.X), Rails (v5.x, v7.x), Vue, JavaScript, Sidekiq, Postgres, Mongodb, Docker.
-- **Services**: AWS, AppSignal, Loggly, DeadMansSnitch, Segment, StitchData, CustomerIO, Klipfolio, Azion.
+**Services**: AWS (EC2, ECS, Redshift, Cloudwatch, WAF, VPCs, ELB, and more), AppSignal, Loggly, DeadMansSnitch, Segment, StitchData, CustomerIO, Klipfolio, Azion
 
 ---
 
-#### [RD Station](https://www.rdstation.com/) - Backend Software Developer (Contract)
-`JUNE 2023 - JANUARY 2024, REMOTE`
+### [RD Station](https://www.rdstation.com/) - Backend Software Developer (Freelancer Contract)
+`June 2023 - January 2024 | Remote (BR)`
 
-I helped to develop a new multi-product webhook tool using the most up-to-date code practices and tools of the Ruby on Rails ecosystem. This tool delivered more than a million webhooks per day and through different client applications, offering the best, with zero friction, multi-product interface possible so it can integrate into different internal applications that the company had. The application just needed to set up an event pipeline and send it to the webhook service, and it would handle the rest.
+- Built a high-throughput multi-product webhook tool delivering over a million webhooks per day.
+- Maintained and improved existing APIs across various products.
 
-I also helped to maintain and improve the company's existing APIs.
+**Technologies**: Ruby 3, Rails 7, Sidekiq, Postgres, Docker, GCloud PubSub
 
-- **Techs**: Ruby (3.1.X), Rails (v7.x), Sidekiq, Postgres, Docker, GCloud PubSub.
-- **Services**: GCloud, Rollbar, Datadog, Okta, Vault, GCloud Lake, JIRA, Kong.
-
----
-
-#### [WaySync](https://www.getwaysync.com/) - Full Stack Software Web Developer (Contract)
-`NOVEMBER 2022 - JANUARY 2023, REMOTE (US)`
-
-WaySync was a company that aimed to empower forwarders to win more business with less overhead, providing tools and automations to make quoting prices for rates easier.
-
-I helped to improve the contract processing micro-service reliability by increasing the automated test coverage, considerably reducing the number of bugs, developed a new tool for handling air delivery. I also received mentorship from my other two peers (tech lead and founder engineer), participated in problem discussions, code reviews, and performance improvements of queries and services used by the system.
-
-Likewise, I was responsible for redesigning (UI and code) the whole email composer component to avoid using the one Nyla provided in their integration and build one with the company face.
-
-- **Techs**: Ruby (3.1.X), Rails (v7.x), JavaScript, Stimulus, Turbo, Postgres, Docker, Tailwind CSS and more
-- **Services**: AWS, Sentry, Nylas
+**Services**: GCloud (pub-sub, lake), Rollbar, Datadog, Okta, Vault, JIRA, Kong
 
 ---
 
-#### [Codeminer42](https://www.codeminer42.com/) - Full Stack Software Developer
-`JULY 2020 - JUNE 2022, HYBRID, TERESINA (BR)`
+### [WaySync](https://www.getwaysync.com/) - Full Stack Software Developer (Freelancer Contract)
+`November 2022 - January 2023 | Remote (US)`
 
-My job at Codeminer consisted of participating in problem discussions, code reviews, apply the best code practices, and design standards using agile methodologies. In addition, improved my experience with Ruby, Rails, RSpec, Docker, Git and be introduced to other technologies and concepts such as JavaScript, Python, Elixir, TDD, DDD, and many more. I also perform some extra activities, like reviewing the blog posts that were published every Wednesday and I help to mentor new employees on their technologies and projects when was needed.
+- Improved contract processing reliability by increasing automated test coverage.
+- Built new air delivery management tools and redesigned email composer components.
 
-Worked with clients such as **Stack Commerce**, **Cyanna**, **Agrosmart**, and **Juntos Somos Mais**. More details below.
+**Technologies**: Ruby 3.1, Rails 7, JavaScript, Stimulus, Turbo, Postgres, Docker, Tailwind CSS
 
-- [StackSocial](https://stacksocial.com/) - **Full-Stack Software Developer (Contract)**
+**Services**: AWS, Sentry, Nylas
 
-  `AUGUST 2021 - JUNE /2022, REMOTE`
+---
 
-  My work consisted of coding features and bug fixes, doing code reviews, and participating in planning meetings. I also implemented and gave support to backend integrations with third-party services like Salesforce, Segment, and others.
+### [Codeminer42](https://www.codeminer42.com/) - Full Stack Software Developer
+`July 2020 - June 2022 | Hybrid (BR)`
 
-  - **Techs**: Ruby (v2.7), Rails (v5.x), Angular, React, JavaScript, Sidekiq, MySQL, Docker
-  - **Services**: AWS, Sentry, Iterable, Salesforce, Segment, Postgres, ElasticSearch, GraphQL, SemaphoreCI
+- Collaborated in project planning, problem-solving discussions, and performed code reviews following agile methodologies.
+- Provided mentorship to new developers and delivered technical talks on navigating common challenges in legacy software.
+- Managed and maintained Codeminer42's public blog, overseeing content quality and reviewing posts before publication.
+- Co-organized Imersão 42, a 3-month learning program for university students focused on real-world problem solving and collaboration, providing mentorship and hands-on software development challenges to prepare participants for careers in programming.
+- Contributed to various client projects such as [StackSocial](https://stacksocial.com/), [Cyanna](https://cyanna.com/), [Agrosmart](https://agrosmart.com.br/), and [Juntos Somos Mais](https://www.juntossomosmais.com.br/).
 
-- [Cyanna](https://cyanna.com/) - **Backend Software Developer (Contract)**
+**Notable Clients:**
 
-  `JUNE 2021 - AUGUST 2021`
+- **StackSocial** (August 2021 - June 2022)
+  - Developed features, bug fixes, and backend integrations with third-party services like Salesforce.
+  - **Technologies**: Ruby 2.7, Rails 5, Angular, React, MySQL, Docker
+  - **Services**: AWS, Salesforce, Iterable, Segment, ElasticSearch, GraphQL, SemaphoreCI
 
-  My work at Cyanna consisted on help maintain one of the core services that supply a workflow for submitting, retrieving, processing, and analyzing required compliance data documents.
-
-  - **Techs**: Ruby (v2.4), Rails (v4.x), Sidekiq, Docker, Postgresql, Haml
+- **Cyanna** (June 2021 - August 2021)
+  - Maintained a compliance data workflow service for the US government education service.
+  - **Technologies**: Ruby 2.4, Rails 4, Docker, Postgres
   - **Services**: AWS, Github, Jenkins
 
-- [Agrosmart](https://agrosmart.com.br/) - **Backend Software Developer (Contract)**
+- **Agrosmart** (March 2021 - June 2021)
+  - Developed an API for managing crop cycles with offline functionality.
+  - **Technologies**: Ruby 2.7, Rails 5, Docker, Git
+  - **Services**: AWS, Kubernetes
 
-  `MARCH 2021 - JUNE 2021`
-
-  My job at Agrosmart was the development of an API to create a field notebook to manage crops, glebas, and the entire tobacco planting cycle. Focusing on practicality, security, and offline usage (due to the poor connections of the people residing on the farms).
-
-  The main challenge was how we would handle the data pipeline of sending and receiving the information since users could spend more than a day without internet connection and basically work with a full offline app.
-
-  - **Techs**: Ruby (v2.8), Rails (v5.1), RSpec, PostgreSQL, Docker, Git, Kubernetes
-  - **Services**: AWS, Github, Jenkins
-
-- [Juntos Somos Mais](https://www.juntossomosmais.com.br/) - **Backend Software Developer (Contract)**
-
-  `JULY 2020 - FEBRUARY 2021`
-
-  My job was the development of an API for handling resources in a B2C (Business to Consumer) project. The API was integrated with multiple third-party API services such as B2W, Mercado Livre, Shopee, Via Varejo, and Amazon.
-
-  - **Techs**: Python, Django, Django rest framework, Unittest, Pytest, PostgreSQL, Git, Docker, RabbitMQ, Kubernetes
-  - **Services**: AWS, GitHub, GitHub Actions, Sentry
+- **Juntos Somos Mais** (July 2020 - February 2021)
+  - Developed B2C API integrations with Mercado Livre, Shopee, and Amazon.
+  - **Technologies**: Python, Django, RabbitMQ, Kubernetes
+  - **Services**: AWS, Sentry, GitHub Actions
 
 ---
 
-#### [Maida.Health](https://maida.health/) - Software Developer Intern
-`JUNE 2019 - JUNE 2020, TERESINA (BR)`
+### [Maida.Health](https://maida.health/) - Software Developer Intern
+`June 2019 - June 2020 | Teresina (BR)`
 
-I helped develop a Microservice and scraping scripts for retrieving and parsing data from legacy web systems for later displaying the data into internal APIs.
+- Developed micro services and scraping scripts for retrieving and parsing data from legacy systems.
 
-- **Techs**: Python, Flask, FastAPI, Postgres, SQLAlchemy, Docker
+**Technologies**: Python, Flask, FastAPI, Docker, SQLAlchemy
 
----
-
-#### 💻 Technology
-
-- **Proficiency**: Ruby, Rails, RSpec, Sidekiq, Docker, Redis, AWS, Postgres, MongoDB, Git, Unix, Linux, JavaScript (ES6+)
-- **Acquainted**: HTML5, CSS3, React, Angular, Vue, Python, Django, Flask, Scrapping, Shell Script, Perl, GraphQL
+**Services**: No Cloud, pretty much self hosted everything with an intenal infra/devops team
 
 ---
 
-#### 🗣 Languages
+### 💻 Technology
 
-Portuguese 🇧🇷: `Native speaker`
-
-English 🇺🇸: `Advanced, with excellent conversational skills`
-
----
-
-#### 📜 Talks
-
-**[BrownBag CM42: Starting in the world of Web Scraping](https://www.youtube.com/watch?v=a0ucInKSuwg)**
-
-**[BrownBag CM42: Legacy Systems - What to (or not) do](https://www.youtube.com/watch?v=hd70mmpkZ_c)**
-
+- **Proficient**: Ruby, Rails, RSpec, Sidekiq, Docker, Redis, AWS, Postgres, MongoDB, Git, Unix, Linux, Shell Scripting, JavaScript (ES6+)
+- **Familiar**: HTML5, CSS3, React, Angular, Vue, Python, Django, GraphQL
 
 ---
 
-#### 📅 Events
+### 🗣 Languages
 
-- [Tropical.rb](https://www.tropicalrb.com/) - 2024
-- [Imersão42](https://www.imersao42.com.br/) (Class 1 and 2) - 2021
-- [NLW](https://nextlevelweek.com/) (Next Level Week, Rocketseat) - 2021
-- Introdev (Teresina) - 2019
-- Introdev (Teresina) - 2018
-- Introdev (Teresina) - 2017
-- University Programming Marathon - 2018 (second place)
-- University Programming Marathon - 2017 (third place)
-- [Hackatruck](https://hackatruck.com.br/) - 2017
+- **Portuguese**: Native
+- **English**: Advanced, Excellent conversational skills
 
 ---
 
-#### 🐙 Open Source
+### 📜 Videos
 
-##### **City Scrappers** — [Pull Requests](https://github.com/City-Bureau/city-scrapers/pulls/sosolidkk)
-The City Scrapers collect information about public meetings. Every day, the City Scrapers go out and fetch information about new meetings from the Chicago City Council's website, the local school council's website, the Chicago police department's website, and many more.
-
-###### **Gatsby Docs** — [Pull Requests](https://github.com/gatsbyjs/gatsby-pt-BR/pulls/sosolidkk)
-This repository contains the Brazilian Portuguese translation of Gatsby.
-
-###### **steam_api** - [Repository](https://github.com/sosolidkk/steam_api)
-Ruby client for fetching data for the public Steam API Interface.
-
+- **[BrownBag CM42: Starting in the world of Web Scraping](https://www.youtube.com/watch?v=a0ucInKSuwg)**
+- **[BrownBag CM42: Legacy Systems - What to (or not) do](https://www.youtube.com/watch?v=hd70mmpkZ_c)**
 
 ---
 
-#### 📚 Education
+### 📅 Events
 
-##### **Bachelor's Degree in Computer Science**
-`JUNE 2016 - JULY 2021 (finished)`
+- No speaking engagements yet, but actively pursuing opportunities to present at future events.
 
-UFPI - Teresina - PI, Brazil
+---
 
-##### **Technical course in IT integrated with High School**
-`JANUARY 2012 - JANUARY 2015 (finished)`
+### 🐙 Open Source
 
-IFMA - Bacabal - MA, Brazil
+- **City Scrappers** — [Pull Requests](https://github.com/City-Bureau/city-scrapers/pulls/sosolidkk)
+- **Gatsby Docs** — [Pull Requests](https://github.com/gatsbyjs/gatsby-pt-BR/pulls/sosolidkk)
+- **Steam API** — [Repository](https://github.com/sosolidkk/steam_api)
+
+---
+
+### 📚 Education
+
+- **Bachelor's Degree in Computer Science**
+
+  `June 2016 - July 2021 | UFPI - Teresina, Brazil`

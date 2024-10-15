@@ -41,7 +41,7 @@ author:
 remote_theme: jekyll/minima
 
 minima:
-  skin: dark
+  skin: classic
   social_links:
     - { platform: github,  user_url: "https://github.com/sosolidkk" }
     - { platform: instagram, user_url: "https://instagram.com/jpechaves" }

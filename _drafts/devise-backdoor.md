@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Devise Backdoor
-date: 2024-02-07 22:44 -0300
-tags: ruby rails
 ---
 
 It's common knowledge that end-to-end tests are one of the more demanding and heavy to execute types of tests in an application. Every developer is tired of looking into the same image of the test pyramid that keeps the end-to-end tests at the top of it and tired of being recommended that most of the tests should be unit or integration with fewer end-to-end tests.

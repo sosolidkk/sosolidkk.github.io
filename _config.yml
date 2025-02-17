@@ -18,7 +18,6 @@ description: >-
   Don't take everything you read here too seriously.
   Enjoy your stay!
 url: "https://sosolidkk.github.io/"
-
 tagline: Ruby on Rails and Indie Hacking
 
 show_excerpts: true
@@ -43,10 +42,10 @@ remote_theme: jekyll/minima
 minima:
   skin: classic
   social_links:
-    - { platform: github,  user_url: "https://github.com/sosolidkk" }
+    - { platform: github, user_url: "https://github.com/sosolidkk" }
     - { platform: instagram, user_url: "https://instagram.com/jpechaves" }
     - { platform: telegram, user_url: "https://t.me/sosolidkk" }
-    - { platform: linkedin, user_url: "https://www.linkedin.com/in/sosolidkk/" }
+    - { platform: linkedin, user_url: "https://www.linkedin.com/in/jpechaves/" }
 
 plugins:
   - jekyll-feed

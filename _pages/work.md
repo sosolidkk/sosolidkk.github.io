@@ -4,7 +4,7 @@ title: Work
 permalink: /work/
 ---
 
-### [Nuuvem](https://nuuvem.com) - Senior Software Developer
+### [Nuuvem](https://nuuvem.com) - Tech Lead
 `June 2022 - Present | Remote (BR)`
 
 - **Technical Decision-Making:** Contributed to critical product and technical decisions, sharing expertise across the company to align development efforts with business goals. Empowered team members to make decisions while maintaining product quality. Develop and enhance company projects, ensuring best coding practices and adherence to industry standards.

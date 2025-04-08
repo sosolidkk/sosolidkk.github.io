@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Ruby % Notation</title>
-<meta name="generator" content="Jekyll v4.3.4" />
+<meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="Ruby % Notation" />
 <meta name="author" content="João Pedro" />
 <meta property="og:locale" content="en_US" />
@@ -20,16 +20,9 @@
 {"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"João Pedro"},"dateModified":"2022-02-04T23:20:00+00:00","datePublished":"2022-02-04T23:20:00+00:00","description":"For a long time, my Rubocop always kept complaining about the list of symbols defined in my code and, I also didn’t search for the reason behind it. It states that: Prefer %i to the literal array syntax when you need an array of symbols (and you don’t need to maintain Ruby 1.9 compatibility). Apply this rule only to arrays with two or more elements. So after some searching, I’ve found that’s pretty common and, generally, more readable for the developers to use this notation. So here goes a brief resume and examples about them: # Yes, they are case sensitive %q[ ] # Non-interpolated String (except for \\\\ \\[ and \\]) %Q[ ] # Interpolated String (default) %r[ ] # Interpolated Regexp (flags can appear after the closing delimiter) %i[ ] # Non-interpolated Array of symbols, separated by whitespace %I[ ] # Interpolated Array of symbols, separated by whitespace %w[ ] # Non-interpolated Array of words, separated by whitespace %W[ ] # Interpolated Array of words, separated by whitespace %x[ ] # Interpolated shell command %q %q{one\\ntwo\\n#{ 1 + 2 }} # =&gt; &quot;one\\\\ntwo\\\\n\\#{ 1 + 2 }&quot; %Q %Q{one\\ntwo\\n#{ 1 + 2 }} # =&gt; &quot;one\\ntwo\\n3&quot; %r name = &#39;nemo&#39; %r/#{name}/i # =&gt; /nemo/i %i %i[one two three] # after Ruby 2.0 # =&gt; [:one, :two, :three] %I value = &#39;searching&#39; %I[#{value} for nemo] # =&gt; [:searching, :for, :nemo] %w %w[one two three] # =&gt; [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;] %W value = &#39;one&#39; %W[#{value} two three] # =&gt; [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;] %x %x{ruby --copyright} # =&gt; &quot;ruby - Copyright (C) 1993-2020 Yukihiro Matsumoto\\n&quot; References Wikibooks - Ruby Programming Rubocop Style Guide","headline":"Ruby % Notation","mainEntityOfPage":{"@type":"WebPage","@id":"https://sosolidkk.github.io//2022/02/04/ruby-notation.html"},"url":"https://sosolidkk.github.io//2022/02/04/ruby-notation.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://sosolidkk.github.io//feed.xml" title="&lt;brain_dump/&gt;" />
-
-
-
-
-
-
-
 <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Ruby % Notation</title>
-<meta name="generator" content="Jekyll v4.3.4" />
+<meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="Ruby % Notation" />
 <meta name="author" content="João Pedro" />
 <meta property="og:locale" content="en_US" />
@@ -58,16 +51,8 @@
 
         <div class="nav-items">
   <a class="nav-item" href="/about/">About</a>
-  <a class="nav-item" href="/tag/config.html">Tag: config</a>
   <a class="nav-item" href="/contact/">Contact</a>
-  <a class="nav-item" href="/tag/jekyll.html">Tag: jekyll</a>
-  <a class="nav-item" href="/tag/linux.html">Tag: linux</a>
   <a class="nav-item" href="/now/">Now</a>
-  <a class="nav-item" href="/tag/personal.html">Tag: personal</a>
-  <a class="nav-item" href="/tag/rails.html">Tag: rails</a>
-  <a class="nav-item" href="/tag/ruby.html">Tag: ruby</a>
-  <a class="nav-item" href="/tags/">Tags</a>
-  <a class="nav-item" href="/tag/tips.html">Tag: tips</a>
   <a class="nav-item" href="/work/">Work</a>
 </div>
 
@@ -80,24 +65,6 @@
 
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">Ruby % Notation</h1>
-    <span class="post-tags">
-      Tags: [&nbsp;
-      
-        
-        <a class="no-underline" href="/tag/ruby">
-          <code class="highligher-rouge">
-            <nobr>ruby</nobr>
-          </code>
-        </a>&nbsp;
-      
-        
-        <a class="no-underline" href="/tag/tips">
-          <code class="highligher-rouge">
-            <nobr>tips</nobr>
-          </code>
-        </a>&nbsp;
-       ]
-    </span>
     <p class="post-meta"><time class="dt-published" datetime="2022-02-04T23:20:00+00:00" itemprop="datePublished">
         Feb 4, 2022
       </time></p>
@@ -197,20 +164,20 @@
     </div>
 
     <div class="social-links"><ul class="social-media-list"><li>
-    <a rel="me" href="" target="_blank" title="">
-      <span class="grey fa-brands fa- fa-lg"></span>
+    <a rel="me" href="https://github.com/sosolidkk" target="_blank" title="My GitHub Profile">
+      <span class="grey fa-brands fa-github fa-lg"></span>
     </a>
   </li><li>
-    <a rel="me" href="" target="_blank" title="">
-      <span class="grey fa-brands fa- fa-lg"></span>
+    <a rel="me" href="https://instagram.com/jpechaves" target="_blank" title="My Instagram profile">
+      <span class="grey fa-brands fa-instagram fa-lg"></span>
     </a>
   </li><li>
-    <a rel="me" href="" target="_blank" title="">
-      <span class="grey fa-brands fa- fa-lg"></span>
+    <a rel="me" href="https://t.me/sosolidkk" target="_blank" title="My Telegram profile">
+      <span class="grey fa-brands fa-telegram fa-lg"></span>
     </a>
   </li><li>
-    <a rel="me" href="" target="_blank" title="">
-      <span class="grey fa-brands fa- fa-lg"></span>
+    <a rel="me" href="https://www.linkedin.com/in/jpechaves/" target="_blank" title="My LinkedIn profile">
+      <span class="grey fa-brands fa-linkedin fa-lg"></span>
     </a>
   </li></ul>
 </div>

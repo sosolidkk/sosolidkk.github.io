@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Gnome/Keyring does not wraps around SSH Agent automatically</title>
-<meta name="generator" content="Jekyll v4.3.4" />
+<meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="Gnome/Keyring does not wraps around SSH Agent automatically" />
 <meta name="author" content="João Pedro" />
 <meta property="og:locale" content="en_US" />
@@ -20,16 +20,9 @@
 {"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"João Pedro"},"dateModified":"2024-07-07T20:14:00+00:00","datePublished":"2024-07-07T20:14:00+00:00","description":"It seems that starting from version 1:46.0-1, the gnome-keyring changed it’s behavior and now it disables building the ssh-agent support by default. The OS by default also doesn’t enable it, which was the cause for all my ssh-agents goes missing every time I tried to do any connection and even asking for password again. Lookint at the Gitlab MR, it seems like we’re now supposed to use gcr-ssh-agent. Here’s the instructions: Run: systemctl enable --user gcr-ssh-agent.socket to enable the socket. Set: $SSH_AUTH_SOCK environment value to $XDG_RUNTIME_DIR/gcr/ssh. I just put this in my .zshrc: export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/gcr/ssh Reboot After those two changes, your SSH keys should start working just like before. Other workaround I was doing before finding those threads were adding this to my .zshrc: if [ -z &quot;$SSH_AUTH_SOCK&quot; ]; then eval &quot;$(ssh-agent -s)&quot; &gt; /dev/null ssh-add ~/.ssh/id_ed25519_github &amp;&gt; /dev/null ssh-add ~/.ssh/id_ed25519_gitlab &amp;&gt; /dev/null fi The problem with this approach is that it will init a new ssh-agent for every newly created console session since the .zshrc will be loaded every time. But since it was a workaround, I didn’t care. It was more stressful not to have it working at all. References Reddit gitlab/gnome-keyring #60 Wiki/Arch Linux - Keyring#SSH_keys https://bbs.archlinux.org/viewtopic.php?pid=2152021#p2152021","headline":"Gnome/Keyring does not wraps around SSH Agent automatically","mainEntityOfPage":{"@type":"WebPage","@id":"https://sosolidkk.github.io//2024/07/07/gnome-keyring.html"},"url":"https://sosolidkk.github.io//2024/07/07/gnome-keyring.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://sosolidkk.github.io//feed.xml" title="&lt;brain_dump/&gt;" />
-
-
-
-
-
-
-
 <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Gnome/Keyring does not wraps around SSH Agent automatically</title>
-<meta name="generator" content="Jekyll v4.3.4" />
+<meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="Gnome/Keyring does not wraps around SSH Agent automatically" />
 <meta name="author" content="João Pedro" />
 <meta property="og:locale" content="en_US" />
@@ -58,16 +51,8 @@
 
         <div class="nav-items">
   <a class="nav-item" href="/about/">About</a>
-  <a class="nav-item" href="/tag/config.html">Tag: config</a>
   <a class="nav-item" href="/contact/">Contact</a>
-  <a class="nav-item" href="/tag/jekyll.html">Tag: jekyll</a>
-  <a class="nav-item" href="/tag/linux.html">Tag: linux</a>
   <a class="nav-item" href="/now/">Now</a>
-  <a class="nav-item" href="/tag/personal.html">Tag: personal</a>
-  <a class="nav-item" href="/tag/rails.html">Tag: rails</a>
-  <a class="nav-item" href="/tag/ruby.html">Tag: ruby</a>
-  <a class="nav-item" href="/tags/">Tags</a>
-  <a class="nav-item" href="/tag/tips.html">Tag: tips</a>
   <a class="nav-item" href="/work/">Work</a>
 </div>
 
@@ -80,17 +65,6 @@
 
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">Gnome/Keyring does not wraps around SSH Agent automatically</h1>
-    <span class="post-tags">
-      Tags: [&nbsp;
-      
-        
-        <a class="no-underline" href="/tag/linux">
-          <code class="highligher-rouge">
-            <nobr>linux</nobr>
-          </code>
-        </a>&nbsp;
-       ]
-    </span>
     <p class="post-meta"><time class="dt-published" datetime="2024-07-07T20:14:00+00:00" itemprop="datePublished">
         Jul 7, 2024
       </time></p>
@@ -171,20 +145,20 @@
     </div>
 
     <div class="social-links"><ul class="social-media-list"><li>
-    <a rel="me" href="" target="_blank" title="">
-      <span class="grey fa-brands fa- fa-lg"></span>
+    <a rel="me" href="https://github.com/sosolidkk" target="_blank" title="My GitHub Profile">
+      <span class="grey fa-brands fa-github fa-lg"></span>
     </a>
   </li><li>
-    <a rel="me" href="" target="_blank" title="">
-      <span class="grey fa-brands fa- fa-lg"></span>
+    <a rel="me" href="https://instagram.com/jpechaves" target="_blank" title="My Instagram profile">
+      <span class="grey fa-brands fa-instagram fa-lg"></span>
     </a>
   </li><li>
-    <a rel="me" href="" target="_blank" title="">
-      <span class="grey fa-brands fa- fa-lg"></span>
+    <a rel="me" href="https://t.me/sosolidkk" target="_blank" title="My Telegram profile">
+      <span class="grey fa-brands fa-telegram fa-lg"></span>
     </a>
   </li><li>
-    <a rel="me" href="" target="_blank" title="">
-      <span class="grey fa-brands fa- fa-lg"></span>
+    <a rel="me" href="https://www.linkedin.com/in/jpechaves/" target="_blank" title="My LinkedIn profile">
+      <span class="grey fa-brands fa-linkedin fa-lg"></span>
     </a>
   </li></ul>
 </div>

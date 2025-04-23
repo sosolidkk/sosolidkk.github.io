@@ -284,11 +284,11 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #2a7ae2;
+  color: #1e69d8;
   text-decoration: none;
 }
 a:visited {
-  color: rgb(22.9483471074, 86.2541322314, 168.5516528926);
+  color: rgb(20.6707317073, 72.3475609756, 148.8292682927);
 }
 a:hover {
   color: rgb(65.25, 65.25, 65.25);
@@ -583,7 +583,7 @@ table td {
 .footer-col-wrapper,
 .social-links {
   font-size: 0.9375rem;
-  color: #818181;
+  color: rgb(100.95, 100.95, 100.95);
 }
 
 .footer-col {
@@ -653,7 +653,7 @@ table td {
 
 .post-meta {
   font-size: 14px;
-  color: #818181;
+  color: rgb(100.95, 100.95, 100.95);
 }
 
 .post-link {
